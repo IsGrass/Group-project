@@ -1,0 +1,134 @@
+// Main Base Styles
+// body and universal styles
+body {
+margin: 0;
+font-family: $Poppins,sans-serif;
+letter-spacing: 0.4px;
+font-size: $base-font-size;
+line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
+font-weight: $font-reg;
+}
+
+* {
+box-sizing: border-box;
+}
+
+
+//Universal Containers
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media (min-width: $small) {
+        width: 750px;
+    }
+
+    @media (min-width: $medium) {
+        width: 970px;
+    }
+
+    @media (min-width: $large) {
+        width: 1200px;
+    }
+
+
+}
+
+//container is styled slightly differently for the sitemap/copyright at the bottom of the website
+.container-bottom {
+    padding-left: 15px;
+    padding-right: 15px;
+    display:flex;
+    margin-left:0;
+    margin-right:0; 
+    flex-direction: column;
+
+    @media (min-width: $small) {
+        width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+       
+    }
+
+    @media (min-width: $medium) {
+        width: 970px;
+    }
+
+    @media (min-width: $large) {
+        width: 1200px;
+    }
+}
+
+//margins for the middle sections of the website
+.section
+{ 
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+// standard html Elements
+a {
+    cursor: pointer;
+    text-decoration:none;
+}
+
+a:focus { 
+    outline: thin dotted;
+}
+
+//prevents useragent styling from overriding colour of links
+a:link, a:any-link, a:active, a:focus, a:visited {
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-size: rem(13px);
+    line-height: rem(22px);
+    font-weight: $font-reg;   
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+h2, h3, h4 {
+    line-height: 1.1;
+    font-weight: $font-reg;
+}
+
+h1 {
+    font-size: rem(36px);
+    font-weight: $font-semibold;
+}
+
+h2 {
+    font-size: rem(36px);
+}
+
+h3 {
+    font-size: rem(18px);
+}
+
+h4 {
+    font-size: rem(16px);
+    line-height: rem(18px);
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+strong {
+    font-weight: $font-semibold
+}

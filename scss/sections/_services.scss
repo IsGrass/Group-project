@@ -1,0 +1,234 @@
+//services section styling
+.services-list {
+		.services-row {
+            max-width: 100%;
+
+            @media (min-width: $small) {
+                margin-left: -15px;
+                margin-right: -15px;
+            }
+
+            //services header styling
+			.services-header {
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                color:  $darkgrey;   
+
+                h2 {
+                    font-size: rem(43px);
+                    margin-top: -13px;
+                    margin-bottom: -10px;              
+                }
+
+                //just like in news section this header is only on larger screens and is replaced with one below the grid on mobiles 
+                h1 {
+                    margin-top:-13px;
+                    margin-left: 20px;
+                    margin-bottom: 28px;
+                    display:none;
+                    
+                 @media (min-width: $small) {
+                    display:block;
+                 }   
+
+                 a:hover {
+                    text-decoration: underline;
+                 }
+                }
+            }
+			
+            //I used grid layout here to display different arrangements of the panels at each different screen sizes
+            //I used template areas to define number of columns, rows and what is on each row
+            .services-gridbox {
+                display:grid;
+                grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr; //Uses fr for columns so they expand as nessicary
+                grid-template-rows: 320px 320px 320px 320px 320px 320px 320px; //defined excat height of each row so panel size was consistent
+                row-gap: 30px;
+
+                //mobile is 1 panel per row
+                grid-template-areas: 
+                "panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1"
+                "panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2"
+                "panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3"
+                "panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4 panel4"
+                "panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5 panel5"
+                "panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6 panel6"
+                "panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7 panel7";
+                padding-bottom: 30px;
+
+                //defining grid area for the panels in order of Top to bottom panels panels or top left to bottom right panels
+                #panel1 {
+                    grid-area: panel1;
+                }
+
+                #panel2 {
+                    grid-area: panel2;
+
+                }
+
+                #panel3 {
+                    grid-area: panel3;
+                }
+
+                #panel4 {
+                    grid-area: panel4;
+                    
+                }
+
+                #panel5 {
+                    grid-area: panel5;
+                }
+
+                #panel6 {
+                    grid-area: panel6;
+                }
+
+                #panel7 {
+                    grid-area: panel7;
+                }
+
+                //At first breakpoint the layout is first the panels have each their own row 
+                //and then the last two rows have 2 panels each taking up half the space
+                @media (min-width:$small) {
+                    grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+                    grid-template-rows: 320px 320px 320px 320px 320px;
+                    row-gap: 30px;
+                    grid-template-areas: 
+                    "panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1 panel1"
+                    "panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2 panel2"
+                    "panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3 panel3"                
+                    "panel4 panel4 panel4 panel4 panel4 panel4 panel5 panel5 panel5 panel5 panel5 panel5"
+                    "panel6 panel6 panel6 panel6 panel6 panel6 panel7 panel7 panel7 panel7 panel7 panel7";
+                }
+
+                //At second break point layout is 3 panels on the first row and 2 pannels on the second and third rows 
+                @media (min-width:$medium) {
+                    grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+                    grid-template-rows: 380px 340px 340px;
+                    row-gap: 30px;
+                    grid-template-areas: 
+                    "panel1 panel1 panel1 panel1 panel2 panel2 panel2 panel2 panel3 panel3 panel3 panel3"
+                    "panel4 panel4 panel4 panel4 panel4 panel4 panel5 panel5 panel5 panel5 panel5 panel5"
+                    "panel6 panel6 panel6 panel6 panel6 panel6 panel7 panel7 panel7 panel7 panel7 panel7";
+                }
+
+                //At final breakpoint the layout is 3 panels on first row and 4 on bottom row
+                @media (min-width:$large) {
+                    grid-template-columns: 1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr  1fr;
+                    grid-template-rows: 340px 340px;
+                    row-gap: 30px;
+                    grid-template-areas: 
+                    "panel1 panel1 panel1 panel1 panel2 panel2 panel2 panel2 panel3 panel3 panel3 panel3"
+                    "panel4 panel4 panel4 panel5 panel5 panel5 panel6 panel6 panel6 panel7 panel7 panel7";
+                }
+                
+            //services Panel styling    
+			.services-panel {
+                cursor: pointer;
+                padding-left:15px;
+
+                @media (min-width: $small) {
+                    padding-right:15px;
+                }
+                    //panel dimensions and flex box defining for easier adjusting with grid
+                    a { 
+                        display: flex;
+                        flex-direction: column;
+                        height: 100%;
+                            
+                        margin-top: 30px;
+                        padding: 30px;
+                        text-align: center;
+                            
+                        color:  $darkgrey;
+                        width: 100%;
+                        position: relative;
+
+                        // this is used here to allow when hovered for it to shift up
+                        top: 0px; 
+                        transition: .5s ease;
+
+                        border-radius: 15px;
+                        border: 1px solid $offwhite;
+                        box-shadow: 0 3px 35px $border-black;
+                    
+                    //panel icon
+                    //border radius is set to 50% so that it looks like the icon is within a full circle
+                    .icon1 {
+                        height: 65px;
+                        width: 65px;
+                        margin: 0 auto 17px;
+                        border-radius: 50%;
+                        font-size: rem(32px);
+                        line-height: rem(70px);
+                    }
+
+					h2 {
+                        font-size: rem(20px);
+                        margin-top:0;
+                        margin-bottom: 10px;
+                        padding-bottom: 10px;
+                    }
+
+					p {
+                        margin-top:0;
+                        margin-bottom: 13px;
+                    }
+                    
+                    //panel button styling
+					.button-container {
+                        display:block;
+
+                        //Did as a span rather than a as a within a breaks the code
+                        span{
+                            font-size: rem(17px);
+                            font-weight: $font-semibold;
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 11px 18px;
+                            text-transform: uppercase;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+                
+                //When each panel is hovered over it will shift upwards
+                a:hover {
+                    top: -10px;
+                    transition: .5s ease;
+                    color: $white;
+                }
+            }
+        }
+             //this link only displays on mobile screens
+            .hidden-view-work {
+                display: block;
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px;
+                margin: 30px auto -55px;
+
+                @media (min-width: $small) {
+                    display:none;
+                }
+
+                h3 {
+                    font-size: rem(26px);
+                    font-weight: $font-semibold;
+                    color: $darkgrey;
+
+                    a:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+    
+
+
