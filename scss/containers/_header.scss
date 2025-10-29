@@ -1,34 +1,45 @@
 // Header Styling
 
 .header {
+  position: relative;
 
-  div {
+     div {
+      position: absolute;
+      left: 0;
+      top: 0;
 
-    h1  {
+      h1  {
 
+      }
     }
     
     div {
+      display: flex;
+      flex-direction: column;
+
       div { 
+        display: flex;
+        flex-direction: row;
+
+        a {
+
+        }
+
+      }
+
+      div {
+
+        h1 {
+
+        }
+
+        p {
+
+        }
+
         a {
 
         }
       }
-
-      h1 {
-
-      }
-
-      p {
-
-      }
-
-      a {
-
-      }
-    }
-
-    
-
+    }  
   }
-}
