@@ -2,24 +2,24 @@
 //I use fontface mixins for the Zalando Sans fonts
 
 //Zalando Sans fonts
-@include font-face('Zalando Sans',Zalando Sans-Black,900);
-@include font-face('Zalando Sans',Zalando Sans-Bold,700);
-@include font-face('Zalando Sans',Zalando Sans-ExtraBold, 800);
-@include font-face('Zalando Sans',Zalando Sans-ExtraLight,200);
-@include font-face('Zalando Sans',Zalando Sans-Light,300);
-@include font-face('Zalando Sans',Zalando Sans-Medium, 500);
-@include font-face('Zalando Sans',Zalando Sans-Regular,400);
-@include font-face('Zalando Sans',Zalando Sans-SemiBold, 600);
+@include font-face('Zalando Sans',ZalandoSans-Black,900);
+@include font-face('Zalando Sans',ZalandoSans-Bold,700);
+@include font-face('Zalando Sans',ZalandoSans-ExtraBold, 800);
+@include font-face('Zalando Sans',ZalandoSans-ExtraLight,200);
+@include font-face('Zalando Sans',ZalandoSans-Light,300);
+@include font-face('Zalando Sans',ZalandoSans-Medium, 500);
+@include font-face('Zalando Sans',ZalandoSans-Regular,400);
+@include font-face('Zalando Sans',ZalandoSans-SemiBold, 600);
 
 //italic Zalando Sans fonts
-@include font-face-italic('Zalando Sans',Zalando Sans-BlackItalic,900, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-BoldItalic,700, italic );
-@include font-face-italic('Zalando Sans',Zalando Sans-ExtraBoldItalic, 800, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-ExtraLightItalic, 200, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-LightItalic ,300, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-MediumItalic , 500, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-Italic,400, italic);
-@include font-face-italic('Zalando Sans',Zalando Sans-SemiBoldItalic, 600, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-BlackItalic,900, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-BoldItalic,700, italic );
+@include font-face-italic('Zalando Sans',ZalandoSans-ExtraBoldItalic, 800, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-ExtraLightItalic, 200, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-LightItalic ,300, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-MediumItalic , 500, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-Italic,400, italic);
+@include font-face-italic('Zalando Sans',ZalandoSans-SemiBoldItalic, 600, italic);
 
 //icomoon font-face function
 @font-face {
@@ -43,152 +43,25 @@
 }
 
 //icon fonts classes and codes
-.icon-edit-pencil::before {
-  content: "\e908";
-}
-.icon-bar-graph::before {
-  content: "\e902";
-}
-.icon-envelope-o::before {
-  content: "\f003";
-}
-.icon-download::before {
-  content: "\f019";
-}
-.icon-lock::before {
-  content: "\f023";
-}
-.icon-question-circle::before {
-  content: "\f059";
-}
-.icon-random::before {
-  content: "\f074";
-}
-.icon-shopping-cart::before {
-  content: "\f07a";
-}
-.icon-folder-open::before {
-  content: "\f07c";
-}
-.icon-cogs::before {
-  content: "\f085";
-}
 
-.icon-phone::before {
-  content: "\f095";
-}
-.icon-phone-square::before {
-  content: "\f098";
-}
-.icon-bullhorn::before {
-  content: "\f0a1";
-}
-.icon-globe::before {
-  content: "\f0ac";
-}
-.icon-briefcase::before {
-  content: "\f0b1";
-}
-
-.icon-users::before {
-  content: "\f0c0";
-}
-.icon-cloud::before {
-  content: "\f0c2";
-}
-.icon-flask::before {
-  content: "\f0c3";
-}
-.icon-money::before {
-  content: "\f0d6";
-}
-.icon-dashboard::before {
-  content: "\f0e4";
-}
-
-.icon-clipboard::before {
-  content: "\f0ea";
-}
-
-.icon-cloud-download::before {
-  content: "\f0ed";
-}
-.icon-desktop::before {
-  content: "\f108";
-}
-.icon-laptop1::before {
-  content: "\f109";
-}
-.icon-mobile::before {
-  content: "\f10b";
-}
-
-.icon-ticket::before {
-  content: "\f145";
-}
-.icon-handshake-o::before {
-  content: "\f2b5";
-}
-.icon-code::before {
-  content: "\e901";
-}
-.icon-clock::before {
-  content: "\e909";
-}
-.icon-headphones::before {
-  content: "\e910";
-}
-.icon-display::before {
-  content: "\e956";
-}
-.icon-laptop::before {
-  content: "\e957";
-}
-.icon-drive::before {
-  content: "\e963";
-}
-.icon-search::before {
-  content: "\e986";
-}
-.icon-menu::before {
-  content: "\e9bd";
-}
-.icon-star-full::before {
-  content: "\e9d9";
-}
-.icon-arrow-right::before {
-  content: "\ea3c";
-}
-.icon-tab::before {
-  content: "\ea45";
-}
-.icon-facebook::before {
-  content: "\ea90";
-}
-.icon-instagram::before {
-  content: "\ea92";
-}
-.icon-linkedin::before {
-  content: "\eaca";
-}
-.icon-trending_up::before {
-  content: "\e90a";
-}
-.icon-school::before {
-  content: "\e904";
-}
-.icon-security::before {
-  content: "\e905";
-}
-.icon-mouse::before {
-  content: "\e906";
-}
-.icon-phone_in_talk::before {
-  content: "\e907";
-}
-.icon-x::before {
+.icon-envelope::before {
   content: "\e900";
 }
-.icon-paperplane::before {
-  content: "\e903";
+.icon-phone::before {
+  content: "\e942";
+}
+.icon-quotes-left::before {
+  content: "\e977";
+}
+.icon-quotes-right::before {
+  content: "\e978";
+}
+.icon-facebook::before {
+  content: "\ea91";
+}
+.icon-twitter::before {
+  content: "\ea96";
+}
+.icon-linkedin::before {
+  content: "\eac9";
 }
