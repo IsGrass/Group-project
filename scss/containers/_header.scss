@@ -6,21 +6,21 @@
   justify-content: flex-end;
   position: relative;
 
-     div {
+     .logobox {
       position: absolute;
       left: 0;
       top: 0;
 
-      h1  {
-
+        h3  {
+          
+        }
       }
-    }
     
-    div {
+    .header-details {
       display: flex;
       flex-direction: column;
 
-      div { 
+      .contact-info { 
         display: flex;
         flex-direction: row;
 
@@ -30,7 +30,7 @@
 
       }
 
-      div {
+      .company-info {
 
         h1 {
 
@@ -40,7 +40,7 @@
 
         }
 
-        a {
+        .booking-button {
 
         }
       }

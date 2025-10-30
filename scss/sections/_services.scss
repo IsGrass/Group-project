@@ -1,9 +1,12 @@
 //services section styling
-div {
+
+.service {
+
+.service-wrap {
     display:flex;
     flex-direction: row;
 
-    div {
+    .service-box {
         display:flex;
         flex-direction: column;
 
@@ -18,5 +21,6 @@ div {
         p {
 
         }
+    }
 }
 }
