@@ -21,6 +21,9 @@
 @include font-face-italic('Zalando Sans',ZalandoSans-Italic,400, italic);
 @include font-face-italic('Zalando Sans',ZalandoSans-SemiBoldItalic, 600, italic);
 
+//Meow Script Font
+@include font-face('Meow Script',MeowScript-Regular, 400);
+
 //icomoon font-face function
 @font-face {
   font-family: 'icomoon';
@@ -43,7 +46,6 @@
 }
 
 //icon fonts classes and codes
-
 .icon-envelope::before {
   content: "\e900";
 }
