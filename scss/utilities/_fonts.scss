@@ -1,27 +1,25 @@
 //Fonts and Icon set up
-//I use fontface mixins for the poppins fonts
+//I use fontface mixins for the Zalando Sans fonts
 
-//Poppins fonts
-@include font-face('Poppins',Poppins-Black,900);
-@include font-face('Poppins',Poppins-Bold,700);
-@include font-face('Poppins',Poppins-ExtraBold, 800);
-@include font-face('Poppins',Poppins-ExtraLight,200);
-@include font-face('Poppins',Poppins-Light,300);
-@include font-face('Poppins',Poppins-Medium, 500);
-@include font-face('Poppins',Poppins-Regular,400);
-@include font-face('Poppins',Poppins-SemiBold, 600);
-@include font-face('Poppins',Poppins-Thin,100);
+//Zalando Sans fonts
+@include font-face('Zalando Sans',Zalando Sans-Black,900);
+@include font-face('Zalando Sans',Zalando Sans-Bold,700);
+@include font-face('Zalando Sans',Zalando Sans-ExtraBold, 800);
+@include font-face('Zalando Sans',Zalando Sans-ExtraLight,200);
+@include font-face('Zalando Sans',Zalando Sans-Light,300);
+@include font-face('Zalando Sans',Zalando Sans-Medium, 500);
+@include font-face('Zalando Sans',Zalando Sans-Regular,400);
+@include font-face('Zalando Sans',Zalando Sans-SemiBold, 600);
 
-//italic Poppins fonts
-@include font-face-italic('Poppins',Poppins-BlackItalic,900, italic);
-@include font-face-italic('Poppins',Poppins-BoldItalic,700, italic );
-@include font-face-italic('Poppins',Poppins-ExtraBoldItalic, 800, italic);
-@include font-face-italic('Poppins',Poppins-ExtraLightItalic, 200, italic);
-@include font-face-italic('Poppins',Poppins-LightItalic ,300, italic);
-@include font-face-italic('Poppins',Poppins-MediumItalic , 500, italic);
-@include font-face-italic('Poppins',Poppins-Italic,400, italic);
-@include font-face-italic('Poppins',Poppins-SemiBoldItalic, 600, italic);
-@include font-face-italic('Poppins',Poppins-ThinItalic,100, italic);
+//italic Zalando Sans fonts
+@include font-face-italic('Zalando Sans',Zalando Sans-BlackItalic,900, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-BoldItalic,700, italic );
+@include font-face-italic('Zalando Sans',Zalando Sans-ExtraBoldItalic, 800, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-ExtraLightItalic, 200, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-LightItalic ,300, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-MediumItalic , 500, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-Italic,400, italic);
+@include font-face-italic('Zalando Sans',Zalando Sans-SemiBoldItalic, 600, italic);
 
 //icomoon font-face function
 @font-face {
