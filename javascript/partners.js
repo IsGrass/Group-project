@@ -1,14 +1,14 @@
 id = 1
 
 setInterval(function(){
-    $('#box' + id).animate({
+    $('.partner' + id).animate({
         left: '-50%'
     }, 500, function() {
         $(this).css('left', '150%');
-        $(this).appendTo('#container');
+        $(this).appendTo('.partner-box');
     });
 
-    $('#box' + id).next().animate({
+    $('.partner' + id).next().animate({
         left: '50%'
     }, 500);
 
