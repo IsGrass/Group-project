@@ -15,7 +15,7 @@ box-sizing: border-box;
 
 
 //Universal Containers
-.container {
+.sitecontainer {
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
@@ -98,7 +98,7 @@ p a:hover {
 }
 
 h2, h3, h4 {
-    line-height: 1.1;
+    line-height: 1.2;
     font-weight: $font-reg;
 }
 
@@ -109,6 +109,7 @@ h1 {
 
 h2 {
     font-size: rem(36px);
+    font-weight: $font-semibold;
 }
 
 h3 {
@@ -117,7 +118,7 @@ h3 {
 
 h4 {
     font-size: rem(16px);
-    line-height: rem(18px);
+    line-height: rem(19px);
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
@@ -134,9 +135,15 @@ strong {
 }
 
 .button {
-
+ padding: 15px;
+ border-radius: 0px;
 }
 
-.logo {
-
+.logo { 
+    font-family: $meow,sans-serif;
+    color: $red;
+    font-weight: bold;
+}
+.logo:hover {
+     text-decoration: none;
 }

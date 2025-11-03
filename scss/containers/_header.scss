@@ -1,20 +1,48 @@
 // Header Styling
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  
   position: relative;
+  background-image: url("#{$img-path}/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+
+    .flex-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+      position: relative;
+      width: 100%;
+
 
      .logobox {
+      display:flex;
+      flex-direction: column;
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 25px;
+      top: 10px;
+      color: $white;
+      
 
         h3  {
+          margin:0;
+          font-size: rem(48px);
+          line-height: rem(53px);
+          
+
           a {
             
           }
+        }
+
+        h4  {
+          margin:0;
+          font-size: rem(48px);
+          line-height: rem(53px);
+          color: black;
+          font-weight: $font-light;
         }
       }
     
@@ -50,3 +78,4 @@
       }
     }  
   }
+}
