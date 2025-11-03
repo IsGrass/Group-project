@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('.partner-box').slick({
         infinite: true,
         arrows: false,
-        slidesToShow: 8,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3500,
