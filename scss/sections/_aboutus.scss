@@ -1,0 +1,18 @@
+.about-container {
+		.about-box {
+		    img {}
+			h1 {}
+		    p {}
+        }
+		.star-box {
+            display:flex;
+            flex-direction: row;
+             div {
+                color: orange; 
+                margin-bottom: 25px; 
+                font-size: 50px;
+                }
+            }
+    }
+
+             
