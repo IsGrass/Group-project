@@ -1,20 +1,35 @@
 //services section styling
 
+//homepage section
 .service {
 
+    h1 {
+        color: $darkbrown;
+        padding-bottom: 25px;
+        border-bottom: 2px solid $darkbrown;
+    }
 .service-wrap {
+    margin-top: 60px;
     display:flex;
     flex-direction: row;
 
     .service-box {
         display:flex;
         flex-direction: column;
+        width: 33%;
 
 	    img {
+            height:200px
+            margin-bottom: 20px;
 
         }
 
 	    h2 {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            color: $darkbrown;
+            border-bottom: 2px solid $darkbrown;
 
         }
 

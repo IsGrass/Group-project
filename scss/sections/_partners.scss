@@ -1,31 +1,40 @@
 .partners {
-			h2 {}
-    .partner-wrap {
-				.partner-box {
-					.partner-img {
-						img {}
-                    }
-                }
+			h2 {
+                color: $darkbrown;
+                padding-bottom: 20px;
+                border-bottom: 2px solid $darkbrown;
             }
-}
-
-body {
-    padding: 0px;
-}
+            
+.partner-wrap {
 
 .partner-box {
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden;
+    overflow-x: clip;
     display:flex;
     flex-direction: row;
-
-}
+    width: 100%;
 
 .partner-img {
     width: 50%;
     height: 500px;
     text-align: center;
-    
+    height: 100px;
+    margin-right: 50px;
+    position: relative;
+    padding: 0 20px;
+    max-height:100px;
 
+    img {
+        max-width:200px;
+        filter: grayscale(1)
+        height: 100px;
+    }
+
+    img:hover { 
+        filter: grayscale(0);
+    }
+
+}
+}
 }

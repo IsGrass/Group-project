@@ -1,15 +1,19 @@
 
 .bookingbar {
+    display: flex;
+    flex-direction: row;
+    color: $white;
+    background-color: $dark;
 
     p {
 
     }
 
     .bar-button {
-
+        background-color: $white;
+        color: $brown;
     }
 }
-
 
 
 footer {
@@ -20,12 +24,21 @@ footer {
                     }
 					
 					ul {
-						li{ a { span {}}}
+
+						li{ 
+                            a { 
+                                span {
+
+                                }
+                            }
+                        }
                     }
                 }
             }
             
 		 	.footer-bottom {
-            	span {}
+            	span {
+
+                }
             }
         }

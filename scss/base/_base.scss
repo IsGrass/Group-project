@@ -32,8 +32,6 @@ box-sizing: border-box;
     @media (min-width: $large) {
         width: 1200px;
     }
-
-
 }
 
 //container is styled slightly differently for the sitemap/copyright at the bottom of the website
@@ -104,12 +102,12 @@ h2, h3, h4 {
 
 h1 {
     font-size: rem(36px);
-    font-weight: $font-semibold;
+    font-weight: $font-med;
 }
 
 h2 {
-    font-size: rem(36px);
-    font-weight: $font-semibold;
+    font-size: rem(26px);
+    font-weight: $font-light;
 }
 
 h3 {
@@ -135,8 +133,13 @@ strong {
 }
 
 .button {
- padding: 15px;
- border-radius: 0px;
+    padding: 15px;
+    border-radius: 0px;
+
+}
+
+.button:hover {
+    text-decoration: none;
 }
 
 .logo { 
@@ -145,5 +148,5 @@ strong {
     font-weight: bold;
 }
 .logo:hover {
-     text-decoration: none;
+    text-decoration: none;
 }
