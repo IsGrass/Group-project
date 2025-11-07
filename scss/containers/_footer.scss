@@ -1,4 +1,5 @@
 
+//booking bar styling
 .bookingbar {
     display: flex;
     flex-direction: row;
@@ -15,9 +16,11 @@
     }
 }
 
-
+//footer styling
 footer {
-			.footer-row {
+    background-color: $red;
+    color: $white;
+    		.footer-row {
 				.footer-box {
 					h3 {
 

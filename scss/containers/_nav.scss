@@ -1,9 +1,20 @@
+//navigation bar styling
 .nav {
+    background-color: $red;
+    color: $white;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
 
     .navbar {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        text-align: right;
         li {
+            padding:10px;
+            font-size: rem(16px);
+            line-height: rem(19px);
             a {
                 
             }
