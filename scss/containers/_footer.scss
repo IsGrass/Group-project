@@ -1,23 +1,33 @@
 
 //booking bar styling
 .bookingbar {
-    display: flex;
-    flex-direction: row;
-    color: $white;
     background-color: $dark;
+    .booking-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: $white;
+       
 
-    p {
+        p {
+            margin-right: 25px;
+            width: 80%;
 
-    }
+        }
 
-    .bar-button {
-        background-color: $white;
-        color: $brown;
+        .bar-button {
+            display:inline-block;
+            margin:15px 0;
+            padding:10px;
+            background-color: $white;
+            color: $brown;
+        }
     }
 }
 
 //footer styling
 footer {
+    display:flex;
     background-color: $red;
     color: $white;
     		.footer-row {

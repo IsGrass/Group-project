@@ -2,21 +2,29 @@
 
 //homepage section
 .service {
+    display:flex;
+    flex-direction: column;
+    .service-header {
 
-    h1 {
-        color: $darkbrown;
-        padding-bottom: 25px;
-        border-bottom: 2px solid $darkbrown;
+        h1 {
+            display: inline-block;
+            color: $darkbrown;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 2px solid $darkbrown;
+         }
     }
 .service-wrap {
     margin-top: 60px;
     display:flex;
     flex-direction: row;
+    gap: 25px;
 
     .service-box {
         display:flex;
         flex-direction: column;
         width: 33%;
+        text-align: center;
 
 	    img {
             height:200px;
@@ -25,15 +33,19 @@
         }
 
 	    h2 {
-            text-align: center;
+            display:inline-block;
             padding-bottom: 20px;
+            margin-right: auto;
+            margin-left: auto;
             margin-bottom: 20px;
             color: $darkbrown;
             border-bottom: 2px solid $darkbrown;
+            
+
 
         }
-
-        p {
+       
+        p { 
 
         }
     }

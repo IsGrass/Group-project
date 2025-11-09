@@ -86,8 +86,8 @@ button {
 }
 
 p {
-    font-size: rem(13px);
-    line-height: rem(22px);
+    font-size: rem(16px);
+    line-height: rem(24px);
     font-weight: $font-reg;   
 }
 
@@ -144,7 +144,6 @@ strong {
 
 .logo { 
     font-family: $meow,sans-serif;
-    color: $red;
     font-weight: bold;
 }
 .logo:hover {
