@@ -122,7 +122,8 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -25px;
+    bottom: 25px;
+    
 
     display: block;
 
@@ -133,6 +134,7 @@
     list-style: none;
 
     text-align: center;
+    z-index: 1;
 }
 .slick-dots li
 {
@@ -164,6 +166,7 @@
     border: 0;
     outline: none;
     background: transparent;
+    z-index: 1;
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus
@@ -192,13 +195,14 @@
     text-align: center;
 
     opacity: .25;
-    color: black;
+    color: white;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    z-index: 1;
 }
 .slick-dots li.slick-active button:before
 {
     opacity: .75;
-    color: black;
+    color: white;
 }
