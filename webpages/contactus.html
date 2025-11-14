@@ -10,6 +10,98 @@
 	<script src="../javascript/jquery-3.7.1.min.js"></script>
 </head>
 <body>
+	<div class="sitecontainer">
+		<!--Header Section -->
+		<div class="header">
+			<div class="sitecontainer">
+				<div class="flex-header">
+					<div class="logobox">
+						<h3><a class="logo" href="../index.html">Terracotta</a></h3>
+						<h4>Catering</h4>
+					</div>
+					<div class="header-details">
+						<div class="contact-info">
+							<a href="#"><psna></psna>Info@terracotta.com </a> <a href="#"><span></span>01235-628-284</a>
+						</div>
+						<div class="company-info">
+						<h1>QUALITY LOCAL <br> Catering</h1>
+						<p>Resturant quality food made <br> with locally sourced <br> ingredients</p>
+						<a class="button booking-button" href="../webpages/booking.html">BOOK NOW</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="sitecontainer">
+				<ul class="navbar">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../webpages/aboutus.html">About Us</a></li>
+					<li><a href="../webpages/services.html">Services</a></li>
+					<li><a href="../webpages/testimonials.html">Testimonials</a></li>
+					<li><a href="../webpages/contactus.html">Contact Us</a></li>
+				</ul>
+			</div>	
+		</div>
+		<!--Main Content Section -->
+		<form id="emailForm" novalidate>
+  <label for="fromName">Your name</label>
+  <input id="fromName" name="fromName" type="text" required />
+  <small class="error" aria-live="polite"></small>
 
+  <label for="subject">Subject</label>
+  <input id="subject" name="subject" type="text" required />
+  <small class="error" aria-live="polite"></small>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+  <small class="error" aria-live="polite"></small>
+
+  <button type="submit">Send</button>
+</form>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('emailForm');
+  const fields = Array.from(form.querySelectorAll('input, textarea'));
+
+  function setError(el, msg) {
+    el.classList.add('invalid');
+    const hint = el.nextElementSibling;
+    if (hint) hint.textContent = msg;
+  }
+  function clearError(el) {
+    el.classList.remove('invalid');
+    const hint = el.nextElementSibling;
+    if (hint) hint.textContent = '';
+  }
+
+  fields.forEach(el => el.addEventListener('input', () => clearError(el)));
+
+  form.addEventListener('submit', (e) => {
+    let valid = true;
+
+    fields.forEach(el => {
+      if (!el.checkValidity()) {
+        valid = false;
+        if (el.validity.valueMissing) setError(el, 'This field is required.');
+        else if (el === to && el.validity.typeMismatch) setError(el, 'Enter a valid email.');
+        else if (el.validity.tooShort) setError(el, `Enter at least ${el.minLength} characters.`);
+        else setError(el, 'Invalid value.');
+      } else {
+        clearError(el);
+      }
+    });
+
+    if (!valid) {
+      e.preventDefault();
+      const firstInvalid = form.querySelector('.invalid');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+
+
+</script>
+	</div>
 </body>
 </html>
