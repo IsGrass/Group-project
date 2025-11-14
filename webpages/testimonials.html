@@ -97,21 +97,104 @@
 			</div>
 	</div>
 	<!--review submission form with first name, last name, date of review and review text fields -->
-<form>
-    <label for="firstName">First Name:</label><br>
-    <input type="text" id="firstName" name="firstName"><br><br>
+<style>
+        .error { color: #b00020; font-size: 0.9em; display: block; height: 1.1em; }
+        .invalid { outline: 2px solid rgba(176,0,32,0.15); }
+        label { display:block; margin-top:8px; }
+    </style>
+<form id="reviewForm" novalidate>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+    <small class="error" aria-live="polite"></small>
 
-    <label for="lastName">Last Name:</label><br>
-    <input type="text" id="lastName" name="lastName"><br><br>
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+    <small class="error" aria-live="polite"></small>
 
-    <label for="reviewDate">Date of Review:</label><br>
-    <input type="date" id="reviewDate" name="reviewDate"><br><br>
+    <label for="reviewDate">Date of Review:</label>
+    <input type="date" id="reviewDate" name="reviewDate" required>
+    <small class="error" aria-live="polite"></small>
 
-    <label for="reviewText">Your Review:</label><br>
-    <textarea id="reviewText" name="reviewText" rows="4" cols="50"></textarea><br><br>
+    <label for="reviewText">Your Review:</label>
+    <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+    <small class="error" aria-live="polite"></small>
 
-    <input type="submit" value="Submit Review">
+    <div style="margin-top:12px;">
+        <input type="submit" value="Submit Review">
+    </div>
 </form>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('reviewForm');
+    const firstName = document.getElementById('firstName');
+    const lastName  = document.getElementById('lastName');
+    const reviewDate = document.getElementById('reviewDate');
+    const reviewText = document.getElementById('reviewText');
+
+    // Prevent choosing a future date
+    const today = new Date().toISOString().split('T')[0];
+    reviewDate.max = today;
+
+    function setError(el, msg) {
+        el.classList.add('invalid');
+        const hint = el.nextElementSibling;
+        if (hint) hint.textContent = msg;
+    }
+    function clearError(el) {
+        el.classList.remove('invalid');
+        const hint = el.nextElementSibling;
+        if (hint) hint.textContent = '';
+    }
+
+    form.addEventListener('submit', (e) => {
+        let valid = true;
+
+        if (!firstName.value.trim()) {
+            setError(firstName, 'Please enter your first name.');
+            valid = false;
+        } else {
+            clearError(firstName);
+        }
+
+        if (!lastName.value.trim()) {
+            setError(lastName, 'Please enter your last name.');
+            valid = false;
+        } else {
+            clearError(lastName);
+        }
+
+        if (!reviewDate.value) {
+            setError(reviewDate, 'Please select a date.');
+            valid = false;
+        } else if (reviewDate.value > today) {
+            setError(reviewDate, 'Date cannot be in the future.');
+            valid = false;
+        } else {
+            clearError(reviewDate);
+        }
+
+        const reviewLen = reviewText.value.trim().length;
+        if (reviewLen < 20) {
+            setError(reviewText, 'Please enter at least 20 characters.');
+            valid = false;
+        } else {
+            clearError(reviewText);
+        }
+
+        if (!valid) {
+            e.preventDefault();
+            const firstInvalid = form.querySelector('.invalid');
+            if (firstInvalid) firstInvalid.focus();
+        }
+    });
+
+    // Clear errors while typing
+    [firstName, lastName, reviewDate, reviewText].forEach(el => {
+        el.addEventListener('input', () => clearError(el));
+    });
+});
+</script>
 	<!--footer -->
 	<footer>
 		<div class="sitecontainer">
