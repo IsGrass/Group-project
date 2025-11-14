@@ -7,18 +7,20 @@
         flex-direction: row;
         align-items: center;
         color: $white;
-       
 
         p {
+            padding:55px 0;
             margin-right: 25px;
             width: 80%;
-
+            font-size: rem(20px);
+            line-height: rem(30px);
+            
         }
 
         .bar-button {
             display:inline-block;
-            margin:15px 0;
-            padding:10px;
+            margin:55px 0;
+            padding:10px 30px;
             background-color: $white;
             color: $brown;
         }
@@ -30,28 +32,79 @@ footer {
     display:flex;
     background-color: $red;
     color: $white;
-    		.footer-row {
-				.footer-box {
-					h3 {
+    padding: 27px 0 0;
+    position: relative;
 
-                    }
-					
-					ul {
+    	.footer-row {
+            display:flex;
+            flex-wrap:wrap;
+            margin: 0 -15px;
 
-						li{ 
-                            a { 
-                                span {
-
-                                }
-                            }
-                        }
-                    }
+			.footer-box {
+                flex: 100%;
+                padding: 0 15px;
+                margin-bottom: 30px;
+        
+                //flex widths to adjust the size of the footer link men colomns by screen sizes
+                @media (min-width: $small) {
+                    flex: 50%;
                 }
-            }
-            
-		 	.footer-bottom {
-            	span {
 
+                @media (min-width: $medium) {
+                    flex: 25%;
+                }
+
+                @media (min-width: $large) {
+                    flex: 25%;
+                    margin-bottom: 40px;
+                }
+
+				h2 {
+                    border-bottom: 2px solid;
+                    border-image: linear-gradient(to right, $white 25%, transparent 0%) 100% 1;
+                    text-transform: uppercase;
+                    padding-bottom: 20px;
+                    margin-bottom: 26px;
+                    margin-top: 0;
+
+                }
+					
+				ul {
+                    display:block;
+                    padding:0;
+                    margin:0;
+
+                    li {
+                        font-size: rem(16px);
+                        line-height: rem(24px);
+                    }
+
+                    li a:hover {
+                        text-decoration:underline;
+                    }
+                    
+                    li a span {
+
+                    }
+                    
                 }
             }
         }
+            
+		.footer-bottom {
+            text-align: center;
+
+            span {
+                margin:auto;
+
+            }
+        }
+}
+
+
+  
+
+
+
+  
+
