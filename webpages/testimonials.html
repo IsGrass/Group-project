@@ -44,57 +44,37 @@
 				<li><a href="../webpages/contactus.html">Contact Us</a></li>
 			</ul>
 		</div>	
-	</div>
+		</div>
 	<div class="sitecontainer">
 	<!--Opening page title and paragraph -->
 	<h2>What our clients say</h2>
+	<h1 class="h1">What our clients say</h1>
 	<p>At Terracotta Catering, we pride ourselves on delivering exceptional service and delicious food. But don't just take our word for it - here's what some of our clients have to say:</p>
 	<div class="reviews">
 	<h2>PARTNERS</h2>
+	<h1 class="h1">PARTNERS</h1>
 	<div class="review-wrap">
 		<h2>Corporate reviews</h2>
+		<h1 class="h1">Corporate reviews</h1>
 		<div class="review-box1">
-			<div class="review">
-				<img src="" alt="">
-				<p>"Excellent service and delicious food!"</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"Highly recommend Terracotta Catering for any event."</p>
-			</div>
 			<div class="review">
 				<img src="" alt="">
 				<p>"The food was outstanding and the service was impeccable."</p>
 			</div>
 		</div>
 		<h2>Wedding reviews</h2>
+		<h1 class="h1">Wedding reviews</h1>
 		<div class="review-box2">
-			<div class="review">
-				<img src="" alt="">
-				<p>"The food at our wedding was absolutely amazing!"</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"Terracotta Catering made our special day even more memorable."</p>
-			</div>
 			<div class="review">
 				<img src="" alt="">
 				<p>"The attention to detail was fantastic!"</p>
 			</div>
 		</div>
 		<h2>Event reviews</h2>
+		<h1 class="h1">Event reviews</h1>
 		<div class="review-box3">
 			<div class="review">
 				<img src="" alt="">
-				<p>"The food at my birthday party was exceptional!"</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"Terracotta Catering handled everything flawlessly."</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"I couldn't have asked for a better catering service."</p>
 			</div>
 	</div>
 	<!--review submission form with first name, last name, date of review and review text fields -->
@@ -103,6 +83,8 @@
         .invalid { outline: 2px solid rgba(176,0,32,0.15); }
         label { display:block; margin-top:8px; }
     </style>
+<div class="form-wrap">
+	<h1>Submit Your Review</h1>
 <form id="reviewForm" novalidate>
     <label for="firstName">First Name:</label>
     <input type="text" id="firstName" name="firstName" required>
@@ -122,8 +104,36 @@
 
     <div style="margin-top:12px;">
         <input type="submit" value="Submit Review">
+	<div class="rev">
+		<label for="firstName">First Name:</label>
+		<input type="text" id="firstName" name="firstName" required>
+		<small class="error" aria-live="polite"></small>
+	</div>
+<br>
+	<div class="rev">
+		<label for="lastName">Last Name:</label>
+		<input type="text" id="lastName" name="lastName" required>
+		<small class="error" aria-live="polite"></small>
+	</div>
+<br>
+	<div class="rev">
+		<label for="reviewDate">Date of Review:</label>
+		<input type="date" id="reviewDate" name="reviewDate" required>
+		<small class="error" aria-live="polite"></small>
+	</div>
+<br>
+	<div class="rev rev2">
+		<label class="revtext" for="reviewText">Your Review:</label>
+		<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+		<small class="error" aria-live="polite"></small>
+	</div>
+    <div">
+        <input class = "revbutton" type="submit" value="Submit Review">
     </div>
+	
 </form>
+</div>
+</div>
 </div>
 	<!--Footer Section-->
 		<footer>
@@ -131,48 +141,35 @@
 				<div class="footer-row">
 					<div class="footer-box">
 						<h2>
+						<h1>
 							CONTACT US
 						</h2>
+						</h1>
 						<ul>
 							<li><a href="#">16 zbrel close</a></li>
 							<li><a href="#">Norwich</a></li>
-							<li><a href="#">Norfolk</a></li>
-							<li><a href="#">NR3 2BY</a></li>
-							<li> &nbsp; </li>
-							<li><a href="#">12345-543-253</a><li>
-							<li><a href="#">info@terracotta.com</a></li>
 						</ul>
 					</div>
 					<div class="footer-box">
 						<h2>
+						<h1>
 							SECTIONS
 						</h2>
+						</h1>
 						<ul>
 							<li><a href="#">About Us</a></li>
 							<li><a href="#">Corperate</a></li> 
-							<li><a href="#">Weddings</a></li>
-							<li><a href="#">Events</a> </li>
-							<li><a href="#">Testimonials</a></li>
-							<li><a href="#">Terms & Conditions</a></li>
 						</ul>
 					</div>
 					<div class="footer-box">
 						<h2>
+						<h1>
 							FOLLOW US
 						</h2>
+						</h1>
 						<ul>
-							<li><a href="#"><span class="icon-facebook"></span>Facebook</a></li>
-							<li><a href="#"><span class="icon-twitter"></span>Twitter</a></li>
-							<li><a href="#"><span class="icon-linkedin"></span>LinkedIn</a></li>
-						</ul>
-					</div>
-				</div>
-			
-		<!--Footer Bottom Section-->
-		 		<div class="footer-bottom">
-            		<span>
-                		COPYWRITE &copy; TERRACOTTA CATERING. ALL RIGHTS RESERVED 2019 
-					</span>
+					<li><a href="#"><span class="icon-facebook"></span>Facebook</a></li>
+					<li><a href="#"><span class="icon-twitter"></span>Twitter</a></li>
         		</div>
 			</div>
 		</footer>

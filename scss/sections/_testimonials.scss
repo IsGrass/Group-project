@@ -1,0 +1,38 @@
+.review-wrap {
+    text-align: center;
+    color: #7B4E4B;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+.h1 {
+    display: inline-block;
+    color: #7B4E4B;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #7B4E4B;
+}
+.form-wrap {
+    max-width: 600px;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    border: 1px solid #7B4E4B;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+.rev {
+    margin: -5px;
+}
+.rev2 {
+    display: flex;
+    align-items: center;
+}
+.revtext {
+    padding-right: 10px;
+}
+.revbutton {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #AF473C;
+    color: #f9f9f9;
+    border-radius: 5px;
+}
