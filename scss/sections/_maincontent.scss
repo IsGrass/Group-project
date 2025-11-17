@@ -5,9 +5,10 @@
         display: inline-block;
         color: $darkbrown;
         padding-bottom: 25px;
-        margin-bottom: 25px;
+        margin-bottom: 35px;
         border-bottom: 2px solid;
         border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
+        text-transform: uppercase;
 
     }
 	p  {
