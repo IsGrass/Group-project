@@ -8,7 +8,11 @@
 	<title>Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters</title>
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<script src="../javascript/jquery-3.7.1.min.js"></script>
-	<script src="../javascript/form.js"></script>
+	<script src="../javascript/reviewform.js"></script>
+	<script src="../javascript/slick-1.8.1/slick/slick.min.js"></script>
+	<script src="../javascript/slick-1.8.1/slick/slick.js"></script>
+	<link rel="stylesheet" type="text/css" href="../javascript/slick-1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="../javascript/slick-1.8.1/slick/slick-theme.css">
 </head>
 
 <body>
@@ -112,31 +116,15 @@
 	</div>
 	<!--review submission form with first name, last name, date of review and review text fields -->
 <style>
-        .error { color: #b00020; font-size: 0.9em; display: block; height: 1.1em; }
+        .error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%;} 
         .invalid { outline: 2px solid rgba(176,0,32,0.15); }
         label { display:block; margin-top:8px; }
+		input {margin-top:8px;}
     </style>
 <div class="form-wrap">
 	<h1>Submit Your Review</h1>
 <form id="reviewForm" novalidate>
-    <label for="firstName">First Name:</label>
-    <input type="text" id="firstName" name="firstName" required>
-    <small class="error" aria-live="polite"></small>
-
-    <label for="lastName">Last Name:</label>
-    <input type="text" id="lastName" name="lastName" required>
-    <small class="error" aria-live="polite"></small>
-
-    <label for="reviewDate">Date of Review:</label>
-    <input type="date" id="reviewDate" name="reviewDate" required>
-    <small class="error" aria-live="polite"></small>
-
-    <label for="reviewText">Your Review:</label>
-    <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
-    <small class="error" aria-live="polite"></small>
-
     <div style="margin-top:12px;">
-        <input type="submit" value="Submit Review">
 	<div class="rev">
 		<label for="firstName">First Name:</label>
 		<input type="text" id="firstName" name="firstName" required>

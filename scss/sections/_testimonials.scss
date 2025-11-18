@@ -4,6 +4,16 @@
     padding-bottom: 25px;
     margin-bottom: 25px;
 }
+.review {
+    text-align: center;
+    justify-content: center;
+    
+}
+.review-box1, .review-box2, .review-box3 {
+    margin-bottom: 20px;
+}
+
+// what div is this header for??
 .h1 {
     display: inline-block;
     color: #7B4E4B;
@@ -21,14 +31,24 @@
 }
 .rev {
     margin: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    label {
+        margin-right:4px;
+    }
+
+    .revtext {
+        margin-right: 8px;
+    }
 }
 .rev2 {
     display: flex;
     align-items: center;
 }
-.revtext {
-    padding-right: 10px;
-}
+
 .revbutton {
     display: inline-block;
     margin-top: 12px;

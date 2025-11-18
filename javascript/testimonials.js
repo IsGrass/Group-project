@@ -5,10 +5,9 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        dots: true,
-        variableWidth: true,
+        autoplaySpeed: 3600,
+        speed: 300,
+        
         draggable: true,
         centerMode: false,
         responsive: [ // so it fixes bug on it disappearing on screenj sizes above 768
@@ -28,11 +27,11 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        variableWidth: true,
+        autoplaySpeed: 3600,
+        speed: 300,
+       
         draggable: true,
         centerMode: false,
         responsive: [ // so it fixes bug on it disappearing on screenj sizes above 768
@@ -52,11 +51,11 @@ $(document).ready(function() {
         arrows: false,
         slidesToShow: 1,
         slidesToScroll: 1,
-        dots: true,
+        
         autoplay: true,
-        autoplaySpeed: 3000,
-        speed: 1000,
-        variableWidth: true,
+        autoplaySpeed: 3600,
+        speed: 300,
+       
         draggable: true,
         centerMode: false,
         responsive: [ // so it fixes bug on it disappearing on screenj sizes above 768
