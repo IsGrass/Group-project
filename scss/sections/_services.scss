@@ -4,48 +4,73 @@
 .service {
     display:flex;
     flex-direction: column;
+    
     .service-header {
+        display:flex;
+        justify-content: center;
+
+        @media (min-width: $small) {
+            justify-content: left;
+        }
 
         h1 {
             display: inline-block;
             color: $darkbrown;
             padding-bottom: 25px;
             margin-bottom: 25px;
+            border-left:0;
+            border-right:0;
+            border-top:0;
             border-bottom: 2px solid $darkbrown;
             text-transform: uppercase;
+            text-align: center;
+
+            @media (min-width: $small) {
+                text-align: left;
+            }
          }
     }
-.service-wrap {
-    margin-top: 60px;
-    display:flex;
-    flex-direction: row;
-    gap: 25px;
-    margin: 35px 0 0;
 
-    .service-box {
+    .service-wrap {
+        margin-top: 60px;
         display:flex;
         flex-direction: column;
-        width: 33%;
-        text-align: center;
-        margin-bottom: 75px;
+        gap: 25px;
+        margin: 35px 0 0;
+        justify-content: center;
 
-	    img {
-            height:200px;
-            margin-bottom: 20px;
-
+        @media (min-width: $small) {
+            flex-direction: row;
         }
 
-	    h2 {
-            display:inline-block;
-            padding-bottom: 20px;
-            margin-right: auto;
-            margin-left: auto;
-            margin-bottom: 20px;
-            color: $darkbrown;
-            border-bottom: 2px solid $darkbrown;
+        .service-box {
+            display:flex;
+            flex-direction: column;
+            margin: 0 auto;
+            width: 50%;
+            text-align: center;
+            margin-bottom: 25px;
 
+            @media (min-width: $small) {
+                justify-content: center;
+                width: 33%;
+                margin-bottom: 75px;
+            }
+
+	        img {
+                height:200px;
+                margin-bottom: 20px;
+            }
+
+	        h2 {
+                display:inline-block;
+                padding-bottom: 20px;
+                margin-right: auto;
+                margin-left: auto;
+                margin-bottom: 20px;
+                color: $darkbrown;
+                border-bottom: 2px solid $darkbrown;
+            }
         }
-       
     }
-}
 }

@@ -1,47 +1,47 @@
 //paretners styling
 .partners {
-			h2 {
-                display: inline-block;
-                color: $darkbrown;
-                padding-bottom: 20px;
-                border-bottom: 2px solid $darkbrown;
-                text-transform: uppercase;
-                margin-bottom: 50px;
+	h2 {
+        display: inline-block;
+        color: $darkbrown;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $darkbrown;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .partner-wrap {
+    //set to overflow so the partners can slide across the page
+        .partner-box {
+            margin: 0px;
+            padding: 0px;
+            overflow-x: clip;
+            display:flex;
+            flex-direction: row;
+            width: 100%;
+            margin-bottom: 70px;
+            min-height:150px;
+
+            .partner-img {
+                width: 50%;
+                height: 500px;
+                text-align: center;
+                height: 100px;
+                margin-right: 50px;
+                position: relative;
+                padding: 0 20px;
+                max-height:150px;
+
+                img {
+                    max-width:200px;
+                    filter: grayscale(1);
+                    height: 150px;
+                }
+
+                img:hover { 
+                    filter: grayscale(0);
+                }
+
             }
-
-.partner-wrap {
-//set to overflow so the partners can slide across the page
-.partner-box {
-    margin: 0px;
-    padding: 0px;
-    overflow-x: clip;
-    display:flex;
-    flex-direction: row;
-    width: 100%;
-    margin-bottom: 70px;
-    min-height:150px;
-
-.partner-img {
-    width: 50%;
-    height: 500px;
-    text-align: center;
-    height: 100px;
-    margin-right: 50px;
-    position: relative;
-    padding: 0 20px;
-    max-height:150px;
-
-    img {
-        max-width:200px;
-        filter: grayscale(1);
-        height: 150px;
+        }
     }
-
-    img:hover { 
-        filter: grayscale(0);
-    }
-
-}
-}
-}
 }

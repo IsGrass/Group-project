@@ -19,11 +19,10 @@
         src: url('#{$font-path}/#{$file}.ttf') format('truetype');
         font-weight: $weight;
         font-style: $style;
-        
     }
 }
 
-//Colour Mixins for the panels, icons and buttons they are used to define background and text colours.
+/*//Colour Mixins for the panels, icons and buttons they are used to define background and text colours.
 //panel mixin
 @mixin panelcolor($panel-bg-color) {
   background-color: $panel-bg-color;
@@ -45,3 +44,4 @@
 @mixin navcolor($nav-bg-color) {
   background-color: $nav-bg-color;
 }
+  */

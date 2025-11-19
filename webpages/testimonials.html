@@ -16,146 +16,140 @@
 </head>
 
 <body>
-		<!--Header Section -->
-		<div class="header">
-			<div class="sitecontainer">
-				<div class="flex-header">
-					<div class="logobox">
-						<h3><a class="logo" href="../index.html">Terracotta</a></h3>
-						<h4>Catering</h4>
-					</div>
-					<div class="header-details">
-						<div class="contact-info">
-							<a href="#"><span class="icon-envelope"></span>Info@terracotta.com </a> <a href="#"><span class="icon-phone"></span>01235-628-284</a>
-						</div>
-						<div class="company-info">
-						<h1>QUALITY LOCAL <br> Catering</h1>
-						<p>Resturant quality food made <br> with locally sourced <br> ingredients</p>
-						<a class="button booking-button" href="../webpages/booking.html">BOOK NOW</a>
-						</div>
-					</div>
+<!--Header Section -->
+<div class="header">
+	<div class="sitecontainer">
+		<div class="flex-header">
+			<div class="logobox">
+				<h3><a class="logo" href="../index.html">Terracotta</a></h3>
+				<h4>Catering</h4>
+			</div>
+			<div class="header-details">
+				<div class="contact-info">
+					<a href="#"><span class="icon-envelope"></span>Info@terracotta.com </a> <a href="#"><span class="icon-phone"></span>01235-628-284</a>
+				</div>
+				<div class="company-info">
+					<h1>QUALITY LOCAL <br> Catering</h1>
+					<p>Resturant quality food made <br> with locally sourced <br> ingredients</p>
+					<a class="button booking-button" href="../webpages/booking.html">BOOK NOW</a>
 				</div>
 			</div>
 		</div>
-		<!--Navigation Bar -->
-		<div class="nav">
-			<div class="sitecontainer">
-				<ul class="navbar">
-					<li><a href="../index.html">Home</a></li>
-					<li><a href="../webpages/aboutus.html">About Us</a></li>
-					<li><a href="../webpages/services.html">Services</a></li>
-					<li><a href="../webpages/testimonials.html">Testimonials</a></li>
-					<li><a href="../webpages/contactus.html">Contact Us</a></li>
-				</ul>
-			</div>	
-		</div>
+	</div>
+</div>
+<!--Navigation Bar -->
+<div class="nav">
 	<div class="sitecontainer">
-		<script defer src="../javascript/testimonials.js"></script>
+		<ul class="navbar">
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../webpages/aboutus.html">About Us</a></li>
+			<li><a href="../webpages/services.html">Services</a></li>
+			<li><a href="../webpages/testimonials.html">Testimonials</a></li>
+			<li><a href="../webpages/contactus.html">Contact Us</a></li>
+		</ul>
+	</div>	
+</div>
+<div class="sitecontainer">
+	<script defer src="../javascript/testimonials.js"></script>
 	<!--Opening page title and paragraph -->
 	<h1 class="h1">What our clients say</h1>
 	<p>At Terracotta Catering, we pride ourselves on delivering exceptional service and delicious food. But don't just take our word for it - here's what some of our clients have to say:</p>
 	<div class="reviews">
+		<h1 class="h1">PARTNERS</h1>
+		<div class="review-wrap">
+			<h1 class="h1">Corporate reviews</h1>
+			<div class="review-box1">
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"Excellent service and delicious food!"</p>
+				</div>
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"Highly recommend Terracotta Catering for any event."</p>
+				</div>
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"The food was outstanding and the service was impeccable."</p>
+				</div>
+
+			</div>
+			<h1 class="h1">Wedding reviews</h1>
+			<div class="review-box2">
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"The food at our wedding was absolutely amazing!"</p>
+				</div>
+				<div class="review">
+					<img src="" alt="">
+					<p>"Terracotta Catering made our special day even more memorable."</p>
+				</div>
+
+				<div class="review">
+					`<img src="" alt="">
+					<p>"The attention to detail was fantastic!"</p>
+				</div>
+
+			</div>
+			<h1 class="h1">Event reviews</h1>
+			<div class="review-box3">
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"The food at my birthday party was exceptional!"</p>
+				</div>
+
+				<div class="review">
+					<img src="" alt="">
+					<p>"Terracotta Catering handled everything flawlessly."</p>
+				</div>
+				<div class="review">
+					<img src="" alt="">
+					<p>"I couldn't have asked for a better catering service."</p>
+				</div>
+			</div>
+			<!--review submission form with first name, last name, date of review and review text fields -->
+			<style>
+        		.error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%;} 
+        		.invalid { outline: 2px solid rgba(176,0,32,0.15); }
+        		label { display:block; margin-top:8px; }
+				input {margin-top:8px;}
+    		</style>
+			<div class="form-wrap">
+				<h1>Submit Your Review</h1>
+				<form id="reviewForm" novalidate>
+    			<div style="margin-top:12px;">
+					<div class="rev">
+						<label for="firstName">First Name:</label>
+						<input type="text" id="firstName" name="firstName" required>
+						<small class="error" aria-live="polite"></small>
+					</div><br>
+					<div class="rev">
+						<label for="lastName">Last Name:</label>
+						<input type="text" id="lastName" name="lastName" required>
+						<small class="error" aria-live="polite"></small>
+					</div><br>
+					<div class="rev">
+						<label for="reviewDate">Date of Review:</label>
+						<input type="date" id="reviewDate" name="reviewDate" required>
+						<small class="error" aria-live="polite"></small>
+					</div><br>
+					<div class="rev rev2">
+						<label class="revtext" for="reviewText">Your Review:</label>
+						<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+						<small class="error" aria-live="polite"></small>
+					</div>
+    				<div">
+        				<input class = "revbutton" type="submit" value="Submit Review">
+    				</div>
 	
-	<h1 class="h1">PARTNERS</h1>
-
-	<div class="review-wrap">
-		<h1 class="h1">Corporate reviews</h1>
-
-		<div class="review-box1">
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"Excellent service and delicious food!"</p>
+				</form>
 			</div>
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"Highly recommend Terracotta Catering for any event."</p>
-			</div>
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"The food was outstanding and the service was impeccable."</p>
-			</div>
-
 		</div>
-		<h1 class="h1">Wedding reviews</h1>
-		<div class="review-box2">
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"The food at our wedding was absolutely amazing!"</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"Terracotta Catering made our special day even more memorable."</p>
-			</div>
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"The attention to detail was fantastic!"</p>
-			</div>
-
-		</div>
-		<h1 class="h1">Event reviews</h1>
-		<div class="review-box3">
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"The food at my birthday party was exceptional!"</p>
-			</div>
-
-			<div class="review">
-				<img src="" alt="">
-				<p>"Terracotta Catering handled everything flawlessly."</p>
-			</div>
-			<div class="review">
-				<img src="" alt="">
-				<p>"I couldn't have asked for a better catering service."</p>
-			</div>
 	</div>
-	<!--review submission form with first name, last name, date of review and review text fields -->
-<style>
-        .error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%;} 
-        .invalid { outline: 2px solid rgba(176,0,32,0.15); }
-        label { display:block; margin-top:8px; }
-		input {margin-top:8px;}
-    </style>
-<div class="form-wrap">
-	<h1>Submit Your Review</h1>
-<form id="reviewForm" novalidate>
-    <div style="margin-top:12px;">
-	<div class="rev">
-		<label for="firstName">First Name:</label>
-		<input type="text" id="firstName" name="firstName" required>
-		<small class="error" aria-live="polite"></small>
-	</div>
-<br>
-	<div class="rev">
-		<label for="lastName">Last Name:</label>
-		<input type="text" id="lastName" name="lastName" required>
-		<small class="error" aria-live="polite"></small>
-	</div>
-<br>
-	<div class="rev">
-		<label for="reviewDate">Date of Review:</label>
-		<input type="date" id="reviewDate" name="reviewDate" required>
-		<small class="error" aria-live="polite"></small>
-	</div>
-<br>
-	<div class="rev rev2">
-		<label class="revtext" for="reviewText">Your Review:</label>
-		<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
-		<small class="error" aria-live="polite"></small>
-	</div>
-    <div">
-        <input class = "revbutton" type="submit" value="Submit Review">
-    </div>
-	
-</form>
-</div>
-</div>
-</div>
 </div>
 <footer>
 	<div class="sitecontainer">

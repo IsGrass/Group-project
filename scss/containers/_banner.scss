@@ -22,7 +22,6 @@
             position: absolute;
             top:50px;
             left:125px;
-
         }
 
 	    p { 
@@ -31,7 +30,6 @@
             font-size: rem(22px);
             line-height: rem(33px);
             margin-bottom:30px;
-
         }
 
         h3 {
@@ -42,15 +40,12 @@
             line-height: rem(24px);
             margin: 0 auto;
             text-transform: uppercase;
-            
-
         }
 
         .quote-end {
             position: absolute;
             top:140px;
             right:125px;
-
         }
     }
 }
@@ -62,18 +57,12 @@
 
 .slide2 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/lemons.jpg');
-
-
 }
 
 .slide3 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/onion.png');
-
-
 }
 
 .slide4 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/calories.png');
-
-
 }

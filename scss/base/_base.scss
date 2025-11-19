@@ -1,18 +1,18 @@
 // Main Base Styles
+
 // body and universal styles
 body {
-margin: 0;
-font-family: $zanadolo,sans-serif;
-letter-spacing: 0.4px;
-font-size: $base-font-size;
-line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
-font-weight: $font-reg;
+    margin: 0;
+    font-family: $zanadolo,sans-serif;
+    letter-spacing: 0.4px;
+    font-size: $base-font-size;
+    line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
+    font-weight: $font-reg;
 }
 
 * {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
-
 
 //Universal Containers
 .sitecontainer {
@@ -47,7 +47,6 @@ box-sizing: border-box;
         width: 750px;
         margin-right: auto;
         margin-left: auto;
-       
     }
 
     @media (min-width: $medium) {
@@ -60,8 +59,7 @@ box-sizing: border-box;
 }
 
 //margins for the middle sections of the website
-.section
-{ 
+.section { 
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -135,7 +133,6 @@ strong {
 .button {
     padding: 15px;
     border-radius: 0px;
-
 }
 
 .button:hover {
@@ -146,6 +143,7 @@ strong {
     font-family: $meow,sans-serif;
     font-weight: bold;
 }
+
 .logo:hover {
     text-decoration: none;
 }

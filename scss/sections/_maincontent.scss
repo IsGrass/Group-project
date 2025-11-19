@@ -1,4 +1,4 @@
-
+// Main content styling
 .main-content {
     
 	h1 {
@@ -9,12 +9,10 @@
         border-bottom: 2px solid;
         border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
         text-transform: uppercase;
-
     }
+
 	p  {
         margin-bottom: 20px;
         b {color: $darkbrown;}
-
     }
-
 }

@@ -14,7 +14,6 @@
             width: 80%;
             font-size: rem(20px);
             line-height: rem(30px);
-            
         }
 
         .bar-button {
@@ -38,7 +37,11 @@ footer {
     	.footer-row {
             display:flex;
             flex-wrap:wrap;
-            margin: 50px -15px;
+            margin: 10px -15px 0;
+
+            @media (min-width: $small) {
+                margin: 50px -15px;
+            }
 
 			.footer-box {
                 flex: 100%;
@@ -66,7 +69,6 @@ footer {
                     padding-bottom: 20px;
                     margin-bottom: 26px;
                     margin-top: 0;
-
                 }
 					
 				ul {
@@ -85,7 +87,6 @@ footer {
                     
                     li a span {
                         margin-right:10px;
-
                     }
                     
                 }
@@ -98,8 +99,6 @@ footer {
 
             span {
                 margin:auto;
-                
-
             }
         }
 }
