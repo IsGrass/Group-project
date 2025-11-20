@@ -18,34 +18,64 @@
         position: relative;
         text-align: center;
 
+        .banner-row {
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
         .quote-start {
-            position: absolute;
-            top:50px;
-            left:125px;
+          margin-top: 20px;
+          justify-self: left;
+          align-self:normal;
+
+           @media (min-width: $phone) {
+                margin-top: 50px;
+           }
         }
 
 	    p { 
-            margin-top: 65px;
+            margin-top: 25px;
             text-align: center;
-            font-size: rem(22px);
-            line-height: rem(33px);
-            margin-bottom:30px;
+            font-size: rem(18px);
+            line-height: rem(27px);
+            margin-bottom:15px;
+            width: 85%;
+
+            @media (min-width: $phone) {
+                margin-top: 60px;
+                margin-bottom: 30px;
+                width: 90%;
+            }
+
+            @media (min-width: $large) {
+                font-size: rem(20px);
+                line-height: rem(30px);
+            }
         }
 
         h3 {
-            padding:20px 0;
+            padding:10px 0;
             display:inline-block;
             border-top: 2px solid $white;
             font-size: rem(16px);
             line-height: rem(24px);
             margin: 0 auto;
             text-transform: uppercase;
+
+            @media (min-width: $phone) {
+                padding: 20px 0;
+            }
         }
 
         .quote-end {
-            position: absolute;
-            top:140px;
-            right:125px;
+           justify-self: right;
+           align-self: end;
+           margin-bottom: 10px;
+
+           @media (min-width: $phone) {
+                margin-bottom: 25px;
+           }
         }
     }
 }

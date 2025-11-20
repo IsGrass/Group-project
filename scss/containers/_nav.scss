@@ -21,10 +21,14 @@
         display: flex;
         flex-direction: row;
         justify-content: left;
-        text-align: left;
-        row-gap: 10px;
+        text-align: center;
+        //row-gap: 10px;
         margin:0;
         padding:0;
+
+        @media (min-width: $tablet) {
+            text-align: left;
+        }
 
         @media (min-width: $small) {
             justify-content: right;
@@ -32,9 +36,16 @@
         }
 
         li {
-            padding:10px;
-            font-size: rem(16px);
-            line-height: rem(19px);
+            padding: 10px 5px;
+            font-size: rem(12px);
+            line-height: rem(15px);
+
+            @media (min-width: $phone) {
+                padding:10px;
+                font-size: rem(16px);
+                line-height: rem(19px);
+            }
+
 
             a {
                 text-transform: uppercase;
