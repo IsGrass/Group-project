@@ -4,25 +4,50 @@
     background-color: $dark;
     .booking-row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         color: $white;
 
+        @media (mind-width: $small) {
+            flex-direction: row;            
+        }
+
         p {
-            padding:55px 0;
-            margin-right: 25px;
-            width: 80%;
+            padding:55px 0 15px;
+            margin: 0 10px 0;
+            width: 100%;
             font-size: rem(20px);
             line-height: rem(30px);
+            
+            text-align: center;
+
+             @media (mind-width: $small) {
+                margin-right: 25px;
+                margin-bottom:20px;
+                padding:55px 0;
+                width: 80%;
+                text-align: left;
+
+             }
         }
 
         .bar-button {
             display:inline-block;
-            margin:55px 0;
-            padding:10px 30px;
+            margin:10px 0 55px;
+            padding:10px 20px;
             background-color: $white;
             color: $brown;
             font-size: rem(14px);
+            line-height: 17px;
+
+            @media (mind-width: $small) {
+                margin:55px 0;
+                padding:10px 15px;
+            }
+
+            @media (min-width: $large) {
+                padding:10px 30px;
+            }
         }
     }
 }
