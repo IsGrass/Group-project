@@ -48,9 +48,14 @@
                 width: 90%;
             }
 
-            @media (min-width: $large) {
+            @media (min-width: $medium) {
                 font-size: rem(20px);
                 line-height: rem(30px);
+            }
+
+             @media (min-width: $large) {
+                font-size: rem(24px);
+                line-height: rem(36px);
             }
         }
 
@@ -58,13 +63,23 @@
             padding:10px 0;
             display:inline-block;
             border-top: 2px solid $white;
-            font-size: rem(16px);
-            line-height: rem(24px);
+            font-size: rem(15px);
+            line-height: rem(22px);
             margin: 0 auto;
             text-transform: uppercase;
 
             @media (min-width: $phone) {
                 padding: 20px 0;
+            }
+
+            @media (min-width: $medium) {
+                font-size: rem(16px);
+                line-height: rem(24px);
+            }
+
+            @media (min-width: $large) {
+                font-size: rem(18px);
+                line-height: rem(27px);
             }
         }
 

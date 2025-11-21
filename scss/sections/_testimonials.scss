@@ -1,10 +1,12 @@
 // testimonials page styling for form and banners
 .review-wrap {
     text-align: center;
-    color: #7B4E4B;
+    min-width: 0;
+    min-height: 0;
 }
 
 .review {
+    display:flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -13,6 +15,9 @@
     background-position: center;
     height:400px;
     width: 100%;
+    min-height: 0;
+    min-width: 0;
+
 
     p {
         margin-top: 25px;
@@ -35,7 +40,8 @@
     color: $darkbrown;
     padding-bottom: 25px;
     margin-bottom: 35px;
-    border-bottom: 2px solid #7B4E4B;
+    border-bottom: 2px solid $darkbrown;
+    text-transform: uppercase;
 }
 
 
@@ -43,7 +49,7 @@
     max-width: 600px;
     margin: 36px auto 50px auto;
     padding: 20px;
-    border: 1px solid #7B4E4B;
+    border: 1px solid $darkbrown;
     border-radius: 8px;
     background-color: #f9f9f9;
 }

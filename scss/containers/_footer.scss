@@ -21,9 +21,9 @@
             
             text-align: center;
 
-             @media (mind-width: $small) {
+             @media (min-width: $small) {
                 margin-right: 25px;
-                margin-bottom:20px;
+                margin-bottom:0;
                 padding:55px 0;
                 width: 80%;
                 text-align: left;
@@ -43,10 +43,12 @@
             @media (mind-width: $small) {
                 margin:55px 0;
                 padding:10px 15px;
+                
             }
 
             @media (min-width: $large) {
                 padding:10px 30px;
+                 margin:55px 0;
             }
         }
     }

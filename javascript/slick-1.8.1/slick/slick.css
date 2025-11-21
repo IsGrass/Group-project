@@ -2,6 +2,8 @@
 .slick-slider
 {
     position: relative;
+    min-width: 0;
+    min-height: 0;
 
     display:block;
     box-sizing: border-box;
@@ -81,6 +83,7 @@
 
     height: 100%;
     min-height: 1px;
+    
 }
 [dir='rtl'] .slick-slide
 {
@@ -89,6 +92,8 @@
 .slick-slide img
 {
     display: block;
+    width: 100%;
+    height: auto;
 }
 .slick-slide.slick-loading img
 {
