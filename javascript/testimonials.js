@@ -1,11 +1,10 @@
 $(document).ready(function() {   
     $('.review-box1').slick({
         infinite: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3600,
+        autoplay: false,
         speed: 300,
         
         draggable: true,
@@ -24,12 +23,11 @@ $(document).ready(function() {
 $(document).ready(function() {   
     $('.review-box2').slick({
         infinite: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         
-        autoplay: true,
-        autoplaySpeed: 3600,
+        autoplay: false,
         speed: 300,
        
         draggable: true,
@@ -48,12 +46,11 @@ $(document).ready(function() {
 $(document).ready(function() {   
     $('.review-box3').slick({
         infinite: true,
-        arrows: false,
+        arrows: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         
-        autoplay: true,
-        autoplaySpeed: 3600,
+        autoplay: false,
         speed: 300,
        
         draggable: true,
