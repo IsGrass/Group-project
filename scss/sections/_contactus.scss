@@ -15,22 +15,18 @@
     #emailForm {
         width: 500px;
         }
-    .content {
-        display: flex;
-        gap: 10px;
-        }
+ .content {
+    display: flex;
+    gap: 10px;
+    }
 }
- 
-
 @media (min-width: $phone) {
     #emailForm {
         width: 250px;
         }
     }
-   
 @media (min-width: $small) {
     #emailForm {
         width: 300px;
         }
     }
-
