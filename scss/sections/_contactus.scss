@@ -1,16 +1,15 @@
+//contact us page styling
 .img-wrap img {
-    width: -webkit-fill-available;
-    }   
+    width: 100%;
+}
+
 #subject {
     margin-left: 22px;
-    margin-top: 5px;
 }
-#message {
-    margin-left: 14px;
-    margin-top: 5px;
-    width: 90%;
-}
+
 .form-wrapper {
+    display:flex;
+    flex-direction: column;
     max-width: 600px;
     margin: 36px auto 50px auto;
     padding: 20px;
@@ -18,12 +17,46 @@
     border-radius: 8px;
     background-color: #f9f9f9;
 }
-.contact-button {
-    display: inline-block;
-    margin-top: 12px;
-    background-color: #AF473C;
-    color: #f9f9f9;
-    border-radius: 5px;
+
+.email-form-wrapper {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+    width: 100%;
+
+    .formName {
+        margin-top:8px;
+    }
+
+    label {
+        margin-right:4px;
+        display:block; 
+        margin-top:15px;
+    }
+	
+    input { 
+        margin-top:15px; 
+    }
+    
+	textarea { 
+        margin-top:8px;
+        margin-left: 14px;
+        width: 90%;
+    }
+}
+
+.button-send-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .contact-button {
+        display: inline-block;
+        margin-top: 12px;
+        background-color: #AF473C;
+        color: #f9f9f9;
+        border-radius: 5px;
+    }
 }
 
 @media (min-width: $medium) {
@@ -39,11 +72,13 @@
         gap: 10px;
         }
 }
+
 @media (min-width: $phone) {
     #emailForm {
         width: 250px;
         }
     }
+
 @media (min-width: $small) {
     #emailForm {
         width: 300px;

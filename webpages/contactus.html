@@ -45,33 +45,40 @@
 </div>
 <div class="sitecontainer">
 	<!--Main Content Section -->
+	<h1 class="h1">Contact Us </h1>
     <h3>You can contact us via the form below for any of your catering needs.</h3>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis voluptates quod exercitationem enim voluptate dignissimos nulla! Distinctio, delectus expedita explicabo libero quibusdam eaque facilis aut eveniet, fugiat, tempore id.</p>
 	<div class="content">
 		<div class="img-wrap">
-		<img src="../images/contact-us.jpg" alt="placeholder">
+			<img src="../images/contact-us.jpg" alt="placeholder">
 		</div>
 	
-	<div class="form-wrapper">
-	<form id="emailForm" novalidate>
-  	<label for="fromName">Your name</label>
-  	<input id="fromName" name="fromName" type="text" required />
-  	<small class="error" aria-live="polite"></small>
-	
-	<br>
-  	<label for="subject">Subject</label>
-  	<input id="subject" name="subject" type="text" required />
-  	<small class="error" aria-live="polite"></small>
-
-	<br>
-  	<label for="message">Message</label>
-  	<textarea id="message" name="message" rows="6" required minlength="10"></textarea>
-  	<small class="error" aria-live="polite"></small>
-
-	<br>
-  	<button class="contact-button" type="submit">Send</button>
-	</form>
-	</div>
+	<style>
+        .error { color: #b00020; font-size: 0.9em; display: block; height: 1.1em; }
+        .invalid { outline: 2px solid rgba(176,0,32,0.15); }
+    </style>
+		<div class="form-wrapper">
+			<form id="emailForm" class="email=form" novalidate>
+			<div class="email-form-wrapper">
+				<label for="formName" class="formName">Your Name:</label>
+  				<input id="formName" class="formName" name="formName" type="text" required />
+  				<small class="error" aria-live="polite"></small>
+			</div>
+			<div class="email-form-wrapper">
+  				<label for="subject">Subject:</label>
+  				<input id="subject" name="subject" type="text" required />
+  				<small class="error" aria-live="polite"></small>
+			</div>
+			<div class="email-form-wrapper">
+  				<label for="message">Message:</label>
+  				<textarea id="message" name="message" rows="6" required minlength="10"></textarea>
+  				<small class="error" aria-live="polite"></small>
+			</div>
+			<div class="button-send-box">
+  				<button class="contact-button" type="submit">Send</button>
+			</div>
+			</form>
+		</div>
 	</div>
 </div>
 <!--Footer Section-->
