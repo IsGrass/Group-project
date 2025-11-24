@@ -852,6 +852,14 @@ footer .footer-bottom span {
   margin-top: 30px;
 }
 
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  #emailForm {
+    width: 500px;
+  }
+}
 .partners h2 {
   display: inline-block;
   color: #7B4E4B;
