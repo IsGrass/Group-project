@@ -921,7 +921,7 @@ footer .footer-bottom span {
   filter: grayscale(0);
 }
 
-#reviewForm {
+#reviewerForm {
   max-width: 600px;
   margin: 36px auto 50px auto;
   padding: 20px;
@@ -929,7 +929,7 @@ footer .footer-bottom span {
   border-radius: 8px;
   background-color: #f9f9f9;
 }
-#reviewForm #reviewText {
+#reviewerForm #reviewText {
   width: -webkit-fill-available;
   height: 182px;
 }
