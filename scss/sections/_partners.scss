@@ -43,7 +43,7 @@
                     height: 150px;
                 }
 
-                img:hover { 
+                img:hover, img:active { 
                     filter: grayscale(0);
                 }
 

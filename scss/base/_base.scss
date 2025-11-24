@@ -122,6 +122,26 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     text-decoration: underline;
 }
 
+.h1 {
+    display: inline-block;
+    margin-top: 20px;
+    color: $darkbrown;
+    padding-bottom: 25px;
+    margin-bottom: 35px;
+    border-bottom: 2px solid $darkbrown;
+    text-transform: uppercase;
+}
+
+.h2 {
+    display:inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: $darkbrown;
+    text-transform: uppercase;
+}
+
 ul {
     list-style: none;
     text-decoration: none;

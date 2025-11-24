@@ -102,22 +102,16 @@
         text-transform: uppercase;
     }
 
-    h3 {
-        display:inline-block;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        color: $darkbrown;
+    .h2 {
         border-bottom: 2px solid;
-        border-image: linear-gradient(to right, $darkbrown 15%, transparent 0%) 100% 1;
+        border-image: linear-gradient(to right, $darkbrown 20%, transparent 0%) 100% 1;
     }
 }
 
 .corp-box, .wedding-box, .event-box {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
 
 .picbox {

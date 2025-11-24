@@ -34,15 +34,6 @@
 
 // what div is this header for?? 
 // A: Its not for a div its for a h1 tag as i didnt want to change all the h1 tags on the page
-.h1 {
-    display: inline-block;
-    margin-top: 20px;
-    color: $darkbrown;
-    padding-bottom: 25px;
-    margin-bottom: 35px;
-    border-bottom: 2px solid $darkbrown;
-    text-transform: uppercase;
-}
 
 .form-wrap {
     max-width: 600px;
