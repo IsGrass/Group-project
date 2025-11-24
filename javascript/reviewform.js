@@ -13,12 +13,16 @@ document.addEventListener('DOMContentLoaded', () => {
     function setError(el, msg) {
         el.classList.add('invalid');
         const hint = el.nextElementSibling;
-        if (hint) hint.textContent = msg;
+        if (hint) { hint.textContent = msg;
+        hint.style.marginBottom = '10px';
+        }
     }
     function clearError(el) {
         el.classList.remove('invalid');
         const hint = el.nextElementSibling;
-        if (hint) hint.textContent = '';
+        if (hint) { hint.textContent = '';
+        hint.style.marginBottom = '0px';
+        }
     }
 
     form.addEventListener('submit', (e) => {

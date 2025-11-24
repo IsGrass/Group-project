@@ -111,11 +111,9 @@
 			</div>
 			<!--review submission form with first name, last name, date of review and review text fields -->
 			<style>
-        		.error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%;} 
+        		.error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%; margin-bottom: 0;} 
         		.invalid { outline: 2px solid rgba(176,0,32,0.15); }
-        		label { display:block; margin-top:8px; }
-				input {margin-top:8px;}
-    		</style>
+        	</style>
 			<div class="form-wrap">
 				<h1>Submit Your Review</h1>
 				<form id="reviewForm" novalidate>
@@ -124,17 +122,17 @@
 						<label for="firstName">First Name:</label>
 						<input type="text" id="firstName" name="firstName" required>
 						<small class="error" aria-live="polite"></small>
-					</div><br>
+					</div>
 					<div class="rev">
 						<label for="lastName">Last Name:</label>
 						<input type="text" id="lastName" name="lastName" required>
 						<small class="error" aria-live="polite"></small>
-					</div><br>
+					</div>
 					<div class="rev">
 						<label for="reviewDate">Date of Review:</label>
 						<input type="date" id="reviewDate" name="reviewDate" required>
 						<small class="error" aria-live="polite"></small>
-					</div><br>
+					</div>
 					<div class="rev rev2">
 						<label class="revtext" for="reviewText">Your Review:</label>
 						<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
