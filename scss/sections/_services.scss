@@ -116,15 +116,59 @@
 
 .picbox {
     display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
 
     .wed1 {
-        width: 30%;
+
         height: fit-content;
         margin-right: 10px;
     }
 
-    .wed2 {
-        width: 35.5%;
+    .wed2, .wed3 {
+        display: none;
         height: fit-content;
+    }
+}
+
+.corp-box{
+    
+    .corp-row{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: $small) {
+    .picbox {
+        flex-direction: row;
+    
+    .wed1 {
+        width: 50%;
+    }
+    .wed2 {
+        display: block;
+        width: 50%;
+        }
+    }
+}
+@media (min-width: $medium) {
+    .picbox {
+        .wed1 {
+            width: 32%;
+            margin-right: 10px;
+        }
+        .wed2 {
+            width: 32%;
+            margin-right: 10px;
+        }
+
+        .wed3 {
+            display: block;
+            max-width: 300.8px;
+            min-height: 200.53px;
+        }
     }
 }
