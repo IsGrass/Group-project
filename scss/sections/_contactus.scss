@@ -12,13 +12,16 @@
 }
 @media (min-width: $medium) {
 
+    .form-wrap {
+        margin: 36px auto 129px auto;
+        }
     #emailForm {
         width: 500px;
         }
- .content {
-    display: flex;
-    gap: 10px;
-    }
+    .content {
+        display: flex;
+        gap: 10px;
+        }
 }
 @media (min-width: $phone) {
     #emailForm {

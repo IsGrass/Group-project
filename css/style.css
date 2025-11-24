@@ -848,6 +848,9 @@ footer .footer-bottom span {
 }
 
 @media (min-width: 992px) {
+  .form-wrap {
+    margin: 36px auto 129px auto;
+  }
   #emailForm {
     width: 500px;
   }
