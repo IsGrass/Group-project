@@ -847,8 +847,17 @@ footer .footer-bottom span {
   width: 90%;
 }
 
+.form-wrapper {
+  max-width: 600px;
+  margin: 36px auto 50px auto;
+  padding: 20px;
+  border: 1px solid #7B4E4B;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
 @media (min-width: 992px) {
-  .form-wrap {
+  .form-wrapper {
     margin: 36px auto 129px auto;
   }
   #emailForm {

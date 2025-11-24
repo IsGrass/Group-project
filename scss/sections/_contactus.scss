@@ -10,9 +10,17 @@
     margin-top: 5px;
     width: 90%;
 }
+.form-wrapper {
+    max-width: 600px;
+    margin: 36px auto 50px auto;
+    padding: 20px;
+    border: 1px solid $darkbrown;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
 @media (min-width: $medium) {
 
-    .form-wrap {
+    .form-wrapper {
         margin: 36px auto 129px auto;
         }
     #emailForm {
