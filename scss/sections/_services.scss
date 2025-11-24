@@ -16,6 +16,7 @@
         h1 {
             display: inline-block;
             color: $darkbrown;
+            margin-top: 25px;
             padding-bottom: 25px;
             margin-bottom: 25px;
             border-left:0;
@@ -52,11 +53,11 @@
             margin-bottom: 25px;
 
             @media (min-width: $phone) {
-                    width: 60%;
+                width: 60%;
             }
 
             @media (min-width: $tablet) {
-                    width: 50%;
+                width: 50%;
             }
 
             @media (min-width: $small) {
@@ -72,16 +73,53 @@
 
 	        h2 {
                 display:inline-block;
-                padding-bottom: 20px;
+                padding-top: 20px;
                 margin-right: auto;
                 margin-left: auto;
                 margin-bottom: 20px;
+                margin-top: 0px;
                 color: $darkbrown;
                 border-bottom: 2px solid $darkbrown;
+            }
+
+            p {
+                min-height: 144px;
             }
         }
     }
 }
+
+// services wbpage stlying
+.our-services {
+    
+    h2 {
+        display: inline-block;
+        margin-top: 25px;
+        color: $darkbrown;
+        padding-bottom: 25px;
+        margin-bottom: 35px;
+        border-bottom: 2px solid $darkbrown;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        display:inline-block;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        color: $darkbrown;
+        border-bottom: 2px solid;
+        border-image: linear-gradient(to right, $darkbrown 15%, transparent 0%) 100% 1;
+    }
+}
+
+.corp-box, .wedding-box, .event-box {
+    display: flex;
+    flex-direction: column;
+}
+
+
 .picbox {
     display: flex;
 
