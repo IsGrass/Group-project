@@ -18,6 +18,14 @@
     border-radius: 8px;
     background-color: #f9f9f9;
 }
+.contact-button {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #AF473C;
+    color: #f9f9f9;
+    border-radius: 5px;
+}
+
 @media (min-width: $medium) {
 
     .form-wrapper {
