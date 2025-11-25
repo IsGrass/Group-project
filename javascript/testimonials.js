@@ -10,7 +10,7 @@ $(document).ready(function() {
         draggable: true,
         responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 808,
         settings: {
             arrows: false,
             dots:true,

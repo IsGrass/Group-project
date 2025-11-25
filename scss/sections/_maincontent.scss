@@ -8,8 +8,21 @@
         margin-top: 25px;
         margin-bottom: 35px;
         border-bottom: 2px solid;
-        border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
+        border-image: linear-gradient(to right, $darkbrown 80%, transparent 0%) 100% 1;
         text-transform: uppercase;
+
+        @media (min-width: 385px) {
+            border-image: linear-gradient(to right, $darkbrown 55%, transparent 0%) 100% 1;
+        }
+
+        @media (min-width: $phone) {
+            border-image: linear-gradient(to right, $darkbrown 40%, transparent 0%) 100% 1;
+        }
+
+        @media (min-width: $tablet) {
+            border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
+        }
+
     }
 
 	p  {

@@ -14,21 +14,20 @@
 
         p {
             padding:55px 0 15px;
-            margin: 0 10px 0;
+            margin: 0 10px;
             width: 100%;
             font-size: rem(20px);
             line-height: rem(30px);
-            
             text-align: center;
 
-             @media (min-width: $small) {
+            @media (min-width: $small) {
                 margin-right: 25px;
+                margin-left: 0;
                 margin-bottom:0;
                 padding:55px 0;
                 width: 80%;
                 text-align: left;
-
-             }
+            }
         }
 
         .bar-button {
@@ -40,7 +39,7 @@
             font-size: rem(14px);
             line-height: 17px;
 
-            @media (mind-width: $small) {
+            @media (min-width: $small) {
                 margin:55px 0;
                 padding:10px 15px;
                 
@@ -78,7 +77,7 @@ footer {
         
                 //flex widths to adjust the size of the footer link men colomns by screen sizes
                 @media (min-width: $small) {
-                    flex: 50%;
+                    flex: 33%;
                 }
 
                 @media (min-width: $medium) {
@@ -92,11 +91,23 @@ footer {
 
 				h2 {
                     border-bottom: 2px solid;
-                    border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
+                    border-image: linear-gradient(to right, $white 40%, transparent 0%) 100% 1;
                     text-transform: uppercase;
                     padding-bottom: 20px;
                     margin-bottom: 26px;
                     margin-top: 0;
+
+                    @media (min-width: $small) {
+                        border-image: linear-gradient(to right, $white 60%, transparent 0%) 100% 1;
+                    }
+
+                    @media (min-width: $medium) {
+                        border-image: linear-gradient(to right, $white 45%, transparent 0%) 100% 1;
+                    }
+                    
+                    @media (min-width: $large) {
+                        border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
+                    }
                 }
 					
 				ul {
