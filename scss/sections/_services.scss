@@ -90,23 +90,7 @@
 }
 
 // services wbpage stlying
-.our-services {
-    
-    h2 {
-        display: inline-block;
-        margin-top: 25px;
-        color: $darkbrown;
-        padding-bottom: 25px;
-        margin-bottom: 35px;
-        border-bottom: 2px solid $darkbrown;
-        text-transform: uppercase;
-    }
 
-    .h2 {
-        border-bottom: 2px solid;
-        border-image: linear-gradient(to right, $darkbrown 20%, transparent 0%) 100% 1;
-    }
-}
 
 .corp-box, .wedding-box, .event-box {
     display: flex;
@@ -169,6 +153,14 @@
             display: block;
             max-width: 300.8px;
             min-height: 200.53px;
+        }
+    }
+}
+@media (min-width: 1260px) {
+    .picbox {
+        .wed3 {
+            max-width: 374.39px;
+            min-height: 249.59px;
         }
     }
 }
