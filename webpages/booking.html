@@ -47,39 +47,38 @@
 	<h1 class="h1">Book a Catering Service</h1>
 	<p>Use the form below to book our catering services for your upcoming event. Please provide all the necessary details so we can tailor our services to your needs. We look forward to making your event memorable with our delicious food and exceptional service!</p>
 	<style>
-        		.error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%; margin-bottom: 0; text-align: center;} 
-        		.invalid { outline: 2px solid rgba(176,0,32,0.15); }
-        	</style>
-			<div class="form-wrap" class="bookwrap">
-				<h1>Book here</h1>
-				<form id="reviewForm" class="testimonialsform" novalidate>
-    			<div style="margin-top:12px;">
-					<div class="rev">
-						<label for="firstName">First Name:</label>
-						<input type="text" id="firstName" name="firstName" required>
-						<small class="error" aria-live="polite"></small>
-					</div>
-					<div class="rev">
-						<label for="lastName">Last Name:</label>
-						<input type="text" id="lastName" name="lastName" required>
-						<small class="error" aria-live="polite"></small>
-					</div>
-					<div class="rev">
-						<label for="reviewDate">Date of Review:</label>
-						<input type="date" id="reviewDate" name="reviewDate" required>
-						<small class="error" aria-live="polite"></small>
-					</div>
-					<div class="rev rev2">
-						<label class="revtext" for="reviewText">Your Review:</label>
-						<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
-						<small class="error" aria-live="polite"></small>
-					</div>
-    				<div">
-        				<input class = "revbutton" type="submit" value="Submit Review">
-    				</div>
-	
-				</form>
+    	.error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%; margin-bottom: 0; text-align: center;} 
+    	.invalid { outline: 2px solid rgba(176,0,32,0.15); }
+    </style>
+	<div class="form-wrap" class="bookwrap">
+		<h1>Book here</h1>
+		<form id="reviewForm" class="testimonialsform" novalidate>
+    	<div style="margin-top:12px;">
+			<div class="rev">
+				<label for="firstName">First Name:</label>
+				<input type="text" id="firstName" name="firstName" required>
+				<small class="error" aria-live="polite"></small>
 			</div>
+			<div class="rev">
+				<label for="lastName">Last Name:</label>
+				<input type="text" id="lastName" name="lastName" required>
+				<small class="error" aria-live="polite"></small>
+			</div>
+			<div class="rev">
+				<label for="reviewDate">Date of Review:</label>
+				<input type="date" id="reviewDate" name="reviewDate" required>
+				<small class="error" aria-live="polite"></small>
+			</div>
+			<div class="rev rev2">
+				<label class="revtext" for="reviewText">Your Review:</label>
+				<textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+				<small class="error" aria-live="polite"></small>
+			</div>
+    		<div">
+    			<input class = "revbutton" type="submit" value="Submit Review">
+    		</div>
+		</form>
+	</div>
 </div>
 <!--Footer Section-->
 <footer>
