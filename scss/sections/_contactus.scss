@@ -3,19 +3,24 @@
     width: 100%;
 }
 
-#subject {
-    margin-left: 22px;
+.contact-header {
+    margin:0;
 }
 
 .form-wrapper {
     display:flex;
     flex-direction: column;
-    max-width: 600px;
-    margin: 36px auto 50px auto;
+    max-width: 335px;
+    margin: 25px auto 30px auto;
     padding: 20px;
     border: 1px solid $darkbrown;
     border-radius: 8px;
     background-color: #f9f9f9;
+
+    @media (min-width: $medium) {
+        max-width: 600px;
+        margin: 36px auto 50px auto;
+    }
 }
 
 .email-form-wrapper {
@@ -24,8 +29,16 @@
     flex-flow: row wrap;
     width: 100%;
 
+    @media (min-width: $medium) {
+        justify-content: left;
+    }
+
     .formName {
         margin-top:8px;
+    }
+
+    #subject {
+        margin-left: 22px;
     }
 
     label {
@@ -56,6 +69,7 @@
         background-color: #AF473C;
         color: #f9f9f9;
         border-radius: 5px;
+        padding: 3px 8px;
     }
 }
 
@@ -69,13 +83,13 @@
         }
     .content {
         display: flex;
-        gap: 10px;
+        gap: 20px;
         }
 }
 
 @media (min-width: $phone) {
     #emailForm {
-        width: 250px;
+        width: 300px;
         }
 }
 

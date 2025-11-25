@@ -14,6 +14,11 @@ body {
     box-sizing: border-box;
 }
 
+.main {
+    
+}
+
+
 //Universal Containers
 .sitecontainer {
     margin-right: auto;
@@ -32,36 +37,6 @@ body {
     @media (min-width: $large) {
         width: 1200px;
     }
-}
-
-//container is styled slightly differently for the sitemap/copyright at the bottom of the website
-.container-bottom {
-    padding-left: 15px;
-    padding-right: 15px;
-    display:flex;
-    margin-left:0;
-    margin-right:0; 
-    flex-direction: column;
-
-    @media (min-width: $small) {
-        width: 750px;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    @media (min-width: $medium) {
-        width: 970px;
-    }
-
-    @media (min-width: $large) {
-        width: 1200px;
-    }
-}
-
-//margins for the middle sections of the website
-.section { 
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 // standard html Elements
@@ -94,9 +69,9 @@ p a:hover {
     text-decoration: underline;
 }
 
-h2, h3, h4 {
+h1, h2, h3, h4 {
     line-height: 1.2;
-    font-weight: $font-reg;
+    margin-top:0;
 }
 
 h1 {
@@ -111,11 +86,12 @@ h2 {
 
 h3 {
     font-size: rem(18px);
+    font-weight: $font-reg;
 }
 
 h4 {
     font-size: rem(16px);
-    line-height: rem(19px);
+    font-weight: $font-reg;
 }
 
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {

@@ -1,0 +1,140 @@
+// testimonials page styling for form and banners
+.review-wrap {
+    text-align: center;
+    min-width: 0;
+    min-height: 0;
+
+    .h1 {
+        font-size: rem(28px);
+    
+        @media (min-width: $phone) {
+            font-size: rem(36px);
+        }
+    }
+}
+
+.review {
+    display:flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:400px;
+    width: 100%;
+    min-height: 0;
+    min-width: 0;
+
+    p {
+        margin-top: 25px;
+        margin-bottom:10px;
+        font-size: rem(20px);
+        line-height: rem(30px);
+        text-align: center;
+        color: $white;
+        padding:0 10px;
+
+        @media (min-width: $small) {
+            font-size: rem(32px);
+            line-height: rem(48px);
+            padding:0px;
+        }
+    }
+}
+
+.review-box1, .review-box2, .review-box3 {
+    margin-bottom: 20px;
+}
+
+// what div is this header for?? 
+// A: Its not for a div its for a h1 tag as i didnt want to change all the h1 tags on the page
+
+.form-wrap {
+    max-width: 600px;
+    margin: 36px auto 50px auto;
+    padding: 20px;
+    border: 1px solid $darkbrown;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.rev {
+    margin: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+
+    label {
+        margin-right:4px;
+        display:block; 
+        margin-top:8px;
+    }
+
+    .revtext {
+        margin-right: 8px;
+    }
+	
+    input { 
+        margin-top:8px; 
+    }
+    
+	textarea { 
+        margin-top:8px; 
+    }
+}
+
+.rev2 {
+    display: flex;
+    align-items: center;
+}
+
+.revbutton {
+    display: inline-block;
+    margin-top: 12px;
+    background-color: #AF473C;
+    color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.r1 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-corpo-1.png');
+}
+
+.r2 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-corpo-2.png');
+}
+
+.r3 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-corpo-3.png');
+}
+
+.r4 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-wedding-1.png');
+}
+
+.r5 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-wedding-2.png');
+}
+
+.r6 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-wedding-3.png');
+}
+
+.r7 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-event-1.png');
+}
+
+.r8 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-event-2.png');
+}
+
+.r9 {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-event-3.png');
+}
+
+
+			
+		
+                    
