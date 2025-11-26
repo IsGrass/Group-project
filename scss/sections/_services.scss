@@ -36,13 +36,18 @@
         margin-top: 60px;
         display:flex;
         flex-direction: column;
-        gap: 25px;
         margin: 35px 0 0;
         justify-content: center;
 
         @media (min-width: $small) {
             flex-direction: row;
+            gap: 15px;
         }
+
+        @media (min-width: 800px) {
+            gap: 25px;
+        }
+
 
         .service-box {
             display:flex;
