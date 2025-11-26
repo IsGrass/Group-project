@@ -6,14 +6,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviewDate = document.getElementById('reviewDate');
     const reviewText = document.getElementById('reviewText');
 
-    // Prevent choosing a future date
-    const today = new Date().toISOString().split('T')[0];
-    reviewDate.max = today;
+    // Set minimum date to tomorrow (only allow future dates)
+    const tomorrow = new Date();
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const tomorrowStr = tomorrow.toISOString().split('T')[0];
+    reviewDate.min = tomorrowStr;
 
     function setError(el, msg) {
         el.classList.add('invalid');
         const hint = el.nextElementSibling;
-        if (hint) { 
+        if (hint) {
             hint.textContent = msg;
             hint.style.marginBottom = '10px';
         }
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     function clearError(el) {
         el.classList.remove('invalid');
         const hint = el.nextElementSibling;
-        if (hint) { 
+        if (hint) {
             hint.textContent = '';
             hint.style.marginBottom = '0px';
         }
@@ -34,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (el.value !== cleaned) {
                 el.value = cleaned;
                 setError(el, 'You can not input numbers into this field');
-                // clear the message after a short delay so user can continue typing
                 setTimeout(() => clearError(el), 1400);
             } else {
                 clearError(el);
@@ -81,8 +82,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!reviewDate.value) {
             setError(reviewDate, 'Please select a date.');
             valid = false;
-        } else if (reviewDate.value > today) {
-            setError(reviewDate, 'Date cannot be in the future.');
+        } else if (reviewDate.value < tomorrowStr) {
+            setError(reviewDate, 'Please select a future date.');
             valid = false;
         } else {
             clearError(reviewDate);
