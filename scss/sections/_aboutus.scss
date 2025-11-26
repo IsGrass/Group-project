@@ -1,14 +1,33 @@
 .about-container {
-		.star-box {
-            display:flex;
-            flex-direction: row;
-            margin-bottom:10px;
-             .star {
-                color: orange; 
-                margin-bottom: 25px; 
-                font-size: 50px;
-                }
+    .about-box {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            margin:20px auto 35px 0;
+            font-size: rem(30px);
+        
+            @media (min-width: $phone) {
+                font-size: rem(36px);
             }
+        }
     }
+
+	.star-box {
+        display:flex;
+        flex-direction: row;
+        margin-bottom:10px;
+        .star {
+            color: orange; 
+            margin-bottom: 25px; 
+            font-size: 50px;
+        }
+    }
+}
+
+.aboutcomp {
+    margin-bottom: 15px;
+}
 
              

@@ -1,6 +1,11 @@
 //contact us page styling
 .img-wrap img {
     width: 100%;
+    height: 408px;
+
+    @media (min-width: $medium) {
+        margin-bottom: 30px;
+    }
 }
 
 .contact-header {
@@ -19,7 +24,7 @@
 
     @media (min-width: $medium) {
         max-width: 600px;
-        margin: 36px auto 50px auto;
+        margin: 36px auto 75px auto;
     }
 }
 
@@ -75,26 +80,24 @@
 
 @media (min-width: $medium) {
 
-    .form-wrapper {
-        margin: 36px auto 129px auto;
-        }
     #emailForm {
         width: 500px;
-        }
+    }
+
     .content {
         display: flex;
         gap: 20px;
-        }
+    }
 }
 
 @media (min-width: $phone) {
     #emailForm {
         width: 300px;
-        }
+    }
 }
 
 @media (min-width: $small) {
     #emailForm {
         width: 300px;
-        }
+    }
 }

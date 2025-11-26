@@ -52,11 +52,15 @@
 
 .form-wrap {
     max-width: 600px;
-    margin: 36px auto 50px auto;
+    margin: 36px auto 30px auto;
     padding: 20px;
     border: 1px solid $darkbrown;
     border-radius: 8px;
     background-color: #f9f9f9;
+}
+
+.bookwrap {
+    text-align: center;
 }
 
 .form-conyent {
@@ -101,7 +105,6 @@
     color: #f9f9f9;
     border-radius: 5px;
 }
-
 
 
 .r1 {
