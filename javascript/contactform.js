@@ -22,10 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
     fields.forEach(el => {
       if (!el.checkValidity()) {
         valid = false;
-        if (el.validity.valueMissing) setError(el, 'This field is required.');
-        else if (el === to && el.validity.typeMismatch) setError(el, 'Enter a valid email.');
-        else if (el.validity.tooShort) setError(el, `Enter at least ${el.minLength} characters.`);
-        else setError(el, 'Invalid value.');
+        if (el.validity.valueMissing) {
+          setError(el, 'This field is required.');
+        } else if (el.type === 'email' && el.validity.typeMismatch) {
+          // specific message for the email field
+          setError(el, 'Must be a valid email');
+        } else if (el.validity.tooShort) {
+          setError(el, `Enter at least ${el.minLength} characters.`);
+        } else {
+          setError(el, 'Invalid value.');
+        }
       } else {
         clearError(el);
       }
