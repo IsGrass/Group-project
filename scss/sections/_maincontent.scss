@@ -1,6 +1,5 @@
 // Main content styling
 .main-content {
-    
 	h1 {
         display: inline-block;
         color: $darkbrown;
@@ -22,7 +21,6 @@
         @media (min-width: $tablet) {
             border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
         }
-
     }
 
 	p  {

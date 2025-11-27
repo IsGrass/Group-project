@@ -1,6 +1,10 @@
-//used slick to make the imgs move across the screen 
-// used autoplay option with arrows and draggable turned off
-//it scrolls them idivuyally
+//Partners sliding images javascript
+
+//I decided to use slick to make the imgs move across the screen.
+//I used autoplay option that ninfintiely slides them across.
+//i set all the stuff that i wouldn't use to false since this is many images being shown at once.
+//It scrolls them idivuyally.
+//In smaller screen sizes it will center the mage image so they are all placed evenly across the phone and tablet.
 $(document).ready(function() {   
     $('.partner-box').slick({
         infinite: true,
@@ -13,7 +17,7 @@ $(document).ready(function() {
         variableWidth: true,
         draggable: false,
         centerMode: false,
-        responsive: [ // so it fixes bug on it disappearing on screenj sizes above 768
+        responsive: [
             {
                 breakpoint: 768, 
                 settings: {
