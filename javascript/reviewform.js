@@ -1,5 +1,5 @@
+// JavaScript for form validation - Testimonials / Booking review form
 
-// JavaScript for form validation Testimonials Review Form
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('reviewForm');
     const firstName = document.getElementById('firstName');
@@ -7,48 +7,53 @@ document.addEventListener('DOMContentLoaded', () => {
     const reviewDate = document.getElementById('reviewDate');
     const reviewText = document.getElementById('reviewText');
 
-    // Prevent choosing a future date
+    // Compute today's date in YYYY-MM-DD format and set as max for date input
     const today = new Date().toISOString().split('T')[0];
     reviewDate.max = today;
 
+    // setError: mark an element invalid and show a nearby <small> hint element
     function setError(el, msg) {
-        el.classList.add('invalid');
-        const hint = el.nextElementSibling;
+        el.classList.add('invalid');                 
+        const hint = el.nextElementSibling;          
         if (hint) { 
-            hint.textContent = msg;
-            hint.style.marginBottom = '10px';
+            hint.textContent = msg;                  
+            hint.style.marginBottom = '10px';        
         }
     }
+
+    // clearError: remove invalid styling and clear the hint text
     function clearError(el) {
-        el.classList.remove('invalid');
+        el.classList.remove('invalid');             
         const hint = el.nextElementSibling;
         if (hint) { 
-            hint.textContent = '';
+            hint.textContent = '';                   
             hint.style.marginBottom = '0px';
         }
     }
 
-    // Remove digits as the user types and show a brief message
+    // Real-time name sanitisation:
+    // - Remove any digits the user types
+    // - Prevent pasting digits
+    // - Show a brief error message when digits are removed
     [firstName, lastName].forEach(el => {
         el.addEventListener('input', () => {
+
             const cleaned = el.value.replace(/\d+/g, '');
             if (el.value !== cleaned) {
-                el.value = cleaned;
+                el.value = cleaned; 
                 setError(el, 'You can not input numbers into this field');
-                // clear the message after a short delay so user can continue typing
                 setTimeout(() => clearError(el), 1400);
             } else {
-                clearError(el);
+                clearError(el); 
             }
         });
 
-        // also block pasting digits
+        // Block paste operations that include digits and insert cleaned text instead
         el.addEventListener('paste', (ev) => {
-            ev.preventDefault();
+            ev.preventDefault(); 
             const text = (ev.clipboardData || window.clipboardData).getData('text');
-            const cleaned = text.replace(/\d+/g, '');
+            const cleaned = text.replace(/\d+/g, ''); 
             document.execCommand('insertText', false, cleaned);
-            // show message if paste contained digits
             if (text !== cleaned) {
                 setError(el, 'You can not input numbers into this field');
                 setTimeout(() => clearError(el), 1400);
@@ -56,9 +61,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
+    // Form submit validation: check all fields and prevent submission if invalid
     form.addEventListener('submit', (e) => {
         let valid = true;
 
+        // First name: required and must not contain digits
         if (!firstName.value.trim()) {
             setError(firstName, 'Please enter your first name.');
             valid = false;
@@ -69,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(firstName);
         }
 
+        // Last name: required and must not contain digits
         if (!lastName.value.trim()) {
             setError(lastName, 'Please enter your last name.');
             valid = false;
@@ -79,6 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(lastName);
         }
 
+        // Review date: required and must not be in the future (value <= today)
         if (!reviewDate.value) {
             setError(reviewDate, 'Please select a date.');
             valid = false;
@@ -89,6 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(reviewDate);
         }
 
+        // Review text: required and must be at least 20 characters (trimmed)
         const reviewLen = reviewText.value.trim().length;
         if (reviewLen < 20) {
             setError(reviewText, 'Please enter at least 20 characters.');
@@ -97,6 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(reviewText);
         }
 
+        // If any validation failed, prevent form submission and focus the first invalid field
         if (!valid) {
             e.preventDefault();
             const firstInvalid = form.querySelector('.invalid');
@@ -104,7 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Clear errors while typing (exclude first/last name so the number-warning can show briefly)
+    // Clear errors as the user types into date and review fields (instant feedback)
     [reviewDate, reviewText].forEach(el => {
         el.addEventListener('input', () => clearError(el));
     });

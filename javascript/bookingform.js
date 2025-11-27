@@ -1,54 +1,56 @@
-// JavaScript for form validation Booking page Review Form
 document.addEventListener('DOMContentLoaded', () => {
+    
+    // Get references to form elements
     const form = document.getElementById('reviewForm');
     const firstName = document.getElementById('firstName');
     const lastName  = document.getElementById('lastName');
     const reviewDate = document.getElementById('reviewDate');
     const reviewText = document.getElementById('reviewText');
 
-    // Set minimum date to tomorrow (only allow future dates)
-    const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
-    const tomorrowStr = tomorrow.toISOString().split('T')[0];
-    reviewDate.min = tomorrowStr;
+    // Set minimum date constraint: only allow future dates (tomorrow onwards)
+    const tomorrow = new Date(); 
+    tomorrow.setDate(tomorrow.getDate() + 1); 
+    const tomorrowStr = tomorrow.toISOString().split('T')[0]; 
+    reviewDate.min = tomorrowStr; 
 
+    // Helper function: Display error message for a form field
     function setError(el, msg) {
-        el.classList.add('invalid');
-        const hint = el.nextElementSibling;
+        el.classList.add('invalid'); 
+        const hint = el.nextElementSibling; 
         if (hint) {
-            hint.textContent = msg;
-            hint.style.marginBottom = '10px';
+            hint.textContent = msg; 
+            hint.style.marginBottom = '10px'; 
         }
     }
+
+    // Helper function: Clear error message from a form field
     function clearError(el) {
-        el.classList.remove('invalid');
-        const hint = el.nextElementSibling;
+        el.classList.remove('invalid');t
         if (hint) {
             hint.textContent = '';
-            hint.style.marginBottom = '0px';
+            hint.style.marginBottom = '0px'; 
         }
     }
 
-    // Remove digits as the user types and show a brief message
+    // Real-time validation for firstName and lastName fields
     [firstName, lastName].forEach(el => {
         el.addEventListener('input', () => {
             const cleaned = el.value.replace(/\d+/g, '');
             if (el.value !== cleaned) {
                 el.value = cleaned;
-                setError(el, 'You can not input numbers into this field');
+                setError(el, 'You can not input numbers into this field'); 
                 setTimeout(() => clearError(el), 1400);
             } else {
                 clearError(el);
             }
         });
 
-        // also block pasting digits
+        // Block pasting text that contains numbers
         el.addEventListener('paste', (ev) => {
-            ev.preventDefault();
+            ev.preventDefault(); 
             const text = (ev.clipboardData || window.clipboardData).getData('text');
             const cleaned = text.replace(/\d+/g, '');
             document.execCommand('insertText', false, cleaned);
-            // show message if paste contained digits
             if (text !== cleaned) {
                 setError(el, 'You can not input numbers into this field');
                 setTimeout(() => clearError(el), 1400);
@@ -56,9 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
+    // Form submission validation: check all fields when user clicks Submit
     form.addEventListener('submit', (e) => {
-        let valid = true;
+        let valid = true; 
 
+        // Validate First Name field
         if (!firstName.value.trim()) {
             setError(firstName, 'Please enter your first name.');
             valid = false;
@@ -69,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(firstName);
         }
 
+        // Validate Last Name field (same rules as first name)
         if (!lastName.value.trim()) {
             setError(lastName, 'Please enter your last name.');
             valid = false;
@@ -79,6 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(lastName);
         }
 
+        // Validate Review Date field
         if (!reviewDate.value) {
             setError(reviewDate, 'Please select a date.');
             valid = false;
@@ -89,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(reviewDate);
         }
 
+        // Validate Review Text field
         const reviewLen = reviewText.value.trim().length;
         if (reviewLen < 20) {
             setError(reviewText, 'Please enter at least 20 characters.');
@@ -97,14 +104,17 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(reviewText);
         }
 
+
+        // If any field failed validation, stop form submission
         if (!valid) {
-            e.preventDefault();
+            e.preventDefault(); 
             const firstInvalid = form.querySelector('.invalid');
-            if (firstInvalid) firstInvalid.focus();
+            if (firstInvalid) firstInvalid.focus(); 
         }
     });
 
-    // Clear errors while typing (exclude first/last name so the number-warning can show briefly)
+
+    // Clear error messages as user types in date and review fields
     [reviewDate, reviewText].forEach(el => {
         el.addEventListener('input', () => clearError(el));
     });
