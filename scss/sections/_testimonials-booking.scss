@@ -1,3 +1,5 @@
+//testimonials and booking page stylings
+
 // testimonials page styling for form and banners
 .review-wrap {
     text-align: center;
@@ -47,6 +49,10 @@
     margin-bottom: 20px;
 }
 
+//booking form and testimonial form styling
+//both forms use the same layout and styling just different relevant naming conventions
+
+//form wrapper gives background and border as well as sets the layout of the box
 .form-wrap {
     max-width: 600px;
     margin: 36px auto 30px auto;
@@ -56,28 +62,33 @@
     background-color: $offwhite;
 }
 
-.bookwrap {
+// forms are set to be centered 
+.book-wrap {
     text-align: center;
 }
 
+//ads a margin spacing to the form
 .form-content {
     margin-top:12px;
 }
 
-.rev {
+//below is the styling for the row wrappers for the form as well as the contents of said wrapper fields
+//flex flow is used to make the error mesege appear on a new line 
+.rev, .book {
     margin: -5px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
 
+    //these set up margins for the fields
     label {
         margin-right:4px;
         display:block; 
         margin-top:8px;
     }
 
-    .revtext {
+    .revtext, .booktext {
         margin-right: 8px;
     }
 	
@@ -88,19 +99,32 @@
 	textarea { 
         margin-top:8px; 
     }
+
+    //Inline styles for form error messages on booking and testimonials forms
+    .error { 
+        display: block; 
+        color: $brightred; 
+        font-size: 0.9em; 
+        height: 1.1em; 
+        flex-basis: 100%; 
+        width:100%; 
+        margin-bottom: 0; 
+        text-align: center;
+    }
 }
 
-.rev2 {
+.rev2, .book2 {
     display: flex;
     align-items: center;
 }
 
-.revbutton {
+.revbutton, .bookbutton {
     display: inline-block;
     margin-top: 12px;
     background-color: $red;
-    color: offwhite;
+    color: $offwhite;
     border-radius: 5px;
+    padding: 3px 8px;
 }
 
 //banner slides for the testimonials reviews below uses background images and graident overlay for text to be readible
@@ -141,73 +165,6 @@
 
 .r9 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-event-3.png');
-}
-
-.booking-form-wrapper {
-    display:flex;
-    flex-direction: column;
-    max-width: 335px;
-    margin: 25px auto 30px auto;
-    padding: 20px;
-    border: 1px solid $darkbrown;
-    border-radius: 8px;
-    background-color: $offwhite;
-
-    @media (min-width: $medium) {
-        max-width: 600px;
-        margin: 36px auto 115px auto;
-    }
-}
-
-.booking-field-wrapper {
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
-    width: 100%;
-
-    @media (min-width: $medium) {
-        justify-content: left;
-    }
-
-    .formName {
-        margin-top:8px;
-    }
-
-    #subject {
-        margin-left: 22px;
-    }
-
-    label {
-        margin-right:4px;
-        display:block; 
-        margin-top:15px;
-    }
-	
-    input { 
-        margin-top:15px; 
-    }
-    
-	textarea { 
-        margin-top:8px;
-        margin-left: 14px;
-        width: 90%;
-    }
-}
-
-.button-send-box {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .booking-button {
-        display: inline-block;
-        margin-top: 12px;
-        background-color: $red;
-        color: $offwhite;
-        border-radius: 5px;
-        padding: 3px 8px;
-    }
-}
-			
+}			
 		
                     

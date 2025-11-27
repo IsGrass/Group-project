@@ -15,8 +15,8 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <!-- jQuery library for DOM manipulation and event handling -->
     <script src="../javascript/jquery-3.7.1.min.js"></script>
-    <!-- External script for contact form validation and functionality -->
-    <script src="../javascript/contactform.js"></script>
+    <!-- External script for booking form validation and functionality -->
+    <script src="../javascript/bookingform.js"></script>
 </head>
 <body>
 <!-- Header Section: contains logo, company name, contact info and main marketing message -->
@@ -73,36 +73,32 @@
         <h1 class="h1">Book a Catering Service</h1>
         <p>Use the form below to book our catering services for your upcoming event. Please provide all the necessary details so we can tailor our services to your needs. We look forward to making your event memorable with our delicious food and exceptional service!</p>
     </div>
-      <style>
-        .error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%; margin-bottom: 0; text-align: center;} 
-        .invalid { outline: 2px solid rgba(176,0,32,0.15); }
-    </style>
-    <div class="form-wrap bookwrap">
+    <div class="form-wrap book-wrap">
         <h1>Book Here</h1>
-        <form id="reviewForm" class="testimonialsform" novalidate>
+        <form id="bookingForm" class="bookingform" novalidate>
         <div class="form-content">
-            <div class="rev">
+            <div class="book">
                 <label for="firstName">First Name:</label>
                 <input type="text" id="firstName" name="firstName" required>
                 <small class="error" aria-live="polite"></small>
             </div>
-            <div class="rev">
+            <div class="book">
                 <label for="lastName">Last Name:</label>
                 <input type="text" id="lastName" name="lastName" required>
                 <small class="error" aria-live="polite"></small>
             </div>
-            <div class="rev">
-                <label for="reviewDate">Event Date:</label>
-                <input type="date" id="reviewDate" name="reviewDate" required>
+            <div class="book">
+                <label for="bookingDate">Event Date:</label>
+                <input type="date" id="bookingDate" name="bookingDate" required>
                 <small class="error" aria-live="polite"></small>
             </div>
-            <div class="rev rev2">
-                <label class="revtext" for="reviewText">Special Requests:</label>
-                <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+            <div class="book book2">
+                <label class="booktext" for="bookingText">Special Requests:</label>
+                <textarea id="bookingText" name="bookingText" rows="4" cols="50" required minlength="20"></textarea>
                 <small class="error" aria-live="polite"></small>
             </div>
             <div>
-                <input class="revbutton" type="submit" value="Book Now">
+                <input class="bookbutton" type="submit" value="Book Now">
             </div>
         </div>
         </form>

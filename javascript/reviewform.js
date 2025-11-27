@@ -1,5 +1,4 @@
-// JavaScript for form validation - Testimonials / Booking review form
-
+// JavaScript for form validation - Testimonials review form
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('reviewForm');
     const firstName = document.getElementById('firstName');

@@ -1,3 +1,4 @@
+//Booking form Javascript
 document.addEventListener('DOMContentLoaded', () => {
     
     // Get references to form elements
@@ -84,7 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(lastName);
         }
 
-        // Validate Bokking Date field
+        // Validate Booking Date field required and must be in the future (value => today)
         if (!bookingDate.value) {
             setError(bookingDate, 'Please select a date.');
             valid = false;
@@ -95,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(bookingDate);
         }
 
-        // Validate booking Text field
+        // Validate booking Text field required and must be at least 20 characters (trimmed)
         const bookingLen = bookingText.value.trim().length;
         if (bookingLen < 20) {
             setError(bookingText, 'Please enter at least 20 characters.');

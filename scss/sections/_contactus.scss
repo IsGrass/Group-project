@@ -62,6 +62,14 @@
         margin-left: 14px;
         width: 90%;
     }
+    
+     /* Error message styling: red text, small font, takes up space when visible */
+    .error { 
+        color: $brightred; 
+        font-size: 0.9em; 
+        display: block; 
+        height: 1.1em; 
+    }
 }
 
 .button-send-box {

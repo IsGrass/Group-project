@@ -1,3 +1,4 @@
+//Contact form Javascript
 document.addEventListener('DOMContentLoaded', () => {
   // Wait for the DOM to fully load before running this script
 
