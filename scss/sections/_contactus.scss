@@ -4,6 +4,8 @@
     margin:0;
 }
 
+// img and contact form are placed in a content class box which sets up the layout via media queries
+//img is on the left and form on the right on pc and img on top and form on bottom on phones
 .img-wrap img {
     width: 100%;
     height: 408px;
@@ -13,6 +15,7 @@
     }
 }
 
+// this styles the form colour, test, border and spacing layout to be centered
 .contact-form-wrapper {
     display:flex;
     flex-direction: column;
@@ -23,22 +26,21 @@
     border-radius: 8px;
     background-color: $offwhite;
 
+    //size of box is adjusted due to margins beging different for the layout , margins adjusted for larger screen sizes
     @media (min-width: $medium) {
         max-width: 600px;
         margin: 36px auto 115px auto;
     }
 }
 
+//used field wrapper to style each row and the feilds them selves like in other forms
 .contact-field-wrapper {
     display: flex;
     justify-content: left;
     flex-flow: row wrap;
     width: 100%;
 
-    @media (min-width: $medium) {
-        justify-content: left;
-    }
-
+    //field element styling for the form layout to flow nicely
     .formName {
         margin-top:8px;
     }
@@ -62,8 +64,8 @@
         margin-left: 14px;
         width: 90%;
     }
-    
-     /* Error message styling: red text, small font, takes up space when visible */
+
+     // Error message styling: red text, small font, takes up space when visible
     .error { 
         color: $brightred; 
         font-size: 0.9em; 
@@ -72,6 +74,8 @@
     }
 }
 
+//contact button styling done similar to other forms just adjusted for this forms layuout
+//button being red background and white text
 .button-send-box {
     display:flex;
     flex-direction: row;
@@ -85,9 +89,16 @@
         border-radius: 5px;
         padding: 3px 8px;
     }
+
+    // sets the button to be a darker red colour on hover
+    .contact-button:hover {
+        background-color: $darkred;
+    }
 }
 
 // media queries written by dennis for the entire page to make sure the presentation works on smaller screen sizes and larger ones
+//these adjust the contact form to be either in column or row with the img
+//width is also adjusted for ifferent sscreen sizes so it works with the margins and the layouts
 @media (min-width: $medium) {
 
     #contactForm {

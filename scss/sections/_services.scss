@@ -4,7 +4,8 @@
 .service {
     display:flex;
     flex-direction: column;
-    
+
+    //title is centered on small screen sizes and on the left on larger ones
     .service-header {
         display:flex;
         justify-content: center;
@@ -16,12 +17,8 @@
         h1 {
             display: inline-block;
             color: $darkbrown;
-            margin-top: 25px;
+            margin: 25px 0 25px;
             padding-bottom: 25px;
-            margin-bottom: 25px;
-            border-left:0;
-            border-right:0;
-            border-top:0;
             border-bottom: 2px solid $darkbrown;
             text-transform: uppercase;
             text-align: center;
@@ -29,9 +26,10 @@
             @media (min-width: $small) {
                 text-align: left;
             }
-         }
+        }
     }
 
+    // services box is set to a row on pc and column on phone 
     .service-wrap {
         margin-top: 60px;
         display:flex;
@@ -39,6 +37,7 @@
         margin: 35px 0 0;
         justify-content: center;
 
+        //gaps are added to make container and img spacing even
         @media (min-width: $small) {
             flex-direction: row;
             gap: 15px;
@@ -48,6 +47,7 @@
             gap: 25px;
         }
 
+        /// width of service box adjusted for different screen sizes to keep the imgs from looking squished when relvant
         .service-box {
             display:flex;
             flex-direction: column;
@@ -79,19 +79,18 @@
                 margin-bottom: 20px;
             }
 
+            //auto margins used to make sure border is same size as the title
 	        h2 {
                 display:inline-block;
                 padding: 20px 0;
-                margin-right: auto;
-                margin-left: auto;
-                margin-bottom: 20px;
-                margin-top: 0px;
+                margin: 0 auto 20px;
                 color: $darkbrown;
                 border-bottom: 2px solid $darkbrown;
             }
 
             p {
-                
+                // min height styling used to keep the service boxes be the same size and layout
+                //this uses base styling for the paragraph
                 @media (min-width: $small) {
                     min-height: 216px;
                 }
@@ -106,6 +105,7 @@
 
 // services wbpage stlying
 
+//styling for content boxes of this page
 .corp-box, .wedding-box, .event-box {
     display: flex;
     flex-direction: column;
@@ -116,6 +116,7 @@
         text-align: left;
     }
 
+    //font size updaters to fit the title length on smaller screen sizes
     h1 {
         font-size: rem(30px);
         margin-right: auto;
@@ -132,6 +133,7 @@
     }
 }
 
+//boxes for the imgs of weddings
 .picbox {
     display: flex;
     flex-direction: column;
@@ -142,6 +144,7 @@
         margin-right: 10px;
     }
 
+    //wedding images 2 and 3 will appear on larger screen sizes
     .wed2, .wed3 {
         display: none;
         height: fit-content;
@@ -157,92 +160,11 @@
     }
 }
 
-//contact us page styling
-
-.contact-header {
-    margin:0;
-}
-
-.img-wrap img {
-    width: 100%;
-    height: 408px;
-
-    @media (min-width: $medium) {
-        margin-bottom: 30px;
-    }
-}
-
-.contact-form-wrapper {
-    display:flex;
-    flex-direction: column;
-    max-width: 335px;
-    margin: 25px auto 30px auto;
-    padding: 20px;
-    border: 1px solid $darkbrown;
-    border-radius: 8px;
-    background-color: $offwhite;
-
-    @media (min-width: $medium) {
-        max-width: 600px;
-        margin: 36px auto 115px auto;
-    }
-}
-
-.contact-field-wrapper {
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
-    width: 100%;
-
-    @media (min-width: $medium) {
-        justify-content: left;
-    }
-
-    .formName {
-        margin-top:8px;
-    }
-
-    #subject {
-        margin-left: 22px;
-    }
-
-    label {
-        margin-right:4px;
-        display:block; 
-        margin-top:15px;
-    }
-	
-    input { 
-        margin-top:15px; 
-    }
-    
-	textarea { 
-        margin-top:8px;
-        margin-left: 14px;
-        width: 90%;
-    }
-}
-
-.button-send-box {
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-
-    .contact-button {
-        display: inline-block;
-        margin-top: 12px;
-        background-color: $red;
-        color: $offwhite;
-        border-radius: 5px;
-        padding: 3px 8px;
-    }
-}
-
 // media queries written by dennis for the entire page to make sure the presentation works on smaller screen sizes and larger ones
 @media (min-width: $small) {
     .picbox {
         flex-direction: row;
-        
+
         .wed1 {
             width: 50%;
         }
@@ -254,6 +176,7 @@
     }
 }
 
+//adjusts the wedding imgs for different screen sizes
 @media (min-width: $medium) {
     .picbox {
         .wed1 {
@@ -267,6 +190,7 @@
             margin-right: 10px;
         }
 
+        //adjusts the img size as it is a different size from the other imgs to fit the screen size 
         .wed3 {
             display: block;
             max-width: 300.8px;
@@ -275,6 +199,7 @@
     }
 }
 
+//adjusts the img size as it is a different size from the other imgs to fit the screen size 
 @media (min-width: $large) {
     .picbox {
         .wed3 {

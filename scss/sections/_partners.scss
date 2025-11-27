@@ -1,4 +1,4 @@
-//paretners styling
+//paretners styling on home page
 .partners {
 	h2 {
         display: inline-block;
@@ -31,11 +31,13 @@
                 padding: 0 5px;
                 max-height:150px;
 
+                //chnages spacing of imgs based on screen size
                 @media (min-width: $small) {
                     margin-right: 50px;
                     padding: 0 20px;
                 }
-
+                
+                //hover over to see coloured version of img non hover is grayscale
                 img {
                     max-width:200px;
                     filter: grayscale(1);

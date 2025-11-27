@@ -39,6 +39,7 @@
       flex-direction: column;
       position: relative;
       color: $black;
+      width:200px;
 
       @media (min-width: $tablet) {
         position: absolute;
@@ -55,14 +56,14 @@
 
       //logo styling
       //logo is styled in font and text rather than img so below are the details for that
-        h3  {
+        h1  {
           margin:0;
           font-size: rem(48px);
           line-height: rem(53px);
           color: $red;
         }
 
-        h4  {
+        h2 {
           margin:0;
           font-size: rem(48px);
           line-height: rem(53px);
@@ -79,34 +80,36 @@
       // contact info detials on the header
       .contact-info { 
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: left;
+        align-items: center;
         color: $black;
         font-size: rem(16px);
         margin-top:10px;
 
-        //on larger screen sizes it is set to a row layout rather than column
-        @media (min-width: $phone) {
-          flex-direction: row;
-        }
-
+        //on larager screen sizes this is on the riugt where as on smaller ones it on the left
         @media (min-width: $small) {
           justify-content: right;
           margin-top:0;
         }
 
+        span { 
+            margin-right: 10px;
+        }
+
         a { 
           margin-right:25px;
-          margin-bottom: 8px;
-
-          @media (min-width: $phone) {
-            margin-bottom: 0;
-          }
-
-          span { 
-            margin-right: 10px;
-          }
+          margin-bottom: 0;
         }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        span:hover {
+            text-decoration: none;
+        }
+        
       }
 
       //company info header
@@ -150,7 +153,7 @@
             margin: 30px 0;
           }
         }
-        
+
         // dscirption is slightly imbossed
         p {
           font-size: rem(18px);
@@ -166,7 +169,7 @@
           }
         }
 
-        //boking button
+        //boking button uses belkow styling plus base button class styling
         .booking-button {
           display: inline-block;
           background-color: $red;
@@ -174,7 +177,7 @@
         }
 
         .booking-button:hover {
-          background-color: $darkbrown;
+          background-color: $darkred;
         }
       }
     }  

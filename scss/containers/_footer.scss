@@ -1,6 +1,8 @@
 //booking bar of homepage and footer styling
 
 //booking bar styling
+//booking bar will be set to a column on smaller screen sizes so button is easer to acess
+//the lyaout is in centered on phone but in a row on a computer
 .bookingbar {
     background-color: $dark;
     .booking-row {
@@ -13,6 +15,7 @@
             flex-direction: row;            
         }
 
+        //paragraph adjusted styling for phone and tablet
         p {
             padding:55px 0 15px;
             margin: 0 10px;
@@ -21,6 +24,7 @@
             line-height: rem(30px);
             text-align: center;
 
+            //paragraph adjusted styling for pc
             @media (min-width: $small) {
                 margin-right: 25px;
                 margin-left: 0;
@@ -31,6 +35,8 @@
             }
         }
 
+        //button styling is also adjusted same as paragraph for different screen sizes
+        //button is white since background is dark
         .bar-button {
             display:inline-block;
             margin:10px 0 55px;
@@ -43,13 +49,18 @@
             @media (min-width: $small) {
                 margin:55px 0;
                 padding:10px 15px;
-                
             }
 
             @media (min-width: $large) {
                 padding:10px 30px;
                  margin:55px 0;
             }
+        }
+
+        //button hover colour chnage to a dark red
+        .bar-button:hover {
+            background-color: $red;
+            color: $white;
         }
     }
 }
@@ -62,6 +73,7 @@ footer {
     padding: 27px 0 0;
     position: relative;
 
+    //footer is set to  be a wrap based row layout on larger screen sizes and a column on smaller ones
     	.footer-row {
             display:flex;
             flex-wrap:wrap;
@@ -90,6 +102,8 @@ footer {
                     margin-bottom: 40px;
                 }
 
+                //for eage list the footer has a header with an adjusting border length that is padded down which uses the same percentage styling as the header 
+                //and is adjusted with media querys for different screen sizes/
 				h2 {
                     border-bottom: 2px solid;
                     border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
@@ -114,7 +128,8 @@ footer {
                         border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
                     }
                 }
-					
+
+				//set in list format for the content of the footer
 				ul {
                     display:block;
                     padding:0;
@@ -132,11 +147,11 @@ footer {
                     li a span {
                         margin-right:10px;
                     }
-                    
                 }
             }
         }
-            
+         
+        //this container is used to house the copy right details which is centerized and uses wbr html to adjust the layout for screen sizes
 		.footer-bottom {
             text-align: center;
             margin-bottom:20px;

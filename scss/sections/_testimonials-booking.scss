@@ -1,6 +1,8 @@
 //testimonials and booking page stylings
 
 // testimonials page styling for form and banners
+
+//Reveiw banner styling
 .review-wrap {
     text-align: center;
     min-width: 0;
@@ -15,6 +17,9 @@
     }
 }
 
+//Review box setting the image to be centerized rather than taking up the entire screen
+//button it does fill the container
+//the arrow and dot buttons are styled by slick
 .review {
     display:flex;
     text-align: center;
@@ -28,6 +33,7 @@
     min-height: 0;
     min-width: 0;
 
+    //chnage font size based on screen size to have it be readible and present over the img size
     p {
         margin-top: 25px;
         margin-bottom:10px;
@@ -113,11 +119,14 @@
     }
 }
 
+//text area styling
 .rev2, .book2 {
     display: flex;
     align-items: center;
 }
 
+//form button styling
+//button being red background and white text
 .revbutton, .bookbutton {
     display: inline-block;
     margin-top: 12px;
@@ -125,6 +134,11 @@
     color: $offwhite;
     border-radius: 5px;
     padding: 3px 8px;
+}
+
+//form button hover colour chnage to a darker red colour
+.revbutton:hover, .bookbutton:hover {
+    background-color: $darkred;
 }
 
 //banner slides for the testimonials reviews below uses background images and graident overlay for text to be readible
