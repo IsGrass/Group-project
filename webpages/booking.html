@@ -69,69 +69,45 @@
 
 <!-- Main Content Section -->
 <div class="sitecontainer">
-    <!-- Page heading -->
-    <h1 class="h1">Contact Us </h1>
-    <!-- Subheading describing the form purpose -->
-    <h3 class="contact-header">You can contact us via the form below for any of your catering needs.</h3>
-    <!-- Introductory paragraph -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias perspiciatis voluptates quod exercitationem enim voluptate dignissimos nulla! Distinctio, delectus expedita explicabo libero quibusdam eaque facilis aut eveniet, fugiat, tempore id.</p>
-    
-    <!-- Content wrapper: image and form side-by-side -->
-    <div class="content">
-        <!-- Image section on left side -->
-        <div class="img-wrap">
-            <img src="../images/contact-us.jpg" alt="placeholder">
+    <div class="main">
+        <h1 class="h1">Book a Catering Service</h1>
+        <p>Use the form below to book our catering services for your upcoming event. Please provide all the necessary details so we can tailor our services to your needs. We look forward to making your event memorable with our delicious food and exceptional service!</p>
+    </div>
+      <style>
+        .error { display: block; color: #b00020; font-size: 0.9em; height: 1.1em; flex-basis: 100%; width:100%; margin-bottom: 0; text-align: center;} 
+        .invalid { outline: 2px solid rgba(176,0,32,0.15); }
+    </style>
+    <div class="form-wrap bookwrap">
+        <h1>Book Here</h1>
+        <form id="reviewForm" class="testimonialsform" novalidate>
+        <div class="form-content">
+            <div class="rev">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="rev">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="rev">
+                <label for="reviewDate">Event Date:</label>
+                <input type="date" id="reviewDate" name="reviewDate" required>
+                <small class="error" aria-live="polite"></small>
+            </div>
+            <div class="rev rev2">
+                <label class="revtext" for="reviewText">Special Requests:</label>
+                <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+                <small class="error" aria-live="polite"></small>
+            </div>
+            <div>
+                <input class="revbutton" type="submit" value="Book Now">
+            </div>
         </div>
-        
-        <!-- CSS for form validation styling -->
-        <style>
-            /* Error message styling: red text, small font, takes up space when visible */
-            .error { color: #b00020; font-size: 0.9em; display: block; height: 1.1em; }
-            /* Invalid field styling: red outline added to fields with errors */
-            .invalid { outline: 2px solid rgba(176,0,32,0.15); }
-        </style>
-        
-        <!-- Contact form section on right side -->
-        <div class="form-wrapper">
-            <!-- Email contact form with novalidate attribute to use custom validation (from contactform.js) -->
-            <form id="emailForm" class="email=form" novalidate>
-                <!-- Email input wrapper -->
-                <div class="email-form-wrapper">
-                    <label for="formName" class="formName">Your email:</label>
-                    <!-- Email input field with required attribute -->
-                    <input id="formName" class="formName" name="formName" type="email" required />
-                    <!-- Error message area for email validation -->
-                    <small class="error" aria-live="polite"></small>
-                </div>
-                
-                <!-- Subject input wrapper -->
-                <div class="email-form-wrapper">
-                    <label for="subject">Subject:</label>
-                    <!-- Subject text input field with required attribute -->
-                    <input id="subject" name="subject" type="text" required />
-                    <!-- Error message area for subject validation -->
-                    <small class="error" aria-live="polite"></small>
-                </div>
-                
-                <!-- Message input wrapper -->
-                <div class="email-form-wrapper">
-                    <label for="message">Message:</label>
-                    <!-- Message textarea with required attribute and minimum 10 character requirement -->
-                    <textarea id="message" name="message" rows="6" required minlength="10"></textarea>
-                    <!-- Error message area for message validation -->
-                    <small class="error" aria-live="polite"></small>
-                </div>
-                
-                <!-- Submit button wrapper -->
-                <div class="button-send-box">
-                    <!-- Form submission button -->
-                    <button class="contact-button" type="submit">Send</button>
-                </div>
-            </form>
-        </div>
+        </form>
     </div>
 </div>
-
 <!-- Footer Section: contact info, site links, and social media links -->
 <footer>
     <div class="sitecontainer">

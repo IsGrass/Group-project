@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
   // Wait for the DOM to fully load before running this script
 
-  // Get reference to the form element with id "emailForm"
-  const form = document.getElementById('emailForm');
+  // Get reference to the form element with id "contactForm"
+  const form = document.getElementById('contactForm');
   
   // Get all input and textarea elements inside the form and convert to array
   // This creates an array of all form fields that need validation

@@ -1,3 +1,7 @@
+//About Ud page styling
+
+//box is used for the descriptions of all the sections on this page
+//it is set up so that the border works for the headers to be padded below it using the same auto margin and aligning that other h1 class headers use on other internal pages.
 .about-container {
     .about-box {
         text-align: left;
@@ -14,12 +18,14 @@
         }
     }
 
+    //this styles the star symbols
 	.star-box {
         display:flex;
         flex-direction: row;
         margin-bottom:10px;
+
         .star {
-            color: orange; 
+            color: $orange; 
             margin-bottom: 25px; 
             font-size: 50px;
         }

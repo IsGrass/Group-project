@@ -1,17 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     
     // Get references to form elements
-    const form = document.getElementById('reviewForm');
+    const form = document.getElementById('bookingForm');
     const firstName = document.getElementById('firstName');
     const lastName  = document.getElementById('lastName');
-    const reviewDate = document.getElementById('reviewDate');
-    const reviewText = document.getElementById('reviewText');
+    const bookingDate = document.getElementById('bookingDate');
+    const bookingText = document.getElementById('bookingText');
 
     // Set minimum date constraint: only allow future dates (tomorrow onwards)
     const tomorrow = new Date(); 
     tomorrow.setDate(tomorrow.getDate() + 1); 
     const tomorrowStr = tomorrow.toISOString().split('T')[0]; 
-    reviewDate.min = tomorrowStr; 
+    bookingDate.min = tomorrowStr; 
 
     // Helper function: Display error message for a form field
     function setError(el, msg) {
@@ -84,26 +84,25 @@ document.addEventListener('DOMContentLoaded', () => {
             clearError(lastName);
         }
 
-        // Validate Review Date field
-        if (!reviewDate.value) {
-            setError(reviewDate, 'Please select a date.');
+        // Validate Bokking Date field
+        if (!bookingDate.value) {
+            setError(bookingDate, 'Please select a date.');
             valid = false;
-        } else if (reviewDate.value < tomorrowStr) {
-            setError(reviewDate, 'Please select a future date.');
-            valid = false;
-        } else {
-            clearError(reviewDate);
-        }
-
-        // Validate Review Text field
-        const reviewLen = reviewText.value.trim().length;
-        if (reviewLen < 20) {
-            setError(reviewText, 'Please enter at least 20 characters.');
+        } else if (bookingDate.value < tomorrowStr) {
+            setError(bookingDate, 'Please select a future date.');
             valid = false;
         } else {
-            clearError(reviewText);
+            clearError(bookingDate);
         }
 
+        // Validate booking Text field
+        const bookingLen = bookingText.value.trim().length;
+        if (bookingLen < 20) {
+            setError(bookingText, 'Please enter at least 20 characters.');
+            valid = false;
+        } else {
+            clearError(bookingText);
+        }
 
         // If any field failed validation, stop form submission
         if (!valid) {
@@ -113,9 +112,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-
-    // Clear error messages as user types in date and review fields
-    [reviewDate, reviewText].forEach(el => {
+    // Clear error messages as user types in date and booking fields
+    [bookingDate, bookingText].forEach(el => {
         el.addEventListener('input', () => clearError(el));
     });
 });

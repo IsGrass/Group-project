@@ -157,6 +157,88 @@
     }
 }
 
+//contact us page styling
+
+.contact-header {
+    margin:0;
+}
+
+.img-wrap img {
+    width: 100%;
+    height: 408px;
+
+    @media (min-width: $medium) {
+        margin-bottom: 30px;
+    }
+}
+
+.contact-form-wrapper {
+    display:flex;
+    flex-direction: column;
+    max-width: 335px;
+    margin: 25px auto 30px auto;
+    padding: 20px;
+    border: 1px solid $darkbrown;
+    border-radius: 8px;
+    background-color: $offwhite;
+
+    @media (min-width: $medium) {
+        max-width: 600px;
+        margin: 36px auto 115px auto;
+    }
+}
+
+.contact-field-wrapper {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+    width: 100%;
+
+    @media (min-width: $medium) {
+        justify-content: left;
+    }
+
+    .formName {
+        margin-top:8px;
+    }
+
+    #subject {
+        margin-left: 22px;
+    }
+
+    label {
+        margin-right:4px;
+        display:block; 
+        margin-top:15px;
+    }
+	
+    input { 
+        margin-top:15px; 
+    }
+    
+	textarea { 
+        margin-top:8px;
+        margin-left: 14px;
+        width: 90%;
+    }
+}
+
+.button-send-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .contact-button {
+        display: inline-block;
+        margin-top: 12px;
+        background-color: $red;
+        color: $offwhite;
+        border-radius: 5px;
+        padding: 3px 8px;
+    }
+}
+
+// media queries written by dennis for the entire page to make sure the presentation works on smaller screen sizes and larger ones
 @media (min-width: $small) {
     .picbox {
         flex-direction: row;
@@ -192,7 +274,7 @@
     }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: $large) {
     .picbox {
         .wed3 {
             max-width: 374.39px;

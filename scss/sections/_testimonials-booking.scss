@@ -47,23 +47,20 @@
     margin-bottom: 20px;
 }
 
-// what div is this header for?? 
-// A: Its not for a div its for a h1 tag as i didnt want to change all the h1 tags on the page
-
 .form-wrap {
     max-width: 600px;
     margin: 36px auto 30px auto;
     padding: 20px;
     border: 1px solid $darkbrown;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: $offwhite;
 }
 
 .bookwrap {
     text-align: center;
 }
 
-.form-conyent {
+.form-content {
     margin-top:12px;
 }
 
@@ -101,11 +98,15 @@
 .revbutton {
     display: inline-block;
     margin-top: 12px;
-    background-color: #AF473C;
-    color: #f9f9f9;
+    background-color: $red;
+    color: offwhite;
     border-radius: 5px;
 }
 
+//banner slides for the testimonials reviews below uses background images and graident overlay for text to be readible
+//r1 to r3 are for corpate reviews.
+//r4 to r6 are for wedding reviews.
+//r7 to r9 are for event reviews.
 .r1 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-corpo-1.png');
 }
@@ -142,7 +143,71 @@
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/testimonials-event-3.png');
 }
 
+.booking-form-wrapper {
+    display:flex;
+    flex-direction: column;
+    max-width: 335px;
+    margin: 25px auto 30px auto;
+    padding: 20px;
+    border: 1px solid $darkbrown;
+    border-radius: 8px;
+    background-color: $offwhite;
 
+    @media (min-width: $medium) {
+        max-width: 600px;
+        margin: 36px auto 115px auto;
+    }
+}
+
+.booking-field-wrapper {
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+    width: 100%;
+
+    @media (min-width: $medium) {
+        justify-content: left;
+    }
+
+    .formName {
+        margin-top:8px;
+    }
+
+    #subject {
+        margin-left: 22px;
+    }
+
+    label {
+        margin-right:4px;
+        display:block; 
+        margin-top:15px;
+    }
+	
+    input { 
+        margin-top:15px; 
+    }
+    
+	textarea { 
+        margin-top:8px;
+        margin-left: 14px;
+        width: 90%;
+    }
+}
+
+.button-send-box {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .booking-button {
+        display: inline-block;
+        margin-top: 12px;
+        background-color: $red;
+        color: $offwhite;
+        border-radius: 5px;
+        padding: 3px 8px;
+    }
+}
 			
 		
                     
