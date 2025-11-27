@@ -48,7 +48,6 @@
             gap: 25px;
         }
 
-
         .service-box {
             display:flex;
             flex-direction: column;
@@ -139,7 +138,6 @@
     margin-bottom: 20px;
 
     .wed1 {
-
         height: fit-content;
         margin-right: 10px;
     }
@@ -162,22 +160,25 @@
 @media (min-width: $small) {
     .picbox {
         flex-direction: row;
-    
+    }
+
     .wed1 {
         width: 50%;
     }
+
     .wed2 {
         display: block;
         width: 50%;
-        }
     }
 }
+
 @media (min-width: $medium) {
     .picbox {
         .wed1 {
             width: 32%;
             margin-right: 10px;
         }
+
         .wed2 {
             width: 32%;
             margin-right: 10px;
@@ -190,6 +191,7 @@
         }
     }
 }
+
 @media (min-width: 1260px) {
     .picbox {
         .wed3 {
