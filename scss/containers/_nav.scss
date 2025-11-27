@@ -1,4 +1,6 @@
 //navigation bar styling
+
+//navigation bar is on the left for smaller screen sizes and on the right for larger ones to go with the flow of the header set up
 .nav {
     background-color: $red;
     color: $white;
@@ -16,12 +18,12 @@
         }
     }
 
+    //done as a list with one set colour set up nothing too fancy
     .navbar {
         display: flex;
         flex-direction: row;
         justify-content: left;
         text-align: center;
-        //row-gap: 10px;
         margin:0;
         padding:0;
 
@@ -34,6 +36,7 @@
             text-align: right;
         }
 
+        //due to some of the titles being longer than others i had to adjust the font sizes on different screen sizes to keep the presntation the same
         li {
             padding: 10px 5px;
             font-size: rem(12px);

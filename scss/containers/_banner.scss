@@ -1,3 +1,6 @@
+//hompage banner styling
+
+//banner box
 .sliding-image {
     display:flex;
     flex-direction: row;
@@ -6,6 +9,8 @@
     height:400px;
     position:relative;
 
+    //banner image covers screen
+    //contents is centered and set to flex container so that the layout can be flexible
 	.banner {
         display:flex;
         flex-direction: column;
@@ -18,12 +23,15 @@
         position: relative;
         text-align: center;
 
+        //justify content space between is used so that the postioing of the quotation makrs works
+        //flex row wraps the author name under neath the paragrah
         .banner-row {
             display:flex;
             flex-flow: row wrap;
             justify-content: space-between;
         }
 
+        //I used margins and align self postioning for the quotation symbols
         .quote-start {
           margin-top: 20px;
           justify-self: left;
@@ -34,6 +42,7 @@
            }
         }
 
+        //for the presentation of this banner description i had to use different font sizes for different screen sizes
 	    p { 
             margin-top: 25px;
             text-align: center;
@@ -53,12 +62,14 @@
                 line-height: rem(30px);
             }
 
-             @media (min-width: $large) {
+            @media (min-width: $large) {
                 font-size: rem(24px);
                 line-height: rem(36px);
             }
         }
 
+        //for the presentation of this banner author i had to use different font sizes for different screen sizes
+        //set as inline block withpadded border at top, the auto margins make sure it only is the length of the header itself
         h3 {
             padding:10px 0;
             display:inline-block;
@@ -83,6 +94,7 @@
             }
         }
 
+        //same as first quatation set up style just different numbers so it is postioned at the end of the description
         .quote-end {
            justify-self: right;
            align-self: end;
@@ -95,6 +107,7 @@
     }
 }
 
+//background images for each banner slide with a gradient to make the text readible over it.
 .slide1 {
     background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/crab.png');
 }

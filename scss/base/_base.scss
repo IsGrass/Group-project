@@ -1,6 +1,6 @@
-// Main Base Styles
+//Main Base Styles
 
-// body and universal styles
+//body and universal styles
 body {
     margin: 0;
     font-family: $zanadolo,sans-serif;
@@ -18,7 +18,7 @@ body {
     
 }
 
-//Universal Containers
+//Universal Container
 .sitecontainer {
     margin-right: auto;
     margin-left: auto;
@@ -48,7 +48,7 @@ a:focus {
     outline: thin dotted;
 }
 
-//prevents useragent styling from overriding colour of links
+//prevents useragent styling from overriding colour of links.
 a:link, a:any-link, a:active, a:focus, a:visited {
     color: inherit;
 }
@@ -68,6 +68,7 @@ p a:hover {
     text-decoration: underline;
 }
 
+//headers
 h1, h2, h3, h4 {
     line-height: 1.2;
     margin-top:0;
@@ -97,6 +98,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     text-decoration: underline;
 }
 
+//used h1 and h2 classes for headers that are on internal pages so the styling is universal.
+//they all have it set for a border that is pagged down and margins afterwards.
+//the font size is smaller on phones due to some of the titles being long.
 .h1 {
     display: inline-block;
     font-size: rem(30px);
@@ -122,6 +126,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     text-transform: uppercase;
 }
 
+//Other elements styling
 ul {
     list-style: none;
     text-decoration: none;
@@ -131,6 +136,7 @@ strong {
     font-weight: $font-semibold
 }
 
+//button styling
 .button {
     padding: 15px;
     border-radius: 0px;
@@ -140,6 +146,7 @@ strong {
     text-decoration: none;
 }
 
+//header logo stlying since it is done with fancy font style rather than an img.
 .logo { 
     font-family: $meow,sans-serif;
     font-weight: bold;
