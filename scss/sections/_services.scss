@@ -242,15 +242,15 @@
 @media (min-width: $small) {
     .picbox {
         flex-direction: row;
-    }
+        
+        .wed1 {
+            width: 50%;
+        }
 
-    .wed1 {
-        width: 50%;
-    }
-
-    .wed2 {
-        display: block;
-        width: 50%;
+        .wed2 {
+            display: block;
+            width: 50%;
+        }
     }
 }
 
@@ -262,6 +262,7 @@
         }
 
         .wed2 {
+            display: block;
             width: 32%;
             margin-right: 10px;
         }
