@@ -109,17 +109,17 @@
 
 //background images for each banner slide with a gradient to make the text readible over it.
 .slide1 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/crab.png');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/crab.png');
 }
 
 .slide2 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/lemons.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../images/lemons.jpg');
 }
 
 .slide3 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/onion.png');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../images/onion.png');
 }
 
 .slide4 {
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5)), url('../images/calories.png');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)), url('../images/calories.png');
 }
