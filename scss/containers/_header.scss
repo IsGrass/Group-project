@@ -162,7 +162,7 @@
           text-align: left;
           margin-bottom: 20px;
           font-weight: $font-med;
-          text-shadow: $white;
+          text-shadow: 1px 1px $white;
 
           @media (min-width: $small) {
             text-align: right;

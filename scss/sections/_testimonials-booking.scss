@@ -32,6 +32,7 @@
     width: 100%;
     min-height: 0;
     min-width: 0;
+    color: $white;
 
     //chnage font size based on screen size to have it be readible and present over the img size
     p {
@@ -40,7 +41,6 @@
         font-size: rem(20px);
         line-height: rem(30px);
         text-align: center;
-        color: $white;
         padding:0 10px;
 
         @media (min-width: $small) {
