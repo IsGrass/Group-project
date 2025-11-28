@@ -123,41 +123,41 @@
 
                 <!-- Form uses novalidate to allow custom client-side validation (handled in external JS or inline scripts) -->
                 <form id="reviewForm" class="testimonialsform" novalidate>
-                <div class="form-content">
+                    <div class="form-content">
 
-                    <!-- First name field with inline error element -->
-                    <div class="rev">
-                        <label for="firstName">First Name:</label>
-                        <input type="text" id="firstName" name="firstName" required>
-                        <small class="error" aria-live="polite"></small> <!-- area for validation messages -->
-                    </div>
+                        <!-- First name field with inline error element -->
+                        <div class="rev">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                            <small class="error" aria-live="polite"></small> <!-- area for validation messages -->
+                        </div>
 
-                    <!-- Last name field with inline error element -->
-                    <div class="rev">
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" id="lastName" name="lastName" required>
-                        <small class="error" aria-live="polite"></small>
-                    </div>
+                        <!-- Last name field with inline error element -->
+                        <div class="rev">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
 
-                    <!-- Date field for review (type="date" shows a native date picker in modern browsers) -->
-                    <div class="rev">
-                        <label for="reviewDate">Date of Review:</label>
-                        <input type="date" id="reviewDate" name="reviewDate" required>
-                        <small class="error" aria-live="polite"></small>
-                    </div>
+                        <!-- Date field for review (type="date" shows a native date picker in modern browsers) -->
+                        <div class="rev">
+                            <label for="reviewDate">Date of Review:</label>
+                            <input type="date" id="reviewDate" name="reviewDate" required>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
 
-                    <!-- Review text area with minimum length enforced by validation script or attribute -->
-                    <div class="rev rev2">
-                        <label class="revtext" for="reviewText">Your Review:</label>
-                        <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
-                        <small class="error" aria-live="polite"></small>
-                    </div>
+                        <!-- Review text area with minimum length enforced by validation script or attribute -->
+                        <div class="rev rev2">
+                            <label class="revtext" for="reviewText">Your Review:</label>
+                            <textarea id="reviewText" name="reviewText" rows="4" cols="50" required minlength="20"></textarea>
+                            <small class="error" aria-live="polite"></small>
+                        </div>
 
-                    <!-- Submit button (note: there's a small malformed div opening in original file - keep as-is to avoid changing structure) -->
-                    <div>
-                        <input class = "revbutton" type="submit" value="Submit Review">
+                        <!-- Submit button (note: there's a small malformed div opening in original file - keep as-is to avoid changing structure) -->
+                        <div>
+                            <input class = "revbutton" type="submit" value="Submit Review">
+                        </div>
                     </div>
-                </div>
                 </form>
             </div>
         </div>
