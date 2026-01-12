@@ -82,7 +82,6 @@
 //flex flow is used to make the error mesege appear on a new line 
 .rev, .book {
     margin: -5px;
-    display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
@@ -93,6 +92,45 @@
         display:block; 
         margin-top:8px;
     }
+    .firstName {
+        margin-left: -183px;
+        }
+    .lastName {
+        margin-left: -183px;
+        }
+    .reviewDate{
+        margin-left: -156px;
+        }
+    .revtext{
+        margin-left: -178px;
+    }
+    .eventText{
+        margin-left: -184px;
+    }
+    .booktext{
+        margin-left: -133px;
+    }
+
+    @media (min-width: $tablet) {
+        .firstName {
+            margin-left: -420px;
+        }
+        .lastName {
+            margin-left: -420px;
+        }
+        .reviewDate{
+            margin-left: -389px;
+        }
+        .revtext{
+            margin-left: -403px;
+        }
+        .eventText{
+            margin-left: -415px;
+        }
+        .booktext{
+            margin-left: -361px;
+        }
+    }
 
     .revtext, .booktext {
         margin-right: 8px;
@@ -100,10 +138,19 @@
 	
     input { 
         margin-top:8px; 
+        width: 90%;
+        border-radius: 5px;
+        height: 39px;
+        border: inset;
+        background-color: $white;
     }
     
 	textarea { 
         margin-top:8px; 
+        border: inset;
+        border-radius: 5px;
+        background-color: $white;
+        width: 90%;
     }
 
     //Inline styles for form error messages on booking and testimonials forms
@@ -121,7 +168,6 @@
 
 //text area styling
 .rev2, .book2 {
-    display: flex;
     align-items: center;
 }
 
