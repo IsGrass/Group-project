@@ -4,18 +4,17 @@
 //i added a tinting to the img so text can be read over it easier
 .header {
   position: relative;
-  background-image: url("#{$img-path}/banner.png");
-  background-color: rgba(255,255,255, .4);
-  background-blend-mode: lighten;
+  background-image: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url("#{$img-path}/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 590px;
+  height: 400px;
+  padding-top:10px;
 
 //since the layout chnages on other screen sizes i had to adjust the height acordingly
   @media (min-width: $tablet) {
-    height:490px;
+    height:450px;
   }
     //the container controls the postioning of the contents
     //the header will be in one column on phones and will have the header title and button on the left on smaller screen sizes
@@ -23,52 +22,13 @@
     .flex-header {  
       display: flex;
       flex-direction: column;
-      justify-content: left;
+      justify-content: center;
       position: relative;
       width: 100%;
 
       @media (min-width: $small) {
         flex-direction: row;
-        justify-content: right;
-      }
-
-      //logo box
-      //logo is controled by a defined postion that is set to left for phones, right for tablets and left again for bigger screen sizes
-     .logobox {
-      display:flex;
-      flex-direction: column;
-      position: relative;
-      color: $black;
-      width:200px;
-
-      @media (min-width: $tablet) {
-        position: absolute;
-        right: 25px;
-        top: 10px;
-      }
-
-      @media (min-width: $small) {
-        position: absolute;
-        left: 25px;
-        top: 10px;
-        
-      }
-
-      //logo styling
-      //logo is styled in font and text rather than img so below are the details for that
-        h1  {
-          margin:0;
-          font-size: rem(48px);
-          line-height: rem(53px);
-          color: $red;
-        }
-
-        h2 {
-          margin:0;
-          font-size: rem(48px);
-          line-height: rem(53px);
-          font-weight: $font-light;
-        }
+        justify-content: left;
       }
 
       //header info
@@ -76,62 +36,27 @@
     .header-details {
       display: flex;
       flex-direction: column;
-      
-      // contact info detials on the header
-      .contact-info { 
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        color: $black;
-        font-size: rem(16px);
-        margin-top:10px;
-
-        //on larager screen sizes this is on the riugt where as on smaller ones it on the left
-        @media (min-width: $small) {
-          justify-content: right;
-          margin-top:0;
-        }
-
-        span { 
-            margin-right: 10px;
-        }
-
-        a { 
-          margin-right:25px;
-          margin-bottom: 0;
-        }
-
-        a:hover {
-          text-decoration: underline;
-        }
-
-        span:hover {
-            text-decoration: none;
-        }
-        
-      }
 
       //company info header
       .company-info {
-        color: $black;
-        text-align: left;
+        color: $offwhite;
+        text-align: center;
         margin-top:0;
 
         @media (min-width: $small) {
-          text-align: right;
+          text-align: left;
         }
 
         //the border is set to be at the bottom of the final word in the wrappered column
         h1 {
-          text-align: left;
+          text-align: center;
           font-size: rem(40px);
           line-height: rem(48px);
           font-weight: $font-semibold;
           padding-bottom: 20px;
           margin: 8px 0 30px;
           border-bottom: 3px solid;
-          border-image: linear-gradient(to right, $black 55%, transparent 0%) 100% 1;
+          border-image: linear-gradient(to right, $offwhite 100%, transparent 0%) 100% 1;
           text-transform: uppercase;
 
           //since i used a border that is percentage based trasnparent to work with where it needed to be postioned
@@ -139,33 +64,26 @@
           @media (min-width: $phone) {
             font-size: rem(48px);
             line-height: rem(58px);
-            border-image: linear-gradient(to right, $black 50%, transparent 0%) 100% 1;
             margin-top:30px;
           }
 
-          @media (min-width: $tablet) {
-             border-image: linear-gradient(to right, $black 35%, transparent 0%) 100% 1;
-          }
-
           @media (min-width: $small) {
-            text-align: right;
-            border-image: linear-gradient(to left, $black 60%, transparent 0%) 100% 1;
+            text-align: left;
             margin: 30px 0;
           }
         }
 
         // dscirption is slightly imbossed
         p {
-          font-size: rem(18px);
-          line-height: rem(26px);
-          color: $black;
-          text-align: left;
+          font-size: rem(22px);
+          line-height: rem(33px);
+          color: $offwhite;
+          text-align: center;
           margin-bottom: 20px;
           font-weight: $font-med;
-          text-shadow: 1px 1px $white;
 
           @media (min-width: $small) {
-            text-align: right;
+            text-align: left;
           }
         }
 

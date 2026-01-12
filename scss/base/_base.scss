@@ -8,6 +8,7 @@ body {
     font-size: $base-font-size;
     line-height: ($base-line-height/$base-font-size); //line height calcuation for the base font outputs 1.5
     font-weight: $font-reg;
+    background-color: $white;
 }
 
 * {

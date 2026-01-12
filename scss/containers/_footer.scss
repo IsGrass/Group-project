@@ -11,28 +11,14 @@
         align-items: center;
         color: $white;
 
-        @media (min-width: $small) {
-            flex-direction: row;            
-        }
-
         //paragraph adjusted styling for phone and tablet
         p {
             padding:55px 0 15px;
             margin: 0 10px;
             width: 100%;
-            font-size: rem(20px);
-            line-height: rem(30px);
+            font-size: rem(24px);
+            line-height: rem(36px);
             text-align: center;
-
-            //paragraph adjusted styling for pc
-            @media (min-width: $small) {
-                margin-right: 25px;
-                margin-left: 0;
-                margin-bottom:0;
-                padding:55px 0;
-                width: 80%;
-                text-align: left;
-            }
         }
 
         //button styling is also adjusted same as paragraph for different screen sizes
@@ -40,21 +26,12 @@
         .bar-button {
             display:inline-block;
             margin:10px 0 55px;
-            padding:10px 20px;
+            padding:10px 30px;
             background-color: $white;
             color: $brown;
-            font-size: rem(14px);
-            line-height: 17px;
-
-            @media (min-width: $small) {
-                margin:55px 0;
-                padding:10px 15px;
-            }
-
-            @media (min-width: $large) {
-                padding:10px 30px;
-                 margin:55px 0;
-            }
+            font-size: rem(16px);
+            line-height:1;
+            font-weight: $font-med;
         }
 
         //button hover colour chnage to a dark red
@@ -77,7 +54,7 @@ footer {
     	.footer-row {
             display:flex;
             flex-wrap:wrap;
-            margin: 10px -15px 0;
+            margin: 0 -15px 0;
 
             @media (min-width: $small) {
                 margin: 50px -15px;
@@ -87,10 +64,12 @@ footer {
                 flex: 100%;
                 padding: 0 15px;
                 margin-bottom: 30px;
+                text-align: center;
         
                 //flex widths to adjust the size of the footer link men colomns by screen sizes
                 @media (min-width: $small) {
                     flex: 33%;
+                    text-align: left;
                 }
 
                 @media (min-width: $medium) {
@@ -105,28 +84,14 @@ footer {
                 //for eage list the footer has a header with an adjusting border length that is padded down which uses the same percentage styling as the header 
                 //and is adjusted with media querys for different screen sizes/
 				h2 {
-                    border-bottom: 2px solid;
-                    border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
+                    display: inline-block;
+                    border-bottom: 2px solid $white;
                     text-transform: uppercase;
                     padding-bottom: 20px;
                     margin-bottom: 26px;
                     margin-top: 0;
-
-                    @media (min-width: $phone) {
-                        border-image: linear-gradient(to right, $white 25%, transparent 0%) 100% 1;
-                    }
-
-                    @media (min-width: $small) {
-                        border-image: linear-gradient(to right, $white 60%, transparent 0%) 100% 1;
-                    }
-
-                    @media (min-width: $medium) {
-                        border-image: linear-gradient(to right, $white 45%, transparent 0%) 100% 1;
-                    }
-                    
-                    @media (min-width: $large) {
-                        border-image: linear-gradient(to right, $white 35%, transparent 0%) 100% 1;
-                    }
+                    margin-left:auto;
+                    margin-right: auto;
                 }
 
 				//set in list format for the content of the footer
@@ -137,7 +102,8 @@ footer {
 
                     li {
                         font-size: rem(16px);
-                        line-height: rem(24px);
+                        line-height: rem(24px); 
+                        margin-bottom: 6px;
                     }
 
                     li a:hover {
@@ -150,16 +116,22 @@ footer {
                 }
             }
         }
-         
-        //this container is used to house the copy right details which is centerized and uses wbr html to adjust the layout for screen sizes
-		.footer-bottom {
-            text-align: center;
-            margin-bottom:20px;
+}
 
-            span {
-                margin:auto;
-            }
+.copyright {
+    background-color: $dark;
+    color: $white;
+
+     //this container is used to house the copy right details which is centerized and uses wbr html to adjust the layout for screen sizes
+	.footer-bottom {
+        padding:20px 0;
+        text-align: center;
+        font-size: 14px;
+
+        span {
+            margin:auto;
         }
+    }
 }
 
 

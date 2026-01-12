@@ -4,36 +4,108 @@
 .nav {
     background-color: $red;
     color: $white;
+
+.navbox {
     display:flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
 
-    @media (min-width: $small) {
-        justify-content: right;
+    //logo box
+      //logo is controled by a defined postion that is set to left for phones, right for tablets and left again for bigger screen sizes
+     .logobox {
+      display:flex;
+      flex-direction: row;
+      justify-content: left;
+      align-self: flex-start;
+      position: relative;
+      color: $white;
+      padding-top:20px;
+      padding-bottom: 20px;
+      margin-bottom:0;
+
+      @media (min-width: $medium) {
+        padding-bottom:0;
+      }
+
+      //logo styling
+      //logo is styled in font and text rather than img so below are the details for that
+        h1  {
+          margin:0;
+          font-size: 32px;
+          line-height: rem(53px);
+          margin-right: 10px;
+
+          @media (min-width: $small) {
+            font-size: rem(50px);
+          }
+        }
+
+        h2 {
+          margin:0;
+          font-size: 32px;
+          line-height: rem(53px);
+          font-weight: $font-light;
+
+          @media (min-width: $small) {
+            font-size: rem(50px);
+          }
+        }
+
+        a:hover { text-decoration: none;}
     }
 
-    .sitecontainer {
-        @media (max-width: $small) {
-            margin:0;
+    .navlist {
+        display:flex;
+        flex-direction: row;
+
+        @media (min-width: $medium) {
+            flex-direction: column;
+        }
+        
+        .contact-info { 
+        display: none;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        font-size: rem(16px);
+        padding-top:20px;
+        margin:0;
+
+        @media (min-width:$medium) {
+            display:flex;
+        }
+
+        span { 
+            margin-right: 10px;
+        }
+
+        a { 
+            margin-right:40px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        span:hover {
+            text-decoration: none;
         }
     }
+
 
     //done as a list with one set colour set up nothing too fancy
     .navbar {
-        display: flex;
+        display: none;
         flex-direction: row;
-        justify-content: left;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         margin:0;
         padding:0;
+        height: 69px;
 
-        @media (min-width: $tablet) {
-            text-align: left;
-        }
-
-        @media (min-width: $small) {
-            justify-content: right;
-            text-align: right;
+        @media (min-width: $medium) {
+            display:flex;
         }
 
         //due to some of the titles being longer than others i had to adjust the font sizes on different screen sizes to keep the presntation the same
@@ -53,4 +125,37 @@
             }
         }
     }
+
+    //Hamburger Button
+    //hamburger/menu button styling that only appears on mobile
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: flex-end;
+        align-self: center;
+        width: 70px;
+        height: 60px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 15px;
+        border-radius: 3px;
+        cursor:pointer;
+        transition: left 0.5s ease;
+        background-color: $darkgrey;
+        border: 2px solid $dark;
+
+        @media (min-width: $medium) {
+            display:none;
+        }
+        
+        //lines of the menu are styled as seperate background colours with 3 sets of spans used to define them
+        .hamburgerline {
+            width: 100%;
+            height: 5px;
+            background-color: $white;
+        }
+    }
+    }
+}
 }

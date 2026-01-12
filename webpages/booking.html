@@ -15,25 +15,47 @@
     <script src="../javascript/bookingform.js"></script>
 </head>
 <body>
-<!-- Header Section: contains logo, company name, contact info and main marketing message -->
-<div class="header">
-    <div class="sitecontainer"><!-- Container to constrain content width -->
-        <div class="flex-header"><!-- Flexible container for logo and header details -->
-            <!-- Logo/Brand section -->
+
+<!-- Navigation Bar: main site navigation -->
+<div class="nav">
+    <div class="sitecontainer">
+        <div class="navbox">
             <div class="logobox">
                  <!-- Site name with link to home page -->
                 <h1><a class="logo" href="../index.html">Terracotta</a></h1>
                 <!-- Company tagline -->
-                <h2>Catering</h2>
+                <h2><a href="../index.html">Catering</a></h2>
             </div>
-            <!-- Header details: contact info and marketing message -->
-            <div class="header-details">
-                <!-- Quick contact links in header -->
+            <!--Navigation Bar-->
+            <div class="navlist">
                 <div class="contact-info">
                     <!-- Contact links (email / phone) -->
                     <span class="icon-envelope"></span><a href="mailto:info@terracotta.com">Info@terracotta.com </a>
                     <span class="icon-phone"></span><a href="tel:012345628284">01235-628-284</a>
                 </div>
+                <ul class="navbar">
+                    <li><a href="../webpages/aboutus.html">About Us</a></li>
+                    <li><a href="../webpages/services.html">Services</a></li>
+                    <li><a href="../webpages/testimonials.html">Testimonials</a></li>
+                    <li><a href="../webpages/contactus.html">Contact Us</a></li>
+                </ul>
+                <!--Hamburger Button-->
+                <div class="hamburger-menu">
+                    <span class="hamburgerline"></span>
+                    <span class="hamburgerline"></span>
+                    <span class="hamburgerline"></span>
+                </div>
+            </div>
+        </div>
+    </div>	
+</div>
+
+<!-- Header Section: contains logo, company name, contact info and main marketing message -->
+<div class="header">
+    <div class="sitecontainer"><!-- Container to constrain content width -->
+        <div class="flex-header"><!-- Flexible container for logo and header details -->
+            <!-- Header details: contact info and marketing message -->
+            <div class="header-details">
                 <!-- Main marketing section -->
                 <div class="company-info">
                     <!-- Main heading -->
@@ -46,20 +68,6 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-- Navigation Bar: primary site navigation links -->
-<div class="nav">
-    <div class="sitecontainer">
-        <!-- Main navigation menu -->
-        <ul class="navbar">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../webpages/aboutus.html">About Us</a></li>
-            <li><a href="../webpages/services.html">Services</a></li>
-            <li><a href="../webpages/testimonials.html">Testimonials</a></li>
-            <li><a href="../webpages/contactus.html">Contact Us</a></li>
-        </ul>
-    </div>	
 </div>
 
 <!-- Main Content Section -->
@@ -150,14 +158,19 @@
                 </ul>
             </div>
         </div>
-        
-        <!-- Footer Bottom: copyright information -->
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="sitecontainter">
+        <!-- Footer bottom / copyright -->
         <div class="footer-bottom">
             <span>
-                COPYRIGHT &copy; TERRACOTTA CATERING.<wbr> ALL RIGHTS RESERVED 2019 
+                COPYRIGHT &copy; TERRACOTTA CATERING.<wbr>ALL RIGHTS RESERVED 2019 
             </span>
         </div>
     </div>
-</footer>
+</div>
+
 </body>
 </html>
