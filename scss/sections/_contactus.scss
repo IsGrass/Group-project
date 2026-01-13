@@ -3,7 +3,18 @@
 .contact-header {
     margin:0;
 }
-
+.hcon{
+    display: flex;
+    flex-direction: column;
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+h3{
+    width: 60%;
+}
 // img and contact form are placed in a content class box which sets up the layout via media queries
 //img is on the left and form on the right on pc and img on top and form on bottom on phones
 .img-wrap img {
@@ -35,34 +46,37 @@
 
 //used field wrapper to style each row and the feilds them selves like in other forms
 .contact-field-wrapper {
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
-    width: 100%;
+    width: 90%;
 
     //field element styling for the form layout to flow nicely
     .formName {
         margin-top:8px;
+        margin-left: 13px;
+        width: 100%;
     }
 
     #subject {
-        margin-left: 22px;
+        margin-left: 13px;
     }
 
     label {
         margin-right:4px;
         display:block; 
-        margin-top:15px;
+        margin-left:12px;
     }
 	
     input { 
-        margin-top:15px; 
+        width: 100%;
+        border: inset;
+        border-radius: 5px;
     }
     
 	textarea { 
         margin-top:8px;
         margin-left: 14px;
-        width: 90%;
+        width: 100%;
+        border: inset;
+        border-radius: 5px;
     }
 
      // Error message styling: red text, small font, takes up space when visible
