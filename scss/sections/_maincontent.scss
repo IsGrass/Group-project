@@ -1,32 +1,21 @@
 // Main content styling
 .main-content {
-    //the header of the main content for the home page had different styling and layout to all other headers on other pages
-    //the header border only covers the word catering as was given to us in the mock up
-    //this was not kept universal for internal pages due to sheer amount of media queries
-    // media queries below are to make sure the sizing of the border is kept the same for different screen sizes 
-    //As i used the same method as the header for the setting of certain ending for the border being percentage based.
-	h2 {
-        display: inline-block;
-        color: $darkbrown;
-        padding-bottom: 25px;
-        margin-top: 25px;
-        margin-bottom: 35px;
-        border-bottom: 2px solid;
-        border-image: linear-gradient(to right, $darkbrown 80%, transparent 0%) 100% 1;
-        text-transform: uppercase;
 
-        @media (min-width: 385px) {
-            border-image: linear-gradient(to right, $darkbrown 55%, transparent 0%) 100% 1;
-        }
+    
 
-        @media (min-width: $phone) {
-            border-image: linear-gradient(to right, $darkbrown 40%, transparent 0%) 100% 1;
-        }
+        h2 {
+            display: inline-block;
+            color: $darkbrown;
+            margin: 25px 0 25px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid $darkbrown;
+            text-transform: uppercase;
+            text-align: center;
 
-        @media (min-width: $tablet) {
-            border-image: linear-gradient(to right, $darkbrown 30%, transparent 0%) 100% 1;
+            @media (min-width: $small) {
+                text-align: left;
+            }
         }
-    }
 
 	p  {
         margin-top: 15px;
