@@ -2,18 +2,22 @@
 
 .contact-header {
     margin:0;
+    text-align: center;
+    @media (min-width: $tablet) {
+        width: 50%;
+        text-align: left;
+    }
 }
 .hcon{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     @media (min-width: $tablet) {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        gap: 20px;
     }
-}
-h3{
-    width: 60%;
 }
 // img and contact form are placed in a content class box which sets up the layout via media queries
 //img is on the left and form on the right on pc and img on top and form on bottom on phones

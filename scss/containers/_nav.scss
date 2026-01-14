@@ -110,20 +110,19 @@
 
         //due to some of the titles being longer than others i had to adjust the font sizes on different screen sizes to keep the presntation the same
         li {
-            padding: 10px 5px;
-            font-size: rem(12px);
-            line-height: rem(15px);
-
-            @media (min-width: $phone) {
-                padding:10px;
-                font-size: rem(16px);
-                line-height: rem(19px);
-            }
+            padding:10px;
+            font-size: rem(16px);
+            line-height: rem(19px);
 
             a {
                 text-transform: uppercase;
             }
         }
+
+        li a:hover {
+            background-color: $darkred;
+        }
+
     }
 
     //Hamburger Button

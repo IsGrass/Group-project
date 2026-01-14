@@ -36,11 +36,19 @@ body {
 }
 
 .website {
-
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    transition: all .5s;
+    left: 0;
 }
 
 .menu-is-active {
-    
+    left: -275px;
+
+    @media (min-width: $medium) {
+        left: -350px;
+    }
 }
 
 // standard html Elements
@@ -167,5 +175,5 @@ strong {
 }
 
 .hidden {
-
+    display: none;
 }

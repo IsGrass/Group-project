@@ -22,6 +22,7 @@
 //the arrow and dot buttons are styled by slick
 .review {
     display:flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -34,20 +35,21 @@
     min-width: 0;
     color: $white;
 
-    //chnage font size based on screen size to have it be readible and present over the img size
-    p {
-        margin-top: 25px;
-        margin-bottom:10px;
-        font-size: rem(20px);
-        line-height: rem(30px);
+    h3 {
+        margin-top: 20px;
+        font-size: rem(36px);
+        line-height: rem(44px);
         text-align: center;
         padding:0 10px;
-
-        @media (min-width: $small) {
-            font-size: rem(32px);
-            line-height: rem(48px);
-            padding:0px;
-        }
+    }
+        
+    //chnage font size based on screen size to have it be readible and present over the img size
+    p {
+        margin: 20px 0;
+        font-size: rem(28px);
+        line-height: rem(42px);
+        text-align: center;
+        padding:0 10px;
     }
 }
 
