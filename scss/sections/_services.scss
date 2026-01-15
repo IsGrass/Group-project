@@ -31,16 +31,16 @@
 
     // services box is set to a row on pc and column on phone 
     .service-wrap {
-        margin-top: 50px;
         display:flex;
         flex-direction: column;
-        margin: 35px 0 0;
+        margin: 25px -10px 40px;
         justify-content: center;
-
+       
         //gaps are added to make container and img spacing even
         @media (min-width: $small) {
             flex-direction: row;
-            gap: 15px;
+            margin-bottom: 75px;
+            justify-content: normal;
         }
 
         /// width of service box adjusted for different screen sizes to keep the imgs from looking squished when relvant
@@ -49,40 +49,36 @@
             flex-direction: column;
             width: 80%;
             text-align: center;
-            margin-bottom: 25px;
+            margin-bottom:20px;
             margin-left:auto;
             margin-right:auto;
+            border: 2px solid rgba(0,0,0,.125);
+            border-radius: 3px;
 
             @media (min-width: $small) {
-                margin-bottom: 75px; 
-                margin-left:0;
-                margin-right:0;
-                width:32%;         
-            }
-
-            @media (min-width: $medium) {
-                width:32.333333%;         
-            }
-
-            @media (min-width: $large) {
-                width:32.5%;         
+                margin-bottom: 0px; 
+                margin-left:10px;
+                margin-right:10px;
+                width:33%;         
             }
 
 	        img {
                 margin-bottom: 20px;
                 object-fit: cover;
+                border-radius: 3px;
             }
 
             //auto margins used to make sure border is same size as the title
 	        h3 {
                 display:inline-block;
                 padding: 20px 0;
-                margin: 0 auto 20px;
+                margin: 0 auto 10px;
                 color: $darkbrown;
                 border-bottom: 2px solid $darkbrown;
             }
 
             p {
+                padding: 0 15px;
                 // min height styling used to keep the service boxes be the same size and layout
                 //this uses base styling for the paragraph
                 @media (min-width: $small) {
