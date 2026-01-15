@@ -8,6 +8,7 @@
         text-align: left;
     }
 }
+
 .hcon{
     display: flex;
     flex-direction: column;
@@ -19,6 +20,7 @@
         gap: 20px;
     }
 }
+
 // img and contact form are placed in a content class box which sets up the layout via media queries
 //img is on the left and form on the right on pc and img on top and form on bottom on phones
 .img-wrap img {

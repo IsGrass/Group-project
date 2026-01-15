@@ -17,7 +17,7 @@
         h2 {
             display: inline-block;
             color: $darkbrown;
-            margin: 25px 0 25px;
+            margin: 25px 0;
             padding-bottom: 25px;
             border-bottom: 2px solid $darkbrown;
             text-transform: uppercase;
@@ -102,19 +102,18 @@
     margin-bottom: 20px;
     text-align: center;
 
-    @media (min-width: $phone) {
+    @media (min-width: $small) {
         text-align: left;
     }
 
     //font size updaters to fit the title length on smaller screen sizes
     h2 {
-        font-size: rem(30px);
-        margin-right: auto;
-        margin-left: auto;
-        
-        @media (min-width: $phone) {
-            font-size: rem(36px);
-            margin:20px auto 35px 0;
+       margin-right: auto;
+       margin-left:auto;
+       
+        @media (min-width: $small) {
+            margin-right: auto;
+            margin-left:0;
         }
     }
 

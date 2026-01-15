@@ -93,7 +93,7 @@ h1 {
 }
 
 h2 {
-    font-size: rem(26px);
+    font-size: rem(28px);
     font-weight: $font-light;
 }
 
@@ -116,27 +116,29 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
 //the font size is smaller on phones due to some of the titles being long.
 .h1 {
     display: inline-block;
-    font-size: rem(30px);
-    margin-top: 20px;
+    font-size: rem(28px);
+    margin: 25px auto;
     color: $darkbrown;
     padding-bottom: 25px;
-    margin-bottom: 35px;
     border-bottom: 2px solid $darkbrown;
     text-transform: uppercase;
+    font-weight: $font-light;
+    text-align: center;
 
-    @media (min-width: $phone) {
-        font-size: rem(36px);
+    @media (min-width: $small) {
+        text-align: center;
+        margin: 25px 0;
     }
 }
 
 .h2 {
     display:inline-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    font-size: rem(20px);
+    padding-bottom: 25px;
+    margin: 20px 0;
     color: $darkbrown;
     text-transform: uppercase;
+    font-weight: $font-reg;
 }
 
 //Other elements styling
