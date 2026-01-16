@@ -39,16 +39,12 @@ body {
     overflow: hidden;
     position: relative;
     z-index: 10;
-    transition: all .5s;
+    transition: all .5s ease;
     left: 0;
 }
 
 .menu-is-active {
-    left: -275px;
-
-    @media (min-width: $medium) {
-        left: -350px;
-    }
+    left: -175px;
 }
 
 // standard html Elements

@@ -1,35 +1,38 @@
 //Side Navigation Styling
 .sidenav {
     display:none;
-    background-color: $red;
+    background-color: $dark;
     color:$white;
     position: fixed;
 	top: 0;
 	right: 0;
 	z-index: 9;
 	height: 100%;
-    width:275px;
+    width:175px;
     overflow: scroll;
 
-	@media (min-width: $medium) {
-    	width: 350px;
-	}
+    transition: all .5s ease;
 
     .sidenavbox {
         margin:0;
-        padding:20px 0;
+        padding:30px 0 10px;
 
         .sidenav-list {
             display:flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding:0;
+            margin:0;
 
             li {
                 border: 1px solid $dark;
                 padding:10px;
                 text-align: center;
                 border-radius: 3px;
+                min-width:143px;
+                margin-bottom:10px;
+                background-color: $red;
             }
 
             li a {
@@ -39,7 +42,7 @@
                 text-align: center;
             }
 
-            li a:hover {
+            li:hover {
                 text-decoration: none;
                 background-color: $darkred;
             }
