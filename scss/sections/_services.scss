@@ -39,8 +39,12 @@
         //gaps are added to make container and img spacing even
         @media (min-width: $small) {
             flex-direction: row;
-            margin-bottom: 75px;
+            margin: 25px 0 75px;
             justify-content: normal;
+        }
+
+        @media (min-width: $medium) {
+            margin: 25px -10px 75px;
         }
 
         /// width of service box adjusted for different screen sizes to keep the imgs from looking squished when relvant
@@ -57,16 +61,22 @@
 
             @media (min-width: $small) {
                 margin-bottom: 0px; 
+                margin-left:0;
+                margin-right:10px;
+                width:32.5%;         
+            }
+
+            @media (min-width: $medium) {
+                margin-bottom: 0px; 
                 margin-left:10px;
                 margin-right:10px;
-                width:33%;         
+                width:31.5%;         
             }
 
 	        img {
                 margin-bottom: 20px;
                 object-fit: cover;
                 border-radius: 3px;
-                max-height: 177px;
             }
 
             //auto margins used to make sure border is same size as the title

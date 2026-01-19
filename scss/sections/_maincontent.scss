@@ -25,6 +25,10 @@
         margin-top: 15px;
         margin-bottom: 20px;
         b {color: $darkbrown;}
-        text-align: left;
+        text-align: center;
+
+        @media (min-width: $small) {
+            text-align: left;
+        }
     }
 }

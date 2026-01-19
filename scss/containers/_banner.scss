@@ -22,51 +22,43 @@
         height:400px;
         position: relative;
         text-align: center;
+        justify-content: center;
+        align-items: center;
 
         //justify content space between is used so that the postioing of the quotation makrs works
         //flex row wraps the author name under neath the paragrah
         .banner-row {
             display:flex;
-            flex-flow: row wrap;
+            flex-direction: column;
             justify-content: space-between;
+            align-items: center;
         }
 
         //I used margins and align self postioning for the quotation symbols
         .quote-start {
-          margin-top: 60px;
-          justify-self: left;
-          align-self:normal;
+          margin: 0;
+          align-self: start;
+          padding-left: 3px;
 
-           @media (min-width: $phone) {
-                margin-top: 110px;
-           }
+          @media (min-width: $phone) {
+            padding:0;
+          }
         }
 
         //for the presentation of this banner description i had to use different font sizes for different screen sizes
 	    p { 
-            margin-top: 25px;
+            margin: 0;
             text-align: center;
             font-size: rem(18px);
             line-height: rem(27px);
-            margin-bottom:15px;
             width: 85%;
-            padding-top:60px;
+            padding-top:10px;
 
             @media (min-width: $phone) {
-                margin-top: 130px;
-                margin-bottom: 30px;
-                width: 90%;
-                padding-top:0;
-            }
-
-            @media (min-width: $medium) {
-                font-size: rem(20px);
-                line-height: rem(30px);
-            }
-
-            @media (min-width: $large) {
                 font-size: rem(24px);
                 line-height: rem(36px);
+                width: 90%;
+                padding-bottom:10px;
             }
         }
 
@@ -77,22 +69,14 @@
             display:inline-block;
             border-top: 2px solid $white;
             font-size: rem(15px);
-            line-height: rem(22px);
-            margin: 0 auto;
+            line-height: rem(23px);
+            margin:0;
             text-transform: uppercase;
 
             @media (min-width: $phone) {
-                padding: 20px 0;
-            }
-
-            @media (min-width: $medium) {
-                font-size: rem(16px);
-                line-height: rem(24px);
-            }
-
-            @media (min-width: $large) {
                 font-size: rem(18px);
                 line-height: rem(27px);
+                padding: 20px 0;
             }
         }
 
@@ -100,11 +84,12 @@
         .quote-end {
            justify-self: right;
            align-self: end;
-           margin-bottom: 10px;
+           margin: 0;
+           padding-right: 3px;
 
-           @media (min-width: $phone) {
-                margin-bottom: 25px;
-           }
+            @media (min-width: $phone) {
+                padding:0;
+            }
         }
     }
 }
