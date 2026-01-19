@@ -66,6 +66,7 @@
                 margin-bottom: 20px;
                 object-fit: cover;
                 border-radius: 3px;
+                max-height: 177px;
             }
 
             //auto margins used to make sure border is same size as the title
@@ -119,33 +120,6 @@
 
     p {
         text-align: left;
-    }
-}
-
-//boxes for the imgs of weddings
-.picbox {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-
-    .wed1 {
-        height: fit-content;
-        margin-right: 10px;
-    }
-
-    //wedding images 2 and 3 will appear on larger screen sizes
-    .wed2, .wed3 {
-        display: none;
-        height: fit-content;
-    }
-}
-
-.corp-box{
-    .corp-row {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        margin-bottom: 10px;
     }
 }
 
