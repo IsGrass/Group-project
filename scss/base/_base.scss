@@ -37,6 +37,7 @@ body {
 
 .website {
     overflow: hidden;
+    background-color: $white;
     position: relative;
     z-index: 10;
     transition: all .5s ease;

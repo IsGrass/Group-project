@@ -17,7 +17,7 @@ website.addEventListener('click', (event) => {
         // Check if target of the user's click is the hamburger menu or if event target is a child of hamberger menu as sometimes the click function wouldint register because of the spans
         if (event.target == menu || menu.contains(event.target)) { 
             //opens side bar and applies styling for the website and sticky header
-            sidebar.style.display = "block";
+           // sidebar.style.backgroundColor = '#3C3C3C;'
             website.classList.add('menu-is-active');
             menuActive = true;
 
@@ -25,7 +25,7 @@ website.addEventListener('click', (event) => {
         const closeMenu = document.querySelector('.close-menu');
 
         closeMenu.addEventListener('click', () => {
-            sidebar.style.display = "none";
+           // sidebar.style.backgroundColor = ''
             website.classList.remove('menu-is-active');
             menuActive = false;
             });
