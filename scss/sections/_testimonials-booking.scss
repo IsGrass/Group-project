@@ -116,6 +116,7 @@
         border-radius: 5px;
         background-color: $white;
         width: 100%;
+        margin-bottom: 10px;
     }
 
     //Inline styles for form error messages on booking and testimonials forms
@@ -140,7 +141,7 @@
 //button being red background and white text
 .revbutton, .bookbutton {
     display: inline-block;
-    margin-top: 12px;
+    
     background-color: $red;
     color: $offwhite;
     border-radius: 3px;

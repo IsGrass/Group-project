@@ -78,7 +78,6 @@
                 margin-bottom: 20px;
                 object-fit: cover;
                 border-radius: 3px;
-                max-height: 169px;
             }
 
             //auto margins used to make sure border is same size as the title
@@ -136,51 +135,6 @@
     }
 }
 
-// media queries written by dennis for the entire page to make sure the presentation works on smaller screen sizes and larger ones
-@media (min-width: $small) {
-    .picbox {
-        flex-direction: row;
-
-        .wed1 {
-            width: 50%;
-        }
-
-        .wed2 {
-            display: block;
-            width: 50%;
-        }
-    }
-}
-
-//adjusts the wedding imgs for different screen sizes
-@media (min-width: $medium) {
-    .picbox {
-        .wed1 {
-            width: 32%;
-            margin-right: 10px;
-        }
-
-        .wed2 {
-            display: block;
-            width: 32%;
-            margin-right: 10px;
-        }
-
-        //adjusts the img size as it is a different size from the other imgs to fit the screen size 
-        .wed3 {
-            display: block;
-            max-width: 300.8px;
-            min-height: 200.53px;
-        }
-    }
-}
-
-//adjusts the img size as it is a different size from the other imgs to fit the screen size 
-@media (min-width: $large) {
-    .picbox {
-        .wed3 {
-            max-width: 374.39px;
-            min-height: 249.59px;
-        }
-    }
+.image-corporate, .image-wedding, .image-events {
+    min-height: 248px;
 }
