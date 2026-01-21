@@ -26,7 +26,8 @@
         .bar-button {
             display:inline-block;
             margin:10px 0 55px;
-            padding:10px 30px;
+            padding:10px 15px;
+            border-radius: 3px;
             background-color: $white;
             color: $brown;
             font-size: rem(16px);

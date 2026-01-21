@@ -52,11 +52,11 @@
 }
 
 // this styles the form colour, test, border and spacing layout to be centered
-.contact-form-wrapper {
+.content {
     display:flex;
     flex-direction: column;
-    max-width: 335px;
-    margin: 25px auto 30px auto;
+    max-width: 600px;
+    margin: 25px auto 50px auto;
     padding: 20px;
     border: 1px solid $darkbrown;
     border-radius: 8px;
@@ -65,54 +65,63 @@
     //size of box is adjusted due to margins beging different for the layout , margins adjusted for larger screen sizes
     @media (min-width: $medium) {
         max-width: 600px;
-        margin: 36px auto 115px auto;
+        margin: 36px auto 50px auto;
     }
+}
+.contact-form-wrapper {
+
+ 
 }
 
 //used field wrapper to style each row and the feilds them selves like in other forms
 .contact-field-wrapper {
-    width: 90%;
+   
+    display:flex;
+    margin: 0 20px;
+    align-items: normal;
+    justify-content: normal;
+    flex-flow: row wrap;
 
     //field element styling for the form layout to flow nicely
-    .formName {
-        margin-top:8px;
-        margin-left: 13px;
-        width: 100%;
-    }
-
-    #subject {
-        margin-left: 13px;
-    }
-
     label {
         margin-right:4px;
         display:block; 
-        margin-left:12px;
+        margin-top:8px;
+        text-align: left;
     }
-	
-    input { 
+
+    .formName {
+        margin-top:8px;
         width: 100%;
-        border: inset;
+    }
+
+     input { 
+        margin-top:8px; 
+        width: 100%;
         border-radius: 5px;
         height: 39px;
+        border: inset;
         background-color: $white;
     }
     
 	textarea { 
-        margin-top:8px;
-        margin-left: 14px;
-        width: 100%;
+        margin-top:8px; 
         border: inset;
         border-radius: 5px;
         background-color: $white;
+        width: 100%;
     }
 
-     // Error message styling: red text, small font, takes up space when visible
+    //Inline styles for form error messages on booking and testimonials forms
     .error { 
+        display: block; 
         color: $brightred; 
         font-size: 0.9em; 
-        display: block; 
         height: 1.1em; 
+        flex-basis: 100%; 
+        width:100%; 
+        margin-bottom: 0; 
+        text-align: center;
     }
 }
 
@@ -122,45 +131,21 @@
     display:flex;
     flex-direction: row;
     justify-content: center;
+    
 
     .contact-button {
         display: inline-block;
-        margin-top: 12px;
+        
         background-color: $red;
         color: $offwhite;
-        border-radius: 5px;
-        padding: 3px 8px;
+        border-radius: 3px;
+        padding: 10px 15px;
+        text-transform: uppercase;
+        
     }
 
     // sets the button to be a darker red colour on hover
     .contact-button:hover {
         background-color: $darkred;
-    }
-}
-
-// media queries written by dennis for the entire page to make sure the presentation works on smaller screen sizes and larger ones
-//these adjust the contact form to be either in column or row with the img
-//width is also adjusted for ifferent sscreen sizes so it works with the margins and the layouts
-@media (min-width: $medium) {
-
-    #contactForm {
-        width: 500px;
-    }
-
-    .content {
-        display: flex;
-        gap: 20px;
-    }
-}
-
-@media (min-width: $phone) {
-    #contactForm {
-        width: 300px;
-    }
-}
-
-@media (min-width: $small) {
-    #contactForm {
-        width: 300px;
     }
 }

@@ -33,18 +33,18 @@
     .service-wrap {
         display:flex;
         flex-direction: column;
-        margin: 25px -10px 40px;
+        margin: 20px -10px 20px;
         justify-content: center;
        
         //gaps are added to make container and img spacing even
         @media (min-width: $small) {
             flex-direction: row;
-            margin: 25px 0 75px;
+            margin: 20px 0 75px;
             justify-content: normal;
         }
 
         @media (min-width: $medium) {
-            margin: 25px -10px 75px;
+            margin: 20px -10px 75px;
         }
 
         /// width of service box adjusted for different screen sizes to keep the imgs from looking squished when relvant
@@ -63,7 +63,8 @@
                 margin-bottom: 0px; 
                 margin-left:0;
                 margin-right:10px;
-                width:32.5%;         
+                width:32.5%; 
+                padding: 0 0 10px;        
             }
 
             @media (min-width: $medium) {
@@ -87,6 +88,7 @@
                 margin: 0 auto 10px;
                 color: $darkbrown;
                 border-bottom: 2px solid $darkbrown;
+                text-transform: uppercase;
             }
 
             p {

@@ -8,12 +8,8 @@
     min-width: 0;
     min-height: 0;
 
-    .h2 {
-        font-size: rem(28px);
-    
-        @media (min-width: $phone) {
-            font-size: rem(36px);
-        }
+    h2 {
+        margin-bottom: 35px;
     }
 }
 
@@ -63,11 +59,15 @@
 //form wrapper gives background and border as well as sets the layout of the box
 .form-wrap {
     max-width: 600px;
-    margin: 36px auto 30px auto;
+    margin: 36px auto 50px auto;
     padding: 20px;
     border: 1px solid $darkbrown;
     border-radius: 8px;
     background-color: $offwhite;
+
+    h2 {
+        text-transform: uppercase;
+    }
 }
 
 // forms are set to be centered 
@@ -83,9 +83,10 @@
 //below is the styling for the row wrappers for the form as well as the contents of said wrapper fields
 //flex flow is used to make the error mesege appear on a new line 
 .rev, .book {
-    margin: -5px;
-    align-items: center;
-    justify-content: center;
+    display:flex;
+    margin: 0 20px;
+    align-items: normal;
+    justify-content: normal;
     flex-flow: row wrap;
 
     //these set up margins for the fields
@@ -93,45 +94,7 @@
         margin-right:4px;
         display:block; 
         margin-top:8px;
-    }
-    .firstName {
-        margin-left: -183px;
-        }
-    .lastName {
-        margin-left: -183px;
-        }
-    .reviewDate{
-        margin-left: -156px;
-        }
-    .revtext{
-        margin-left: -178px;
-    }
-    .eventText{
-        margin-left: -184px;
-    }
-    .booktext{
-        margin-left: -133px;
-    }
-
-    @media (min-width: $tablet) {
-        .firstName {
-            margin-left: -420px;
-        }
-        .lastName {
-            margin-left: -420px;
-        }
-        .reviewDate{
-            margin-left: -389px;
-        }
-        .revtext{
-            margin-left: -403px;
-        }
-        .eventText{
-            margin-left: -415px;
-        }
-        .booktext{
-            margin-left: -361px;
-        }
+        text-align: left;
     }
 
     .revtext, .booktext {
@@ -140,7 +103,7 @@
 	
     input { 
         margin-top:8px; 
-        width: 90%;
+        width: 100%;
         border-radius: 5px;
         height: 39px;
         border: inset;
@@ -152,7 +115,7 @@
         border: inset;
         border-radius: 5px;
         background-color: $white;
-        width: 90%;
+        width: 100%;
     }
 
     //Inline styles for form error messages on booking and testimonials forms
@@ -180,8 +143,9 @@
     margin-top: 12px;
     background-color: $red;
     color: $offwhite;
-    border-radius: 5px;
-    padding: 3px 8px;
+    border-radius: 3px;
+    padding: 10px 15px;
+    text-transform: uppercase;
 }
 
 //form button hover colour chnage to a darker red colour

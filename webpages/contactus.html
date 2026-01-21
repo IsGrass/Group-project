@@ -98,7 +98,7 @@
         <!-- Header container with introductory text and image -->
         <div class="hcon">
         <!-- Subheading describing the form purpose -->
-        <p class="contact-header">You can contact us via the form below for any of your catering needs.<br>We are here to assist you with any questions or special requests you may have. Please fill out the form, and our team will get back to you promptly. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quos eaque molestiae perferendis recusandae? Obcaecati, accusamus, cupiditate eaque quaerat minima ut est amet dolor alias unde distinctio quasi eos dolores.
+        <p class="contact-header">You can contact us via the form below for any of your catering needs.<wbr>We are here to assist you with any questions or special requests you may have. Please fill out the form, and our team will get back to you promptly. <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quos eaque molestiae perferendis recusandae? Obcaecati, accusamus, cupiditate eaque quaerat minima ut est amet dolor alias unde distinctio quasi eos dolores.
         </p>
             <!-- Image wrapper for contact page hero image -->
             <div class="img-wrap">
@@ -107,11 +107,11 @@
     </div>
     <!-- Content wrapper: contains contact form -->
     <div class="content">
-        <!-- Contact form section: collects email, subject, and message from users -->
-        <div class="contact-form-wrapper">
+        <!-- Contact form section on right side -->
             <!-- Email contact form with novalidate attribute to use custom validation (from contactform.js) -->
             <form id="contactForm" class="contact=form" novalidate>
-                <!-- Email input field: user's email address for reply -->
+                <div class="contact-form-wrapper">
+                <!-- Email input wrapper -->
                 <div class="contact-field-wrapper">
                     <label for="formName" class="formName">Your Email:</label>
                     <!-- Email input field with required attribute -->
@@ -143,8 +143,8 @@
                     <!-- Form submission button -->
                     <button class="contact-button" type="submit">Send</button>
                 </div>
+                </div>
             </form>
-        </div>
     </div>
 </div>
 
