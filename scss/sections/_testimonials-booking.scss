@@ -66,7 +66,9 @@
     background-color: $offwhite;
 
     h2 {
+        margin-top:10px;
         text-transform: uppercase;
+        color: $darkred;
     }
 }
 
@@ -147,6 +149,7 @@
     border-radius: 3px;
     padding: 10px 15px;
     text-transform: uppercase;
+    font-size: 16px;
 }
 
 //form button hover colour chnage to a darker red colour
