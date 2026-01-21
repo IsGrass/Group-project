@@ -22,9 +22,10 @@
 </head>
 <body>
 
-<!--Side Nav Bar-->
+<!-- Side Navigation Bar: collapsible mobile menu with links to all pages -->
 <div class="sidenav">
     <div class="sidenavbox">
+        <!-- Navigation list with links and close menu option -->
         <ul class="sidenav-list">
             <li><a href="../webpages/aboutus.html">About Us</a></li>
             <li><a href="../webpages/services.html">Services</a></li>
@@ -54,13 +55,14 @@
                     <span class="icon-envelope"></span><a href="mailto:info@terracotta.com">Info@terracotta.com </a>
                     <span class="icon-phone"></span><a href="tel:012345628284">01235-628-284</a>
                 </div>
+                <!-- Main navigation menu with links to all sections -->
                 <ul class="navbar">
                     <li><a href="../webpages/aboutus.html">About Us</a></li>
                     <li><a href="../webpages/services.html">Services</a></li>
                     <li><a href="../webpages/testimonials.html">Testimonials</a></li>
                     <li><a href="../webpages/contactus.html">Contact Us</a></li>
                 </ul>
-                <!--Hamburger Button-->
+                <!-- Hamburger menu button: displays on mobile devices to toggle side navigation -->
                 <div class="hamburger-menu">
                     <span class="hamburgerline"></span>
                     <span class="hamburgerline"></span>
@@ -98,54 +100,66 @@
 
     <!-- Reviews section grouped by service type -->
     <div class="reviews">
+        <!-- Reviews wrapper container for carousel/display -->
         <div class="review-wrap">
-            <!-- Corporate reviews block -->
+            <!-- Section heading for customer reviews -->
             <h2 class="h1">Customer Reviews</h2>
+            <!-- Container for all review cards: displayed in carousel using Slick.js -->
             <div class="review-box">
+                <!-- Review card 1: Corporate service review -->
                 <div class="review r1">
                     <h3>Corporate Review</h3>
                     <p>"Excellent service and delicious food!"</p>
                 </div>
+                <!-- Review card 2: Corporate service review -->
                 <div class="review r2">	
                     <h3>Corporate Review</h3>
                     <p>"Highly recommend Terracotta Catering for any event."</p>
                 </div>
+                <!-- Review card 3: Corporate service review -->
                 <div class="review r3">	
                     <h3>Corporate Review</h3>
                     <p>"The food was outstanding and the service was impeccable."</p>
                 </div>
+                <!-- Review card 4: Wedding service review -->
                 <div class="review r4">
                     <h3>Wedding Review</h3>
                     <p>"The food at our wedding was absolutely amazing!"</p>
                 </div>
+                <!-- Review card 5: Wedding service review -->
                 <div class="review r5">
                      <h3>Wedding Review</h3>
                     <p>"Terracotta Catering made our special day even more memorable."</p>
                 </div>
+                <!-- Review card 6: Wedding service review -->
                 <div class="review r6">
                     <h3>Wedding Review</h3>
                     <p>"The attention to detail was fantastic!"</p>
                 </div>
+                <!-- Review card 7: Event service review -->
                 <div class="review r7">
                     <h3>Event Review</h3>
                     <p>"The food at my birthday party was exceptional!"</p>
                 </div>
+                <!-- Review card 8: Event service review -->
                 <div class="review r8">
                     <h3>Event Review</h3>
                     <p>"Terracotta Catering handled everything flawlessly."</p>
                 </div>
+                <!-- Review card 9: Event service review -->
                 <div class="review r9">
                     <h3>Event Review</h3>
                     <p>"I couldn't have asked for a better catering service."</p>
                 </div>
             </div>
 
-            <!-- Review submission form -->
+            <!-- Review submission form section: allows users to submit testimonials -->
             <div class="form-wrap rev-wrap">
                 <h2>Submit Your Review</h2>
 
                 <!-- Form uses novalidate to allow custom client-side validation (handled in external JS or inline scripts) -->
                 <form id="reviewForm" class="testimonialsform" novalidate>
+                    <!-- Form fields wrapper -->
                     <div class="form-content">
 
                         <!-- First name field with inline error element -->
@@ -176,7 +190,7 @@
                             <small class="error" aria-live="polite"></small>
                         </div>
 
-                        <!-- Submit button -->
+                        <!-- Submit button wrapper -->
                         <div class="testimonial-button">
                             <input class = "revbutton" type="submit" value="Submit Review">
                         </div>
@@ -209,6 +223,7 @@
             <!-- Sections box: quick links to other pages -->
             <div class="footer-box">
                 <h2>SECTIONS</h2>
+                <!-- Navigation links to other pages and service sections -->
                 <ul>
                     <li><a href="../webpages/aboutus.html">About Us</a></li>
                     <li><a href="../webpages/services.html#corporate">Corporate</a></li> 
@@ -221,9 +236,10 @@
                 </ul>
             </div>
 
-            <!-- Social links box -->
+            <!-- Social links box: connects to social media platforms -->
             <div class="footer-box">
                 <h2>FOLLOW US</h2>
+                <!-- Social media links with icon indicators -->
                 <ul>
                     <li><a href="#"><span class="icon-facebook"></span>Facebook</a></li>
                     <li><a href="#"><span class="icon-twitter"></span>Twitter</a></li>
@@ -246,6 +262,7 @@
 </div>
 </div>
 
+<!-- JavaScript for side navigation menu functionality -->
 <script defer src="../javascript/sidenav.js"></script>
 
 </body>

@@ -16,9 +16,10 @@
 </head>
 <body>
 
-<!--Side Nav Bar-->
+<!-- Side Navigation Bar: collapsible mobile menu with links to all pages -->
 <div class="sidenav">
     <div class="sidenavbox">
+        <!-- Navigation list with links and close menu option -->
         <ul class="sidenav-list">
             <li><a href="../webpages/aboutus.html">About Us</a></li>
             <li><a href="../webpages/services.html">Services</a></li>
@@ -48,13 +49,14 @@
                     <span class="icon-envelope"></span><a href="mailto:info@terracotta.com">Info@terracotta.com </a>
                     <span class="icon-phone"></span><a href="tel:012345628284">01235-628-284</a>
                 </div>
+                <!-- Main navigation menu with links to all sections -->
                 <ul class="navbar">
                     <li><a href="../webpages/aboutus.html">About Us</a></li>
                     <li><a href="../webpages/services.html">Services</a></li>
                     <li><a href="../webpages/testimonials.html">Testimonials</a></li>
                     <li><a href="../webpages/contactus.html">Contact Us</a></li>
                 </ul>
-                <!--Hamburger Button-->
+                <!-- Hamburger menu button: displays on mobile devices to toggle side navigation -->
                 <div class="hamburger-menu">
                     <span class="hamburgerline"></span>
                     <span class="hamburgerline"></span>
@@ -85,38 +87,45 @@
     </div>
 </div>
 
-<!-- Main Content Section -->
+<!-- Main Content Section: booking form and instructions -->
 <div class="sitecontainer">
-    <!--Booking infomation-->
+    <!-- Booking information section with heading and instructions -->
     <div class="main">
         <h2 class="h1">Book a Catering Service</h2>
         <p>Use the form below to book our catering services for your upcoming event. Please provide all the necessary details so we can tailor our services to your needs. We look forward to making your event memorable with our delicious food and exceptional service!</p>
     </div>
-    <!-- Booking Form uses similar html format to testimonials form  -->
+    <!-- Booking form section: collects event and guest information -->
     <div class="form-wrap book-wrap">
         <h2>Book Here</h2>
+        <!-- Form with novalidate for custom client-side validation -->
         <form id="bookingForm" class="bookingform" novalidate>
+            <!-- Form fields wrapper -->
             <div class="form-content">
+                <!-- First name input field with validation error message area -->
                 <div class="book">
                     <label class="firstName" for="firstName">First Name:</label>
                     <input type="text" id="firstName" name="firstName" required>
                     <small class="error" aria-live="polite"></small>
                 </div>
+                <!-- Last name input field with validation error message area -->
                 <div class="book">
                     <label class="lastName" for="lastName">Last Name:</label>
                     <input type="text" id="lastName" name="lastName" required>
                     <small class="error" aria-live="polite"></small>
                 </div>
+                    <!-- Event date picker field with validation error message area -->
                     <div class="book">
                     <label class="eventText" for="bookingDate">Event Date:</label>
                     <input type="date" id="bookingDate" name="bookingDate" required>
                     <small class="error" aria-live="polite"></small>
                 </div>
+                <!-- Special requests textarea for additional booking details -->
                 <div class="book book2">
                     <label class="booktext" for="bookingText">Special Requests:</label>
                     <textarea id="bookingText" name="bookingText" rows="4" cols="50" required minlength="20"></textarea>
                     <small class="error" aria-live="polite"></small>
                 </div>
+                <!-- Submit button wrapper -->
                 <div>
                     <input class="bookbutton" type="submit" value="Book Now">
                 </div>
@@ -149,6 +158,7 @@
             <!-- Site Sections Column: quick navigation links -->
             <div class="footer-box">
                 <h2>SECTIONS</h2>
+                <!-- Navigation links to other pages and service sections -->
                 <ul>
                     <li><a href="../webpages/aboutus.html">About Us</a></li>
                     <!-- Links to service sections with anchor links (#) -->
@@ -165,6 +175,7 @@
             <!-- Social Media Column: links to social platforms -->
             <div class="footer-box">
                 <h2>FOLLOW US</h2>
+                <!-- Social media links with icon classes -->
                 <ul>
                     <!-- Social media links with icon classes -->
                     <li><a href="#"><span class="icon-facebook"></span>Facebook</a></li>
@@ -176,9 +187,10 @@
     </div>
 </footer>
 
+<!-- Copyright section: displays footer copyright information -->
 <div class="copyright">
     <div class="sitecontainter">
-        <!-- Footer bottom / copyright -->
+        <!-- Copyright text and branding -->
         <div class="footer-bottom">
             <span>
                 COPYRIGHT &copy; TERRACOTTA CATERING.<wbr>ALL RIGHTS RESERVED 2019 
@@ -188,6 +200,7 @@
 </div>
 </div>
 
+<!-- JavaScript for side navigation menu functionality -->
 <script defer src="../javascript/sidenav.js"></script>
 
 </body>

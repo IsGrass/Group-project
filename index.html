@@ -7,7 +7,7 @@
     <meta name="ROBOTS" content="NOINDEX,NOFOLLOW"> <!-- Prevent search engines from indexing this page (development) -->
     <title>Terracotta Catering</title>
 
-    <!-- Site stylesheet -->
+    <!-- Main stylesheet for page layout and design -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Third-party JS libraries (jQuery, Slick carousel). -->
@@ -21,9 +21,10 @@
 </head>
 <body>
 
-<!--Side Nav Bar-->
+<!-- Side Navigation Bar: collapsible mobile menu with links to all pages -->
 <div class="sidenav">
     <div class="sidenavbox">
+        <!-- Navigation list with links and close menu option -->
         <ul class="sidenav-list">
             <li><a href="webpages/aboutus.html">About Us</a></li>
             <li><a href="webpages/services.html">Services</a></li>
@@ -53,13 +54,14 @@
                     <span class="icon-envelope"></span><a href="mailto:info@terracotta.com">Info@terracotta.com </a>
                     <span class="icon-phone"></span><a href="tel:012345628284">01235-628-284</a>
                 </div>
+                <!-- Main navigation menu with links to all sections -->
                 <ul class="navbar">
                     <li><a href="webpages/aboutus.html">About Us</a></li>
                     <li><a href="webpages/services.html">Services</a></li>
                     <li><a href="webpages/testimonials.html">Testimonials</a></li>
                     <li><a href="webpages/contactus.html">Contact Us</a></li>
                 </ul>
-                <!--Hamburger Button-->
+                <!-- Hamburger menu button: displays on mobile devices to toggle side navigation -->
                 <div class="hamburger-menu">
                     <span class="hamburgerline"></span>
                     <span class="hamburgerline"></span>
@@ -70,11 +72,11 @@
     </div>	
 </div>
 
-<!-- Header Section: contains logo and primary header content -->
+<!-- Header Section: site branding with marketing headline and CTA button -->
 <div class="header">
     <div class="sitecontainer">
         <div class="flex-header">
-            <!-- Header details (contact and marketing text) -->
+            <!-- Header content: marketing message and booking button -->
             <div class="header-details">
 
                 <!-- Marketing headline and CTA -->
@@ -89,9 +91,11 @@
     </div>
 </div>
 
-<!-- Main content area: intro text and services overview -->
+<!-- Main content area: introduction and services overview -->
 <div class="sitecontainer">
+    <!-- Main content wrapper -->
     <div class="main">
+        <!-- Text content describing company and services -->
         <div class="main-content">
             <h2>Catering FOR ANY OCCASION</h2>
             <!-- Intro paragraphs describing the business -->
@@ -99,24 +103,25 @@
             <p>we are available to cater for you monday to sunday, ensuring flexibility and convenience for all your catering needs. we even offer a deal for holidays and similar special occasions.</p>
         </div>
 
-        <!-- Services section: three service boxes with images and descriptions -->
+        <!-- Services section: displays three main service categories with images -->
         <div class="service">
             <div class="service-header">
                 <h2>Services</h2>
             </div>
+            <!-- Grid container for service boxes -->
             <div class="service-wrap">
+                <!-- Corporate service card -->
                 <div class="service-box">
                     <img src="images/seminar2.png" alt="">
                     <h3>CORPORATE</h3>
                     <p>At Terracotta catouring we provide top-notch corporate catering services tailored to your business needs this extends to any business event that may require our expertise and special care.</p>
-                </div>
-
+                <!-- Wedding service card -->
                 <div class="service-box">
                     <img src="images/event-alt-img.png" alt="">
                     <h3>WEDDINGS</h3>
-                    <p>The staff at Terracotta catering are dedicated to making your special day unforgettable with exquisite food and impeccable service tailored to your wedding celebration.</p>
                 </div>
 
+                <!-- Event service card -->
                 <div class="service-box">
                     <img src="images/event-pic.png" alt="">
                     <h3>EVENTS</h3>
@@ -131,7 +136,8 @@
      banner.js will enhance this block (initialize slick, transitions, etc.) -->
 <script src="javascript/banner.js"></script>
 <div class="sliding-image">
-    <!-- Each .banner.slideX is a slide; contains testimonial text and author -->
+    <!-- Banner carousel slides: each slide contains a customer testimonial -->
+    <!-- Slide 1: John Doe testimonial -->
     <div class="banner slide1">
         <div class="sitecontainer">
             <div class="banner-row">
@@ -143,6 +149,7 @@
         </div>	
     </div>
 
+    <!-- Slide 2: James Smith testimonial -->
     <div class="banner slide2">
         <div class="sitecontainer">
             <div class="banner-row">
@@ -154,6 +161,7 @@
         </div>
     </div>
 
+    <!-- Slide 3: Linda Bennett testimonial -->
     <div class="banner slide3">
         <div class="sitecontainer">
             <div class="banner-row">
@@ -165,6 +173,7 @@
         </div>
     </div>
 
+    <!-- Slide 4: Jane Brown testimonial -->
     <div class="banner slide4">
         <div class="sitecontainer">
             <div class="banner-row">
@@ -177,35 +186,46 @@
     </div>		
 </div>
 
-<!-- Partners section: logos of partner companies -->
+<!-- Partners section: displays logos of partner companies in a carousel -->
 <div class="sitecontainer">		
-    <script defer src="javascript/partners.js"></script> <!-- partners.js deferred so it runs after parsing -->
+    <script defer src="javascript/partners.js"></script> <!-- partners.js: initializes partner carousel -->
+    <!-- Partners container -->
     <div class="partners">
         <h2>PARTNERS</h2>
+        <!-- Partner logo grid container -->
         <div class="partner-wrap">
+            <!-- Grid of partner company logos -->
             <div class="partner-box">
-                <!-- Individual partner images -->
+                <!-- Partner logos with unique IDs for styling or animations -->
+                <!-- Partner 1: Coffee shop -->
                 <div id="partner1" class="partner-img">
                     <img src="images/coffee-shop.jpg" alt="coffee shop logo">
                 </div>
+                <!-- Partner 2: Eat food -->
                 <div id="partner2" class="partner-img">
                     <img src="images/eat-food.jpg" alt="eat food logo">
                 </div>
+                <!-- Partner 3: Farmer -->
                 <div id="partner3" class="partner-img">
                     <img src="images/farmer.jpg" alt="farmer logo">
                 </div>
+                <!-- Partner 4: Farm food -->
                 <div id="partner4" class="partner-img">
                     <img src="images/farmfood.jpg" alt="farm food logo">
                 </div>
+                <!-- Partner 5: Fruit store -->
                 <div id="partner5" class="partner-img">
                     <img src="images/fruit-store.jpg" alt="fruit store logo">
                 </div>
+                <!-- Partner 6: Juicy chic keb -->
                 <div class="partner6 partner-img">
                     <img src="images/juicy-chic-keb.jpg" alt="juicy chic keb logo">
                 </div>
+                <!-- Partner 7: Resto -->
                 <div class="partner7 partner-img">
                     <img src="images/resto.jpg" alt="resto logo">
                 </div>
+                <!-- Partner 8: Wine club -->
                 <div class="partner8 partner-img">
                     <img src="images/wine-club.jpg" alt="wine club logo">
                 </div>
@@ -214,9 +234,10 @@
     </div>
 </div>
 
-<!-- Booking bar: short call-to-action with booking link -->
+<!-- Booking bar: promotional section with CTA button -->
 <div class="bookingbar">
     <div class="sitecontainer">
+        <!-- Booking promotion content -->
         <div class="booking-row">
             <p>We are available to cater for you Monday to Sunday, ensuring flexibility and convenience for all your catering needs. We even offer a deal for holidays and similar special occasions.</p>
             <a class="button bar-button" href="webpages/booking.html">BOOK NOW</a>
@@ -227,7 +248,9 @@
 <!-- Footer: contact info, site links and social links -->
 <footer>
     <div class="sitecontainer">
+        <!-- Footer content row with three columns -->
         <div class="footer-row">
+            <!-- Contact Information Column -->
             <div class="footer-box">
                 <h2>CONTACT US</h2>
                 <ul>
@@ -242,7 +265,7 @@
                 </ul>
             </div>
 
-            <!-- Footer navigation / useful links -->
+            <!-- Site Sections Column: quick navigation links -->
             <div class="footer-box">
                 <h2>SECTIONS</h2>
                 <ul>
@@ -257,7 +280,7 @@
                 </ul>
             </div>
 
-            <!-- Social links -->
+            <!-- Social Media Column: links to social platforms -->
             <div class="footer-box">
                 <h2>FOLLOW US</h2>
                 <ul>
@@ -270,9 +293,10 @@
     </div>
 </footer>
 
+<!-- Copyright section: displays footer copyright information -->
 <div class="copyright">
     <div class="sitecontainter">
-        <!-- Footer bottom / copyright -->
+        <!-- Copyright text and branding -->
         <div class="footer-bottom">
             <span>
                 COPYRIGHT &copy; TERRACOTTA CATERING.<wbr>ALL RIGHTS RESERVED 2019 
@@ -282,6 +306,7 @@
 </div>
 </div>
 
+<!-- JavaScript for side navigation menu functionality -->
 <script defer src="javascript/sidenav.js"></script>
 
 </body>

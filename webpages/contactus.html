@@ -16,9 +16,10 @@
 </head>
 <body>
 
-<!--Side Nav Bar-->
+<!-- Side Navigation Bar: collapsible mobile menu with links to all pages -->
 <div class="sidenav">
     <div class="sidenavbox">
+        <!-- Navigation list with links and close menu option -->
         <ul class="sidenav-list">
             <li><a href="../webpages/aboutus.html">About Us</a></li>
             <li><a href="../webpages/services.html">Services</a></li>
@@ -48,13 +49,14 @@
                     <span class="icon-envelope"></span><a href="mailto:info@terracotta.com">Info@terracotta.com </a>
                     <span class="icon-phone"></span><a href="tel:012345628284">01235-628-284</a>
                 </div>
+                <!-- Main navigation menu with links to all sections -->
                 <ul class="navbar">
                     <li><a href="../webpages/aboutus.html">About Us</a></li>
                     <li><a href="../webpages/services.html">Services</a></li>
                     <li><a href="../webpages/testimonials.html">Testimonials</a></li>
                     <li><a href="../webpages/contactus.html">Contact Us</a></li>
                 </ul>
-                <!--Hamburger Button-->
+                <!-- Hamburger menu button: displays on mobile devices to toggle side navigation -->
                 <div class="hamburger-menu">
                     <span class="hamburgerline"></span>
                     <span class="hamburgerline"></span>
@@ -86,28 +88,30 @@
     </div>
 </div>
 
-<!-- Main Content Section -->
+<!-- Main Content Section: contact form and information -->
 <div class="sitecontainer">
     
-        <!-- Page heading -->
+        <!-- Page heading section -->
     <div class="page-header">
         <h2 class="h1">Contact Us </h2>
     </div>
+        <!-- Header container with introductory text and image -->
         <div class="hcon">
         <!-- Subheading describing the form purpose -->
         <p class="contact-header">You can contact us via the form below for any of your catering needs.<br>We are here to assist you with any questions or special requests you may have. Please fill out the form, and our team will get back to you promptly. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod quos eaque molestiae perferendis recusandae? Obcaecati, accusamus, cupiditate eaque quaerat minima ut est amet dolor alias unde distinctio quasi eos dolores.
         </p>
+            <!-- Image wrapper for contact page hero image -->
             <div class="img-wrap">
             <img src="../images/contact-us.jpg" alt="placeholder">
         </div>
     </div>
-    <!-- Content wrapper: image and form side-by-side -->
+    <!-- Content wrapper: contains contact form -->
     <div class="content">
-        <!-- Contact form section on right side -->
+        <!-- Contact form section: collects email, subject, and message from users -->
         <div class="contact-form-wrapper">
             <!-- Email contact form with novalidate attribute to use custom validation (from contactform.js) -->
             <form id="contactForm" class="contact=form" novalidate>
-                <!-- Email input wrapper -->
+                <!-- Email input field: user's email address for reply -->
                 <div class="contact-field-wrapper">
                     <label for="formName" class="formName">Your Email:</label>
                     <!-- Email input field with required attribute -->
@@ -116,7 +120,7 @@
                     <small class="error" aria-live="polite"></small>
                 </div>
                 
-                <!-- Subject input wrapper -->
+                <!-- Subject input field: topic or reason for contact -->
                 <div class="contact-field-wrapper">
                     <label for="subject">Subject:</label>
                     <!-- Subject text input field with required attribute -->
@@ -125,7 +129,7 @@
                     <small class="error" aria-live="polite"></small>
                 </div>
                 
-                <!-- Message input wrapper -->
+                <!-- Message input field: detailed message content -->
                 <div class="contact-field-wrapper">
                     <label for="message">Message:</label>
                     <!-- Message textarea with required attribute and minimum 10 character requirement -->
@@ -134,7 +138,7 @@
                     <small class="error" aria-live="polite"></small>
                 </div>
                 
-                <!-- Submit button wrapper -->
+                <!-- Submit button wrapper for form submission -->
                 <div class="button-send-box">
                     <!-- Form submission button -->
                     <button class="contact-button" type="submit">Send</button>
@@ -196,9 +200,10 @@
     </div>
 </footer>
 
+<!-- Copyright section: displays footer copyright information -->
 <div class="copyright">
     <div class="sitecontainter">
-        <!-- Footer bottom / copyright -->
+        <!-- Copyright text and branding -->
         <div class="footer-bottom">
             <span>
                 COPYRIGHT &copy; TERRACOTTA CATERING.<wbr>ALL RIGHTS RESERVED 2019 
@@ -208,6 +213,7 @@
 </div>
 </div>
 
+<!-- JavaScript for side navigation menu functionality -->
 <script defer src="../javascript/sidenav.js"></script>
 </body>
 </html>
