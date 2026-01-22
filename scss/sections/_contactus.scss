@@ -1,14 +1,6 @@
 //contact us page styling
 
-.page-header {
-    margin:10px 0 0;
-    text-align: center;
-
-        @media (min-width: $tablet) {
-            text-align: left;
-        }
-    }
-
+// added styling for the top header of the page 
 .contact-header {
     margin:0 0 25px;
     text-align: center;
@@ -20,6 +12,7 @@
     }
 }
 
+// used to set up the img and the text
 .hcon{
     display: flex;
     flex-direction: column;
@@ -67,10 +60,6 @@
         max-width: 600px;
         margin: 36px auto 50px auto;
     }
-}
-.contact-form-wrapper {
-
- 
 }
 
 //used field wrapper to style each row and the feilds them selves like in other forms
@@ -143,7 +132,6 @@
         padding: 10px 15px;
         text-transform: uppercase;
         font-size: 16px;
-        
     }
 
     // sets the button to be a darker red colour on hover
@@ -151,3 +139,5 @@
         background-color: $darkred;
     }
 }
+
+// all contact form code was adjusted for standardisation of all forms 

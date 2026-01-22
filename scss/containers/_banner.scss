@@ -25,8 +25,8 @@
         justify-content: center;
         align-items: center;
 
-        //justify content space between is used so that the postioing of the quotation makrs works
-        //flex row wraps the author name under neath the paragrah
+        //justify content space between is used so that the postioing of the quotation makes works
+       // set to column and centered
         .banner-row {
             display:flex;
             flex-direction: column;

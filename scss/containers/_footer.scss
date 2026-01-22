@@ -1,8 +1,8 @@
 //booking bar of homepage and footer styling
 
 //booking bar styling
-//booking bar will be set to a column on smaller screen sizes so button is easer to acess
-//the lyaout is in centered on phone but in a row on a computer
+//booking bar will be set to a column
+//the lyaout is in centered
 .bookingbar {
     background-color: $dark;
     .booking-row {
@@ -119,6 +119,7 @@ footer {
         }
 }
 
+//changed font size and added background color
 .copyright {
     background-color: $dark;
     color: $white;
@@ -127,7 +128,7 @@ footer {
 	.footer-bottom {
         padding:20px 0;
         text-align: center;
-        font-size: 14px;
+        font-size: 13px;
 
         span {
             display:block;

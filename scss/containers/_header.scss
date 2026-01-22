@@ -17,8 +17,8 @@
     height:450px;
   }
     //the container controls the postioning of the contents
-    //the header will be in one column on phones and will have the header title and button on the left on smaller screen sizes
-    //but will have the title and button on the right on larger screen sizes
+    //the header will be in one column on phones and will have the header title and button in the center on smaller screen sizes
+    //but will have the title and button on the left on larger screen sizes
     .flex-header {  
       display: flex;
       flex-direction: column;
@@ -32,7 +32,7 @@
       }
 
       //header info
-      //this header box is set to left on smaller screensizes and on thr right on larger ones
+      //this header box is set to center on smaller screensizes and on the left on larger ones
     .header-details {
       display: flex;
       flex-direction: column;
@@ -101,3 +101,5 @@
     }  
   }
 }
+
+//logo removed from this section and moved to nav.scss

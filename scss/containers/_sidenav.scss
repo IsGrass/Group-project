@@ -1,4 +1,4 @@
-//Side Navigation Styling
+//Side Navigation Styling abd will side out of the right hand side
 .sidenav {
     display:block;
     background-color: $dark;
@@ -13,6 +13,7 @@
 
     transition: all .5s ease;
 
+    //side nav set to be a column of buttons 
     .sidenavbox {
         margin:0;
         padding:20px 0 10px;

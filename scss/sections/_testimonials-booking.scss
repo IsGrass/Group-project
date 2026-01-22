@@ -157,10 +157,13 @@
     background-color: $darkred;
 }
 
+// all contact form code was adjusted for standardisation of all forms 
+
 //banner slides for the testimonials reviews below uses background images and graident overlay for text to be readible
 //r1 to r3 are for corpate reviews.
 //r4 to r6 are for wedding reviews.
 //r7 to r9 are for event reviews.
+// all three banners were merged into one
 .r1 {
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/testimonials-corpo-1.png');
 }

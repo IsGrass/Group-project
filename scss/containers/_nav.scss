@@ -5,13 +5,13 @@
     background-color: $red;
     color: $white;
 
+    //logo is controled by a defined postion that is set to left for phones, right for tablets and left again for bigger screen sizes
 .navbox {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 
     //logo box
-      //logo is controled by a defined postion that is set to left for phones, right for tablets and left again for bigger screen sizes
      .logobox {
       display:flex;
       flex-direction: row;

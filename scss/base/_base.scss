@@ -35,6 +35,7 @@ body {
     }
 }
 
+//main website container
 .website {
     overflow: hidden;
     background-color: $white;
@@ -176,3 +177,13 @@ strong {
 .hidden {
     display: none;
 }
+
+// top header container
+.page-header {
+    margin:10px 0 0;
+    text-align: center;
+
+        @media (min-width: $tablet) {
+            text-align: left;
+        }
+    }
